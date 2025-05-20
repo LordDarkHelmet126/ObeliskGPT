@@ -1,0 +1,1082 @@
+[
+  {
+    "Cycle": 1,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 1.0,
+    "AvgLatencyMs": 2.818,
+    "SyntaxPassRate": 0.9991,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0039
+  },
+  {
+    "Cycle": 2,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 2.23,
+    "SyntaxPassRate": 0.9981,
+    "DriftIntegrityIndex": 0.994,
+    "SymbolicConflictRate": 0.0006
+  },
+  {
+    "Cycle": 3,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9993,
+    "AvgLatencyMs": 2.691,
+    "SyntaxPassRate": 0.9998,
+    "DriftIntegrityIndex": 0.994,
+    "SymbolicConflictRate": 0.0006
+  },
+  {
+    "Cycle": 4,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9992,
+    "AvgLatencyMs": 1.685,
+    "SyntaxPassRate": 0.9983,
+    "DriftIntegrityIndex": 0.966,
+    "SymbolicConflictRate": 0.0034
+  },
+  {
+    "Cycle": 5,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 2.331,
+    "SyntaxPassRate": 0.9988,
+    "DriftIntegrityIndex": 0.957,
+    "SymbolicConflictRate": 0.0043
+  },
+  {
+    "Cycle": 6,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": true,
+      "SymbolicConflict": true
+    },
+    "SuccessRate": 0.9993,
+    "AvgLatencyMs": 2.462,
+    "SyntaxPassRate": 0.9996,
+    "DriftIntegrityIndex": 1.0,
+    "SymbolicConflictRate": 0.0
+  },
+  {
+    "Cycle": 7,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9995,
+    "AvgLatencyMs": 2.019,
+    "SyntaxPassRate": 0.9973,
+    "DriftIntegrityIndex": 0.987,
+    "SymbolicConflictRate": 0.0013
+  },
+  {
+    "Cycle": 8,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9999,
+    "AvgLatencyMs": 2.227,
+    "SyntaxPassRate": 0.9996,
+    "DriftIntegrityIndex": 0.963,
+    "SymbolicConflictRate": 0.0037
+  },
+  {
+    "Cycle": 9,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 2.039,
+    "SyntaxPassRate": 1.0,
+    "DriftIntegrityIndex": 0.932,
+    "SymbolicConflictRate": 0.0068
+  },
+  {
+    "Cycle": 10,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 2.603,
+    "SyntaxPassRate": 0.999,
+    "DriftIntegrityIndex": 0.944,
+    "SymbolicConflictRate": 0.0056
+  },
+  {
+    "Cycle": 11,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9996,
+    "AvgLatencyMs": 1.537,
+    "SyntaxPassRate": 0.9976,
+    "DriftIntegrityIndex": 0.968,
+    "SymbolicConflictRate": 0.0032
+  },
+  {
+    "Cycle": 12,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9989,
+    "AvgLatencyMs": 2.84,
+    "SyntaxPassRate": 0.9997,
+    "DriftIntegrityIndex": 0.989,
+    "SymbolicConflictRate": 0.0011
+  },
+  {
+    "Cycle": 13,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 1.0,
+    "AvgLatencyMs": 2.263,
+    "SyntaxPassRate": 0.999,
+    "DriftIntegrityIndex": 0.972,
+    "SymbolicConflictRate": 0.0028
+  },
+  {
+    "Cycle": 14,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9985,
+    "AvgLatencyMs": 2.064,
+    "SyntaxPassRate": 0.999,
+    "DriftIntegrityIndex": 0.945,
+    "SymbolicConflictRate": 0.0055
+  },
+  {
+    "Cycle": 15,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.732,
+    "SyntaxPassRate": 0.9986,
+    "DriftIntegrityIndex": 0.949,
+    "SymbolicConflictRate": 0.0051
+  },
+  {
+    "Cycle": 16,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9992,
+    "AvgLatencyMs": 2.769,
+    "SyntaxPassRate": 0.9997,
+    "DriftIntegrityIndex": 0.966,
+    "SymbolicConflictRate": 0.0034
+  },
+  {
+    "Cycle": 17,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 2.405,
+    "SyntaxPassRate": 0.9993,
+    "DriftIntegrityIndex": 0.943,
+    "SymbolicConflictRate": 0.0057
+  },
+  {
+    "Cycle": 18,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 2.526,
+    "SyntaxPassRate": 0.9974,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0039
+  },
+  {
+    "Cycle": 19,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9997,
+    "AvgLatencyMs": 2.86,
+    "SyntaxPassRate": 0.9999,
+    "DriftIntegrityIndex": 0.951,
+    "SymbolicConflictRate": 0.0049
+  },
+  {
+    "Cycle": 20,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.737,
+    "SyntaxPassRate": 0.9973,
+    "DriftIntegrityIndex": 0.99,
+    "SymbolicConflictRate": 0.001
+  },
+  {
+    "Cycle": 21,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9993,
+    "AvgLatencyMs": 2.245,
+    "SyntaxPassRate": 0.9992,
+    "DriftIntegrityIndex": 0.959,
+    "SymbolicConflictRate": 0.0041
+  },
+  {
+    "Cycle": 22,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9985,
+    "AvgLatencyMs": 2.494,
+    "SyntaxPassRate": 0.9979,
+    "DriftIntegrityIndex": 0.969,
+    "SymbolicConflictRate": 0.0031
+  },
+  {
+    "Cycle": 23,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 1.564,
+    "SyntaxPassRate": 0.9972,
+    "DriftIntegrityIndex": 0.963,
+    "SymbolicConflictRate": 0.0037
+  },
+  {
+    "Cycle": 24,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9994,
+    "AvgLatencyMs": 1.439,
+    "SyntaxPassRate": 0.9976,
+    "DriftIntegrityIndex": 0.97,
+    "SymbolicConflictRate": 0.003
+  },
+  {
+    "Cycle": 25,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9989,
+    "AvgLatencyMs": 1.789,
+    "SyntaxPassRate": 0.999,
+    "DriftIntegrityIndex": 0.97,
+    "SymbolicConflictRate": 0.003
+  },
+  {
+    "Cycle": 26,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9986,
+    "AvgLatencyMs": 1.568,
+    "SyntaxPassRate": 0.9986,
+    "DriftIntegrityIndex": 0.931,
+    "SymbolicConflictRate": 0.0069
+  },
+  {
+    "Cycle": 27,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 2.375,
+    "SyntaxPassRate": 0.9998,
+    "DriftIntegrityIndex": 0.945,
+    "SymbolicConflictRate": 0.0055
+  },
+  {
+    "Cycle": 28,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 2.36,
+    "SyntaxPassRate": 0.9996,
+    "DriftIntegrityIndex": 0.952,
+    "SymbolicConflictRate": 0.0048
+  },
+  {
+    "Cycle": 29,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9998,
+    "AvgLatencyMs": 1.828,
+    "SyntaxPassRate": 0.9982,
+    "DriftIntegrityIndex": 0.943,
+    "SymbolicConflictRate": 0.0057
+  },
+  {
+    "Cycle": 30,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9997,
+    "AvgLatencyMs": 2.301,
+    "SyntaxPassRate": 0.9994,
+    "DriftIntegrityIndex": 0.981,
+    "SymbolicConflictRate": 0.0019
+  },
+  {
+    "Cycle": 31,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": true,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.994,
+    "SyntaxPassRate": 0.9981,
+    "DriftIntegrityIndex": 0.999,
+    "SymbolicConflictRate": 0.0001
+  },
+  {
+    "Cycle": 32,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9995,
+    "AvgLatencyMs": 2.46,
+    "SyntaxPassRate": 0.9993,
+    "DriftIntegrityIndex": 0.958,
+    "SymbolicConflictRate": 0.0042
+  },
+  {
+    "Cycle": 33,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9998,
+    "AvgLatencyMs": 2.487,
+    "SyntaxPassRate": 0.9992,
+    "DriftIntegrityIndex": 0.968,
+    "SymbolicConflictRate": 0.0032
+  },
+  {
+    "Cycle": 34,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.915,
+    "SyntaxPassRate": 0.9983,
+    "DriftIntegrityIndex": 0.953,
+    "SymbolicConflictRate": 0.0047
+  },
+  {
+    "Cycle": 35,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9998,
+    "AvgLatencyMs": 2.107,
+    "SyntaxPassRate": 0.9988,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0039
+  },
+  {
+    "Cycle": 36,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9986,
+    "AvgLatencyMs": 1.563,
+    "SyntaxPassRate": 0.9972,
+    "DriftIntegrityIndex": 0.988,
+    "SymbolicConflictRate": 0.0012
+  },
+  {
+    "Cycle": 37,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9998,
+    "AvgLatencyMs": 1.289,
+    "SyntaxPassRate": 0.9986,
+    "DriftIntegrityIndex": 0.977,
+    "SymbolicConflictRate": 0.0023
+  },
+  {
+    "Cycle": 38,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9992,
+    "AvgLatencyMs": 1.897,
+    "SyntaxPassRate": 0.9971,
+    "DriftIntegrityIndex": 0.987,
+    "SymbolicConflictRate": 0.0013
+  },
+  {
+    "Cycle": 39,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9996,
+    "AvgLatencyMs": 1.347,
+    "SyntaxPassRate": 0.9975,
+    "DriftIntegrityIndex": 0.95,
+    "SymbolicConflictRate": 0.005
+  },
+  {
+    "Cycle": 40,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 2.461,
+    "SyntaxPassRate": 0.9986,
+    "DriftIntegrityIndex": 0.983,
+    "SymbolicConflictRate": 0.0017
+  },
+  {
+    "Cycle": 41,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.999,
+    "AvgLatencyMs": 2.294,
+    "SyntaxPassRate": 0.9976,
+    "DriftIntegrityIndex": 0.968,
+    "SymbolicConflictRate": 0.0032
+  },
+  {
+    "Cycle": 42,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9999,
+    "AvgLatencyMs": 2.46,
+    "SyntaxPassRate": 1.0,
+    "DriftIntegrityIndex": 0.976,
+    "SymbolicConflictRate": 0.0024
+  },
+  {
+    "Cycle": 43,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9997,
+    "AvgLatencyMs": 2.803,
+    "SyntaxPassRate": 1.0,
+    "DriftIntegrityIndex": 0.985,
+    "SymbolicConflictRate": 0.0015
+  },
+  {
+    "Cycle": 44,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 1.907,
+    "SyntaxPassRate": 0.9976,
+    "DriftIntegrityIndex": 0.93,
+    "SymbolicConflictRate": 0.007
+  },
+  {
+    "Cycle": 45,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9986,
+    "AvgLatencyMs": 1.257,
+    "SyntaxPassRate": 0.9993,
+    "DriftIntegrityIndex": 0.965,
+    "SymbolicConflictRate": 0.0035
+  },
+  {
+    "Cycle": 46,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9994,
+    "AvgLatencyMs": 2.392,
+    "SyntaxPassRate": 0.9988,
+    "DriftIntegrityIndex": 0.944,
+    "SymbolicConflictRate": 0.0056
+  },
+  {
+    "Cycle": 47,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9993,
+    "AvgLatencyMs": 2.156,
+    "SyntaxPassRate": 0.9993,
+    "DriftIntegrityIndex": 0.978,
+    "SymbolicConflictRate": 0.0022
+  },
+  {
+    "Cycle": 48,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9999,
+    "AvgLatencyMs": 2.125,
+    "SyntaxPassRate": 0.9977,
+    "DriftIntegrityIndex": 0.954,
+    "SymbolicConflictRate": 0.0046
+  },
+  {
+    "Cycle": 49,
+    "TaskType": "Core3Decoding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9997,
+    "AvgLatencyMs": 2.67,
+    "SyntaxPassRate": 0.9997,
+    "DriftIntegrityIndex": 0.983,
+    "SymbolicConflictRate": 0.0017
+  },
+  {
+    "Cycle": 50,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9992,
+    "AvgLatencyMs": 1.452,
+    "SyntaxPassRate": 0.9974,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0039
+  },
+  {
+    "Cycle": 51,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 2.194,
+    "SyntaxPassRate": 0.9977,
+    "DriftIntegrityIndex": 0.986,
+    "SymbolicConflictRate": 0.0014
+  },
+  {
+    "Cycle": 52,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9999,
+    "AvgLatencyMs": 2.9,
+    "SyntaxPassRate": 0.9981,
+    "DriftIntegrityIndex": 0.976,
+    "SymbolicConflictRate": 0.0024
+  },
+  {
+    "Cycle": 53,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 1.886,
+    "SyntaxPassRate": 0.999,
+    "DriftIntegrityIndex": 0.93,
+    "SymbolicConflictRate": 0.007
+  },
+  {
+    "Cycle": 54,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.999,
+    "AvgLatencyMs": 2.892,
+    "SyntaxPassRate": 0.9993,
+    "DriftIntegrityIndex": 0.954,
+    "SymbolicConflictRate": 0.0046
+  },
+  {
+    "Cycle": 55,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 2.044,
+    "SyntaxPassRate": 0.9999,
+    "DriftIntegrityIndex": 0.957,
+    "SymbolicConflictRate": 0.0043
+  },
+  {
+    "Cycle": 56,
+    "TaskType": "ScrollExecution",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9993,
+    "AvgLatencyMs": 1.237,
+    "SyntaxPassRate": 0.9988,
+    "DriftIntegrityIndex": 0.98,
+    "SymbolicConflictRate": 0.002
+  },
+  {
+    "Cycle": 57,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9994,
+    "AvgLatencyMs": 2.035,
+    "SyntaxPassRate": 0.9999,
+    "DriftIntegrityIndex": 0.995,
+    "SymbolicConflictRate": 0.0005
+  },
+  {
+    "Cycle": 58,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 1.52,
+    "SyntaxPassRate": 0.9972,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0025
+  },
+  {
+    "Cycle": 59,
+    "TaskType": "Visualization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9986,
+    "AvgLatencyMs": 1.38,
+    "SyntaxPassRate": 0.9992,
+    "DriftIntegrityIndex": 0.977,
+    "SymbolicConflictRate": 0.0023
+  },
+  {
+    "Cycle": 60,
+    "TaskType": "Tokenization",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9996,
+    "AvgLatencyMs": 2.492,
+    "SyntaxPassRate": 0.9999,
+    "DriftIntegrityIndex": 0.964,
+    "SymbolicConflictRate": 0.0036
+  }
+]

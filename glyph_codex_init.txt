@@ -1,36 +1,44 @@
-# MUXEDIT Metadata: ScriptID=5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c, Version=2.0, Author=LordDarkHelmet, Created=2025-05-19
-# Description: Encrypts OSL glyphs for external output, ensuring obfuscation
-# Encoding: UTF-8
+# MUXEDIT Metadata: ScriptID=7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a, Version=1.0, Author=LordDarkHelmet, Created=2025-05-13, Purpose=GlyphCodexInitialization, Dependencies=glyph_mappings.sqlite, ValidationStatus=Failed
+# Description: Initializes the Obelisk🜒 Glyph Codex (512 glyphs) for GlyphEngine Suite
+# Encoding: UTF-8 BOM 🜰
+# Codex: file_id=7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a, schema=glyph_codex_v1, lines=60, words=250, glyphs=15, dependencies=glyph_mappings.sqlite, validation_status=failed
 
-function Invoke-GlyphEncryption {
+param (
+    [string]$CodexPath = "F:\OBELISK-OS\glyph_mappings.sqlite",
+    [int]$GlyphCount = 512
+)
+
+function Initialize-GlyphCodex {
     param (
-        [string]$Glyph,
-        [string]$OutputPath
+        [string]$Path,
+        [int]$Count
     )
-    $glyphMap = @{
-        "🜁" = "א"; "🜂" = "🜃"; "🜃" = "🜄"; "🜄" = "🜅"; "🜅" = "🜆"; "🜆" = "🜇"; "🜇" = "🜈"; "🜈" = "🜉";
-        "🝐" = "ב"; "🝑" = "ג"; "🝒" = "ד"; "🝓" = "ה"; "🝔" = "ו"; "🝕" = "ז"; "🝖" = "ח"; "🝗" = "ט"; "🝘" = "י";
-        "🝙" = "ך"; "🝚" = "כ"; "🝛" = "ל"; "🝜" = "ם"; "🝝" = "מ"; "🝞" = "ן"; "🝟" = "נ"; "🝠" = "ס"; "🝡" = "ע";
-        "🝢" = "פ"; "🝣" = "ץ"; "🝤" = "צ"; "🝥" = "ק"; "🝦" = "ר"; "🝧" = "ש"; "🝨" = "ת"; "🝩" = "א"; "🝪" = "ב"
+    try {
+        if (-not (Test-Path $Path)) {
+            throw "Codex database not found: $Path"
+        }
+        $connection = New-SqliteConnection -Path $Path
+        $glyphs = Invoke-SqliteQuery -Connection $connection -Query "SELECT * FROM glyphs WHERE active = 1 LIMIT $Count"
+        if ($glyphs.Count -ne $Count) {
+            throw "Expected $Count glyphs, found $($glyphs.Count)"
+        }
+        Write-Log -LogFile "F:\OBELISK-OS\Final Consolidated Folder\Logs\codex_init_diagnostic.log" -Message "Codex initialized: $Count glyphs" -Glyph "🜁"
+        return $glyphs
     }
-    $substituted = $glyphMap[$Glyph]
-    if (-not $substituted) { $substituted = "א" }
-    $bytes = [System.Text.Encoding]::UTF8.GetBytes($substituted)
-    $base64 = [System.Convert]::ToBase64String($bytes)
-    $aes = New-Object System.Security.Cryptography.AesManaged
-    $aes.KeySize = 256
-    $aes.Key = [System.Text.Encoding]::UTF8.GetBytes("ObeliskOSKey12345678901234567890")
-    $aes.IV = [System.Text.Encoding]::UTF8.GetBytes("ObeliskOSIV12345")
-    $encryptor = $aes.CreateEncryptor()
-    $bytesToEncrypt = [System.Text.Encoding]::UTF8.GetBytes($base64)
-    $encrypted = $encryptor.TransformFinalBlock($bytesToEncrypt, 0, $bytesToEncrypt.Length)
-    $encryptedBase64 = [System.Convert]::ToBase64String($encrypted)
-    $signature = "DilithiumSignaturePlaceholder"
-    $result = "U2FsdGVkX1+$encryptedBase64+$signature"
-    $logEntry = @{ Timestamp = (Get-Date -Format "o"); Glyph = $Glyph; Encrypted = $result; Preserve = $true; GlyphError = $true }
-    $logEntry | ConvertTo-Json | Add-Content -Path "E:\ALL SCRIPTS FOR BOOK\DARK_STAR\Final Consolidated Folder\Logs\glyph_error_$(Get-Date -Format 'yyyyMMdd').log"
-    $securityLog = @{ Timestamp = (Get-Date -Format "o"); Action = "Glyph Encryption"; Glyph = $Glyph; Status = "Success" }
-    $securityLog | ConvertTo-Json | Add-Content -Path "E:\ALL SCRIPTS FOR BOOK\DARK_STAR\Final Consolidated Folder\Logs\security_log.json"
-    Set-Content -Path $OutputPath -Value $result -Encoding UTF8
-    Write-Output "Glyph encrypted and saved to $OutputPath"
+    catch {
+        $errorMsg = $_.Exception.Message
+        Write-Log -LogFile "F:\OBELISK-OS\Final Consolidated Folder\Logs\glyph_error_20250513.log" -Message "Codex initialization failed: $errorMsg" -Glyph "🜒" -Error $true
+        throw $errorMsg
+    }
+    finally {
+        if ($connection) { $connection.Close() }
+    }
 }
+
+# Initialize codex
+Initialize-GlyphCodex -Path $CodexPath -Count $GlyphCount
+
+# Validate initialization
+Invoke-Validation -Script "Validate-GlyphCodex.ps1" -Parameters @{ CodexPath = $CodexPath }
+
+# ---CODEX---

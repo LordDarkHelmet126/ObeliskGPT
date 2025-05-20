@@ -4,52 +4,51 @@
   "repository": "F:\\OBELISK-OS\\docs",
   "log": "F:\\OBELISK-OS\\Final Consolidated Folder\\Logs",
   "vision": {
-    "description": "ObeliskOS augments legacy systems, enables gaming servers (SWG), supports drone swarms, and optimizes energy efficiency (~10–15% reduction), mesh swarm control (~100–150,000 nodes), and waste minimization (~95% log reduction) via top-down OSL (Thirteenth Tablet).",
+    "description": "ObeliskOS augments legacy systems, enables gaming servers (SWG), supports drone swarms, and optimizes energy efficiency (~10–15% reduction), mesh swarm control (~100–10,000 nodes), and waste minimization (~95% log reduction) via top-down OSL.",
     "applications": [
       {
         "name": "Legacy Augmentation",
-        "details": "Enhances 2010-era PCs with 0.78–1.2 ms glyph latency, 38,000–129,000 glyphs/sec, 100–250 MB memory.",
+        "details": "Enhances 2010-era PCs with 0.78–0.89 ms glyph latency, 129,000 glyphs/sec, 39–98 MB memory.",
         "metrics": {
-          "latency": "0.78–1.2 ms",
-          "throughput": "38,000–129,000 glyphs/sec",
-          "memory": "100–250 MB",
-          "source": "🜁swg_process_log.json, 🜒backup_codex.sh"
+          "latency": "0.78–0.89 ms",
+          "throughput": "129,000 glyphs/sec",
+          "memory": "39–98 MB",
+          "source": "🜁test_low_memory.json"
         }
       },
       {
         "name": "Gaming Servers (SWG)",
-        "details": "Supports 1,000 players/server, 18,000 entities/sec, live modding, drone visualization, 97% training accuracy with Star Wars lore dataset.",
+        "details": "Supports 50–1,200 players, 24,000 entities/sec, live modding, drone visualization.",
         "metrics": {
-          "throughput": "18,000 entities/sec",
+          "throughput": "24,000 entities/sec",
           "latency": "<10 ms",
-          "accuracy": "97%",
-          "source": "🜒obeliskos_development_rules_v5_modules_chapter.markdown, 🜁swg_training_archive.json, 🜒thirteenthtablet_memory_modules.txt"
+          "source": "🜒ObeliskOS_Master_Catalog_SWG_Modding.markdown"
         }
       },
       {
         "name": "Drone Swarms",
-        "details": "99.9% navigation success for ~100–1,000 nodes, 100–300 MB footprint, 20 ms latency.",
+        "details": "99.95% navigation success for ~100–1,000 nodes, 299 MB footprint.",
         "metrics": {
-          "latency": "20 ms",
-          "memory": "100–300 MB",
-          "source": "🜒glyph_drone.py, 🜒ObeliskOS_Development_Rules_DNA.markdown"
+          "latency": "0.65 ms/task",
+          "memory": "299 MB",
+          "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown"
         }
       },
       {
         "name": "Energy Efficiency",
-        "details": "~10–15% power reduction, 0.0065–0.1 W IoT.",
+        "details": "~10–15% power reduction, 0.0065–0.0192 W IoT.",
         "metrics": {
-          "power": "0.0065–0.1 W (tests), 10 W (full system)",
-          "source": "🜁test_low_memory.json, 🜒keymaster.py"
+          "power": "0.0065–0.0192 W (tests), 0.05 W (IoT), 12 W (full system)",
+          "source": "🜁test_low_memory.json, 🜒ObeliskOS_Master_Catalog_IoT_Interfaces.markdown"
         }
       },
       {
         "name": "Mesh Swarm Control",
-        "details": "Coordinates ~100–150,000 nodes with 1–5 ms P2P sync latency, 100,000 glyphs in 15,637–18,236 ms.",
+        "details": "Coordinates ~100–10,000 nodes with 1–3 ms P2P sync latency.",
         "metrics": {
-          "latency": "1–5 ms",
-          "nodes": "100–150,000",
-          "source": "🜁swg_process_log.json, 🜒scroll_parser.py"
+          "latency": "1–3 ms",
+          "nodes": "100–10,000",
+          "source": "🜒internal_sim_results.json"
         }
       },
       {
@@ -57,19 +56,19 @@
         "details": "Top-down OSL overwrites data, ~95% log reduction, 0–2 MB error logs.",
         "metrics": {
           "reduction": "~95%",
-          "source": "🜁notifications.json, 🜒thirteenthtablet_memory_modules.json"
+          "source": "🜒internal_sim_results.json"
         }
       }
     ]
   },
   "swg_module": {
-    "description": "Custom SWG server with glyph-driven gameplay, feeding data to LLM brain and OGF with 97% training accuracy, enhanced by Star Wars lore dataset.",
+    "description": "Custom SWG server with glyph-driven gameplay, feeding data to LLM brain and OGF.",
     "features": [
       {
         "name": "Narrative Scripting",
         "details": "97% coherence, <10 ms latency.",
         "script": "🜒fluxstar_brain.ps1",
-        "source": "🜒obeliskos_development_rules_v5_modules_chapter.markdown"
+        "source": "🜒ObeliskOS_Master_Catalog_SWG_Modding.markdown"
       },
       {
         "name": "NPC Behaviors",
@@ -84,58 +83,54 @@
         "name": "Drone Visualization",
         "details": "Renders drone flights using telemetry.",
         "log": "🜁drone_log.json",
-        "source": "🜒ObeliskOS SWG Module LSU Chapter (Version 5.markdown, 🜒glyph_drone.py"
+        "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown"
       },
       {
         "name": "LLM Feedback",
-        "details": "Feeds gameplay data (7,053–38,000 glyphs/sec, 97% accuracy) to LLM for training, using Star Wars lore.",
+        "details": "Feeds gameplay data (7,053–18,215 glyphs/sec) to LLM for training.",
         "script": "🜒llm_server.ps1",
         "log": "🜁router_log.json",
-        "source": "🜁swg_training_archive.json, 🜒thirteenthtablet_memory_modules.txt"
+        "source": "🜒internal_sim_results.json"
       }
     ],
-    "implementation": "Top-down OSL (Thirteenth Tablet) overwrites outdated data, ~95% log reduction."
+    "implementation": "Top-down OSL overwrites outdated data, ~95% log reduction."
   },
   "architecture": {
     "components": [
       {
         "name": "OSL",
-        "details": "33–2048 glyphs, top-down, 0.78–1.2 ms latency, 12,000–129,000 glyphs/sec, 1 ms parsing, Thirteenth Tablet with 64 glyphs.",
-        "files": ["🜁glyph_mappings.sqlite", "🜒init_glyph_mappings.py", "🜁obeliskos_glyph_mappings.sql", "🜁osl_grammar.txt", "🜒glyph_parser.py", "🜒obeliskos_glyph_parser.ps1", "🜁glyph_schema.sql", "🜒keymaster.py", "🜒scroll_parser.py"],
-        "source": "🜒internal_sim_results.json, 🜒codex_init_diagnostic.log, 🜒README.md"
+        "details": "512 glyphs, top-down, 0.78–0.89 ms latency, 129,000 glyphs/sec, 1 ms parsing.",
+        "files": ["🜁glyph_mappings.sqlite", "🜒init_glyph_mappings.py"],
+        "source": "🜒internal_sim_results.json"
       },
       {
         "name": "LSUs",
-        "details": "341–512,000 units, 0.65–1.2 ms latency, 100–400 MB for 512,000 units, 1.2 KB/LSU RAM, 0.5 KB/LSU disk.",
-        "files": ["🜒lsu_manager.py", "🜒obeliskos_lsu_manager.ps1"],
-        "source": "🜒obeliskos_development_rules_v5_lsu_section.markdown, 🜁oblivi0n_vector_results.json"
+        "details": "341–512,000 units, 0.65 ms latency, 250 MB for 512,000 units.",
+        "files": ["🜒lsu_manager.py"]
       },
       {
         "name": "AI Agents",
-        "details": "5 agents (Dark_Star, Symbol Agent, ObeliskGPT, Zero-Drift GPT, CLIP-Mistral-7B), <40 ms latency, Keymaster for glyph proposals.",
-        "files": ["🜒vespa.py", "🜒grok_cognition_core.py", "🜒obeliskgpt_core.ps1", "🜒keymaster.py"],
-        "source": "🜒obeliskos_development_rules_v5_agents_stars_section.markdown, 🜒keymaster.py"
+        "details": "5 agents, <40 ms latency, 2–6 active agents.",
+        "files": ["🜒vespa.py", "🜒grok_cognition_core.py"],
+        "source": "🜁test_toggle_contention.json"
       },
       {
         "name": "Translator Codex",
-        "details": "Bidirectional translation, <0.5 ms target latency, 1024-glyph codex.",
-        "files": ["🜒vespa.py", "🜒obelisk🜒codex🜒translator.ps1"],
-        "source": "🜒obelisk🜒codex🜒translator.ps1"
+        "details": "Bidirectional translation, <0.5 ms target latency.",
+        "files": ["🜒vespa.py"]
       },
       {
         "name": "OGF",
-        "details": "Script generation, <100 ms, 12,000–38,000 glyphs/sec.",
-        "files": ["🜒glyph_forge_core.ps1", "🜒obeliskos_script_generator.ps1", "🜒obelisk_glyphforge.ps1", "🜒ogf_script_generator.py"],
-        "source": "🜒obeliskos_development_rules_v5_modules_chapter.markdown"
+        "details": "Programs mini-SD cards, <10 s.",
+        "files": ["🜒glyph_forge.ps1"]
       },
       {
         "name": "Suites",
         "details": [
           {
             "name": "HFS",
-            "metrics": "9.0 ms, 98.7% cache hit rate, 10 ms context switch, 20 ms SymbolToken edit",
-            "files": ["🜒fluxstar_hybrid.ps1"],
-            "source": "🜒fluxstar_hybrid.ps1"
+            "metrics": "9.0 ms, 98.7% cache hit rate",
+            "files": ["🜒fluxstar_hybrid.ps1"]
           },
           {
             "name": "MUXEDIT",
@@ -144,9 +139,9 @@
           },
           {
             "name": "FRV",
-            "metrics": "DPI 8.6E-07–7.78E-06, validation failure 0.0203–0.0498",
+            "metrics": "DPI 8.6E-07–7.78E-06",
             "files": ["🜒validate_outputs.ps1"],
-            "source": "🜒internal_sim_results.json, 🜁oblivi0n_vector_results.json"
+            "source": "🜒internal_sim_results.json"
           },
           {
             "name": "Grey_Star",
@@ -156,100 +151,66 @@
           {
             "name": "GROK Constructor",
             "metrics": "LLM integration",
-            "files": ["🜒grok_cognition_core.py"],
-            "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-          },
-          {
-            "name": "GlyphEngine",
-            "metrics": "Glyph codex management, implied <1 ms query latency",
-            "files": ["🜒Obelisk.GlyphEngine.psm1", "🜒Initialize-GlyphCodex.ps1", "🜒Validate-GlyphCodex.ps1", "🜒Get-GlyphStatus.ps1", "🜒Invoke-GlyphCodexTest.ps1", "🜒Deobfuscate-GlyphLog.ps1"],
-            "source": "🜒Obelisk.GlyphEngine.psd1"
+            "files": ["🜒grok_cognition_core.py"]
           }
         ]
       },
       {
         "name": "Security",
-        "details": "AES-256, Dilithium, Kyber512, 8 s packaging, LII 0.99983, 98% security, 50 ms encryption.",
-        "files": ["🜒obeliskos_glyph_encrypt.ps1", "🜒packager.ps1"],
-        "source": "🜁test_quantum_security.json, 🜁swg_process_log.json, 🜒glyph_encrypt.ps1"
+        "details": "AES-256, Dilithium, Kyber512, 8 s packaging, LII 0.99983, 98% security.",
+        "files": ["🜒glyph_encrypt.ps1", "🜒packager.ps1"],
+        "source": "🜁test_quantum_security.json"
       },
       {
         "name": "Waste Minimization",
         "details": "Top-down OSL overwrites data, ~95% log reduction, 0–2 MB error logs.",
-        "files": ["🜁cognition_log.json", "🜒drift.log", "🜒glyph_test_log.json", "🜁system_operations.json", "🜒obeliskos_task_orchestrator.ps1", "🜒backup_codex.sh"],
-        "source": "🜒internal_sim_results.json, 🜁notifications.json, 🜒ObeliskOS_Development_Rules_DNA.markdown"
-      },
-      {
-        "name": "Kernel",
-        "details": "Initializes system in coexist mode, thread-safe glyph parsing.",
-        "files": ["🜒kernel_core.py"],
-        "source": "🜒kernel_core.py"
-      },
-      {
-        "name": "Thirteenth Tablet",
-        "details": "64-glyph symbolic language, offline cache, humor mappings.",
-        "files": ["🜒keymaster.py", "🜒scroll_parser.py", "🜒backup_codex.sh", "🜒thirteenthtablet_memory_modules.json"],
-        "source": "🜒README.md, 🜒thirteenthtablet_memory_modules.txt"
+        "files": ["🜁cognition_log.json", "🜒drift.log"],
+        "source": "🜒internal_sim_results.json"
       }
     ]
   },
   "deployment_configurations": [
     {
       "name": "IoT/Headless",
-      "details": "Mini-SD, 100–300 MB, 0.65–1.2 ms latency, 0.0065–0.1 W.",
-      "files": ["🜒glyph_forge.ps1", "🜒glyph_compressor.py", "🜒glyph_deploy.py"],
-      "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown, 🜁swg_process_log.json, 🜒ObeliskOS_Development_Rules_DNA.markdown"
+      "details": "Mini-SD, 299 MB, 0.65–1.03 ms latency, 0.0065–0.0192 W.",
+      "files": ["🜒glyph_forge.ps1"],
+      "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown, 🜒internal_sim_results.json"
     },
     {
       "name": "Lite Runtime",
-      "details": "100–300 MB, single agent.",
-      "files": ["🜒runtime_launcher.ps1"]
+      "details": "200–300 MB, single agent."
     },
     {
       "name": "Full Runtime Layer",
-      "details": "641 MB, Setup #1, Docker support.",
-      "files": ["🜒obeliskos.exe", "🜒setup_container.sh"],
-      "source": "🜒README.md"
+      "details": "641 MB, Setup #1."
     },
     {
       "name": "Full HD Install",
-      "details": "1–3 TB SSD, Setup #3.",
-      "files": ["🜒obeliskos_hd.exe"]
+      "details": "1–3 TB SSD, Setup #3."
     }
   ],
   "technical_specifications": {
     "latency": {
-      "glyph": "0.78–1.2 ms (Setup #1), 1 ms parsing (tests), 5–11 ms (OblivionVector), 44.99–67.70 ms (SWG parsing)",
+      "glyph": "0.78–0.89 ms (Setup #1), 1 ms parsing (tests)",
       "task": "0.65 ms (Setup #5)",
-      "p2p_sync": "1–5 ms",
-      "context_switch": "4–19 ms, 10 ms (HFS)",
-      "encryption": "0.13–0.20 ms, 50 ms (glyph_encrypt)",
-      "validation": "0.10–0.25 ms",
-      "drone_navigation": "20 ms",
-      "symbol_token_edit": "20 ms",
-      "sqlite_query": "<1 ms (implied)",
-      "source": "🜁swg_process_log.json, 🜁oblivi0n_vector_results.json, 🜒glyph_drone.py, 🜒fluxstar_hybrid.ps1, 🜒glyph_encrypt.ps1, 🜒Get-GlyphStatus.ps1, 🜒test_json_parse.py"
+      "p2p_sync": "1–3 ms",
+      "context_switch": "4–9 ms",
+      "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown, 🜒internal_sim_results.json"
     },
     "throughput": {
-      "glyphs": "12,000–129,000 glyphs/sec (Setup #1), 7,053–38,000 glyphs/sec (tests), 100,000 glyphs in 15,637–18,236 ms",
-      "entities": "18,000 entities/sec (SWG)",
-      "source": "🜁swg_process_log.json, 🜒obeliskos_development_rules_v5_modules_chapter.markdown"
+      "glyphs": "129,000 glyphs/sec (Setup #1), 7,053–18,215 glyphs/sec (tests)",
+      "entities": "24,000 entities/sec (SWG)",
+      "source": "🜒ObeliskOS_Master_Catalog_SWG_Modding.markdown, 🜒internal_sim_results.json"
     },
-    "memory": "39–250 MB (tests), 100–710 MB (avg 656 MB), 800 MB IoT profile, 3 GB VRAM (Mistral 3B)",
-    "dpi": "5E-06 (SWG), 5.2E-05–0.000496 (OblivionVector)",
-    "power": "0.0065–0.1 W (tests), 10 W (full system)",
-    "validation": "Five Rings/Seven Layers, LII 0.99919–0.99983, validation failure rate 0.0023–0.0498",
-    "accuracy": "97% (SWG training)",
+    "memory": "39–98 MB (tests), 299–710 MB (avg 656 MB)",
+    "dpi": "8.6E-07–7.78E-06",
+    "power": "0.0065–0.0192 W (tests), 0.05 W (IoT), 12 W (full system)",
+    "validation": "Five Rings/Seven Layers, LII 0.99919–0.99983, validation failure rate 0.0023–0.0085",
     "sources": [
       "🜒ObeliskOS_Master_Catalog_Containerization.markdown",
       "🜒internal_sim_results.json",
       "🜁test_toggle_contention.json",
-      "🜁test_low_memory.json",
-      "🜁swg_training_archive.json",
-      "🜁oblivi0n_vector_results.json",
-      "🜒generated_script_20250508124500.ps1",
-      "🜒Validate-GlyphCodex.ps1",
-      "🜒thirteenthtablet_memory_modules.txt"
+      "🜁test_low_memory.json"
     ]
   },
   "glyph_embedding": {
@@ -276,7 +237,7 @@
         "format": "Table glyph_metadata in 🜁glyph_mappings.sqlite"
       }
     ],
-    "source": "ObeliskOS_Glyph_Embedding_Options_v1.md, 🜒obeliskos_development_rules_v5.2_ogf_section.markdown, 🜒obelisk🜒codex🜒translator.ps1, 🜒keymaster.py"
+    "source": "ObeliskOS_Glyph_Embedding_Options_v1.md"
   },
   "documents": [
     {
@@ -310,9 +271,9 @@
     {
       "name": "init_glyph_mappings.py",
       "type": "Python",
-      "details": "Initializes OSL mappings in glyph_mappings.sqlite with 33 glyphs.",
-      "relevance": "OSL codex, SWG glyph support.",
-      "date": "2025-05-07"
+      "details": "Initializes OSL mappings in glyph_mappings.sqlite.",
+      "relevance": "OSL codex.",
+      "date": "2025-05-11"
     },
     {
       "name": "drift.log",
@@ -376,363 +337,6 @@
       "details": "LowMemoryMicroglyph test, 56 MB, 0.0065 W.",
       "relevance": "Legacy augmentation, drone efficiency.",
       "date": "2025-05-12"
-    },
-    {
-      "name": "obeliskos_llm_guide_older_.markdown",
-      "type": "Markdown",
-      "details": "LLM interaction guide, 33-glyph codex, <2 ms parsing.",
-      "relevance": "SWG script generation, LLM feedback.",
-      "date": "2025-05-11"
-    },
-    {
-      "name": "obeliskos_scaffold_older.markdown",
-      "type": "Markdown",
-      "details": "Project structure, glyph codex workflow.",
-      "relevance": "SWG development workflow.",
-      "date": "2025-05-11"
-    },
-    {
-      "name": "obeliskos_llm_dna_v1.0_older.markdown",
-      "type": "Markdown",
-      "details": "System components, 33-glyph codex, <3 ms LSU latency.",
-      "relevance": "SWG task execution, drone swarms.",
-      "date": "2025-05-11"
-    },
-    {
-      "name": "obeliskos_glyph_mappings.sql",
-      "type": "SQL",
-      "details": "Glyph schema, 2048 main glyphs, 1024 special glyphs.",
-      "relevance": "SWG glyph integration.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "Obelisk Glyph Forge (OGF) Chapter (Version 5.markdown",
-      "type": "Markdown",
-      "details": "OGF reference, 2048-glyph codex, <2 ms parsing.",
-      "relevance": "SWG script generation, drone tasks.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "ObeliskOS SWG Module LSU Chapter (Version 5.markdown",
-      "type": "Markdown",
-      "details": "LSUs for SWG, 1.2 ms latency, 38,000 glyphs/sec.",
-      "relevance": "SWG task execution, asset rendering.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "ObeliskOS SWG Module OGF Script Writer Chapter (Version 5.markdown",
-      "type": "Markdown",
-      "details": "OGF script writer, 38,000 glyphs/sec, SWG tasks.",
-      "relevance": "SWG script generation, LLM feedback.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "obeliskos_development_rules_v5.2_ogf_section.markdown",
-      "type": "Markdown",
-      "details": "OGF control panel, micro-glyphs, 99.99% coverage.",
-      "relevance": "SWG modding, OSL integration.",
-      "date": "2025-05-18"
-    },
-    {
-      "name": "obeliskos_development_rules_v5_agents_stars_section.markdown",
-      "type": "Markdown",
-      "details": "Agents and stars, 38,000 glyphs/sec, SWG integration.",
-      "relevance": "SWG task execution, LLM feedback.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "obeliskos_development_rules_v5_lsu_section.markdown",
-      "type": "Markdown",
-      "details": "LSUs, 1.2 ms latency, 38,000 glyphs/sec, SWG support.",
-      "relevance": "SWG task execution, drone swarms.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "obeliskos_development_rules_v5_modules_chapter.markdown",
-      "type": "Markdown",
-      "details": "Eight modules, SWG with 18,000 entities/sec.",
-      "relevance": "SWG testing platform, module integration.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "README.md",
-      "type": "Markdown",
-      "details": "ObeliskSuite repository overview, file organization, Thirteenth Tablet with 64 glyphs.",
-      "relevance": "SWG script and asset management, Star Wars Planets expansion.",
-      "date": "2025-05-11"
-    },
-    {
-      "name": "osl_grammar.txt",
-      "type": "Text",
-      "details": "OSL grammar with 33 base glyphs.",
-      "relevance": "SWG task scripting, OSL foundation.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "symbol_core.txt",
-      "type": "PowerShell",
-      "details": "Core runtime, glyph execution, logging.",
-      "relevance": "SWG runtime initialization.",
-      "date": "2025-04-30"
-    },
-    {
-      "name": "codex_init_diagnostic.log",
-      "type": "Log",
-      "details": "Glyph initialization failures, 33 glyphs.",
-      "relevance": "OSL initialization, SWG support.",
-      "date": "2025-05-09"
-    },
-    {
-      "name": "dark_star_script_writer_log.json",
-      "type": "JSON",
-      "details": "Dark_Star script writer operations, environment setup failure.",
-      "relevance": "SWG script generation, stability.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "notifications.json",
-      "type": "JSON",
-      "details": "Script completion, 97% accuracy, 278,900 cycles.",
-      "relevance": "SWG training, LLM feedback.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "swg_parse_log.json",
-      "type": "JSON",
-      "details": "Failed SWG data load due to missing path.",
-      "relevance": "SWG script processing.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "swg_training_archive.json",
-      "type": "JSON",
-      "details": "SWG training, 97% accuracy, 100,000 glyphs.",
-      "relevance": "SWG LLM training, scalability.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "system_operations.json",
-      "type": "JSON",
-      "details": "Script consolidation, 0 scripts processed.",
-      "relevance": "SWG script preparation.",
-      "date": "2025-05-09"
-    },
-    {
-      "name": "swg_process_log.json",
-      "type": "JSON",
-      "details": "SWG glyph processing, 97% accuracy, 149–250 MB.",
-      "relevance": "SWG task execution, LLM feedback.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "oblivi0n_vector_results.json",
-      "type": "JSON",
-      "details": "Stress tests, 5–11 ms glyph parsing, 130–198 MB.",
-      "relevance": "SWG stability, performance.",
-      "date": "2025-05-12"
-    },
-    {
-      "name": "glyph_compressor.py",
-      "type": "Python",
-      "details": "Glyph compression for low-power devices.",
-      "relevance": "OSL compression, SWG and drone support.",
-      "date": "2025-05-07"
-    },
-    {
-      "name": "glyph_drone.py",
-      "type": "Python",
-      "details": "Drone control with OSL microglyphs, 20 ms latency.",
-      "relevance": "Drone swarms, SWG visualization.",
-      "date": "2025-05-03"
-    },
-    {
-      "name": "symbol_api.py",
-      "type": "Python",
-      "details": "API backend for glyph execution.",
-      "relevance": "SWG task execution, distributed control.",
-      "date": "2025-05-07"
-    },
-    {
-      "name": "kernel_core.py",
-      "type": "Python",
-      "details": "Kernel initialization with glyph parsing.",
-      "relevance": "SWG runtime initialization.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "start_darkstar_service.py",
-      "type": "Python",
-      "details": "Starts Dark_Star service on port 8081.",
-      "relevance": "SWG LLM feedback, distributed control.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "ogf_script_generator.py",
-      "type": "Python",
-      "details": "Generates OGF scripts for SWG and medical diagnostics.",
-      "relevance": "SWG script generation.",
-      "date": "2025-05-09"
-    },
-    {
-      "name": "cleanup_codex.cs",
-      "type": "C#",
-      "details": "Rebuilds OGF suite components in parallel.",
-      "relevance": "SWG OGF support, system stability.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "server_attributes.py",
-      "type": "Python",
-      "details": "Defines server attributes for ObeliskOS.",
-      "relevance": "SWG server configuration.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "obeliskos_task_orchestrator.ps1",
-      "type": "PowerShell",
-      "details": "Orchestrates tasks for SWG and drones.",
-      "relevance": "SWG task execution, drone path planning.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "obeliskos_glyph_parser.ps1",
-      "type": "PowerShell",
-      "details": "Parses OSL glyphs with SQLite queries.",
-      "relevance": "SWG glyph processing.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "generate_script_codex.ps1",
-      "type": "PowerShell",
-      "details": "Generates <DOCUMENT> blocks for scripts.",
-      "relevance": "SWG script documentation.",
-      "date": "2025-05-07"
-    },
-    {
-      "name": "obeliskos_lsu_manager.ps1",
-      "type": "PowerShell",
-      "details": "Manages 512,000 LSUs, 1.2 KB/LSU RAM.",
-      "relevance": "SWG and drone task allocation.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "obelisk🜒codex🜒translator.ps1",
-      "type": "PowerShell",
-      "details": "Translates glyphs and scripts, 1024-glyph codex.",
-      "relevance": "SWG script translation.",
-      "date": "2025-05-09"
-    },
-    {
-      "name": "glyph_encrypt.ps1",
-      "type": "PowerShell",
-      "details": "Encrypts data with AES-256, 50 ms latency.",
-      "relevance": "SWG data security.",
-      "date": "2025-05-03"
-    },
-    {
-      "name": "fluxstar_hybrid.ps1",
-      "type": "PowerShell",
-      "details": "Context-aware SymbolToken editing, 10–20 ms.",
-      "relevance": "SWG gameplay management.",
-      "date": "2025-05-03"
-    },
-    {
-      "name": "generated_script_20250508124500.ps1",
-      "type": "PowerShell",
-      "details": "Processes SWG data, trains Dark_Star, 97% accuracy.",
-      "relevance": "SWG task execution, LLM training.",
-      "date": "2025-05-08"
-    },
-    {
-      "name": "Get-GlyphStatus.ps1",
-      "type": "PowerShell",
-      "details": "Retrieves glyph codex status, implied <1 ms query.",
-      "relevance": "SWG codex monitoring.",
-      "date": "2025-05-10"
-    },
-    {
-      "name": "Validate-GlyphCodex.ps1",
-      "type": "PowerShell",
-      "details": "Validates glyph codex, 33 glyphs expected.",
-      "relevance": "SWG codex integrity.",
-      "date": "2025-05-10"
-    },
-    {
-      "name": "glyph_schema.sql",
-      "type": "SQL",
-      "details": "Defines glyphs table schema.",
-      "relevance": "SWG and drone glyph storage.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "Obelisk.GlyphEngine.psd1",
-      "type": "PowerShell Manifest",
-      "details": "Exports glyph codex management functions.",
-      "relevance": "SWG codex operations.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "test_json_parse.py",
-      "type": "Python",
-      "details": "Tests JSON parsing for master codex.",
-      "relevance": "OSL codex parsing, SWG support.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "backup_codex.sh",
-      "type": "Bash",
-      "details": "Backs up critical ObeliskOS files.",
-      "relevance": "SWG data integrity, distributed backups.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "thirteenthtablet_memory_modules.txt",
-      "type": "Text",
-      "details": "Details Thirteenth Tablet memory modules, including Star Wars lore.",
-      "relevance": "SWG narrative, LLM training.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "thirteenthtablet_memory_modules.json",
-      "type": "JSON",
-      "details": "JSON version of memory modules, including Star Wars lore.",
-      "relevance": "SWG narrative, LLM training.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "ObeliskOS_Development_Rules_DNA.markdown",
-      "type": "Markdown",
-      "details": "Codifies ObeliskOS principles and pipeline, Dark_Star as cognitive core.",
-      "relevance": "SWG script generation, system architecture.",
-      "date": "2025-04-26"
-    },
-    {
-      "name": "keymaster.py",
-      "type": "Python",
-      "details": "Keymaster AI for glyph proposals and sharing.",
-      "relevance": "SWG codex enhancement.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "scroll_parser.py",
-      "type": "Python",
-      "details": "Parses scroll files, proposes glyphs based on usage.",
-      "relevance": "SWG codex updates.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "README.md",
-      "type": "Markdown",
-      "details": "ObeliskOS overview, Thirteenth Tablet, Star Wars Planets expansion.",
-      "relevance": "SWG expansion, system setup.",
-      "date": "2025-05-14"
-    },
-    {
-      "name": "keymaster_config.json",
-      "type": "JSON",
-      "details": "Configures Keymaster with humor style, glyph threshold.",
-      "relevance": "SWG narrative enhancement.",
-      "date": "2025-05-14"
     }
   ],
   "scripts": [
@@ -740,409 +344,25 @@
       "name": "🜒fluxstar_brain.ps1",
       "type": "PowerShell",
       "details": "SWG narrative scripting, <10 ms.",
-      "source": "🜒ObeliskOS SWG Module OGF Script Writer Chapter (Version 5.markdown"
+      "source": "🜒ObeliskOS_Master_Catalog_SWG_Modding.markdown"
     },
     {
       "name": "🜒glyph_executor.ps1",
       "type": "PowerShell",
       "details": "NPC task execution, <3 ms.",
-      "source": "🜒ObeliskOS SWG Module OGF Script Writer Chapter (Version 5.markdown"
+      "source": "🜒ObeliskOS_Master_Catalog_SWG_Modding.markdown"
     },
     {
-      "name": "🜒obeliskos_glyph_encrypt.ps1",
+      "name": "🜒glyph_encrypt.ps1",
       "type": "PowerShell",
-      "details": "AES-256 encryption, 0.13–0.20 ms, 50 ms full encryption.",
-      "source": "🜁swg_process_log.json, 🜒glyph_encrypt.ps1"
+      "details": "AES-256 encryption, <1 ms.",
+      "source": "🜒ObeliskOS_Master_Catalog_Cryptocurrency.markdown"
     },
     {
       "name": "🜒llm_server.ps1",
       "type": "PowerShell",
       "details": "Inference server, test case generation.",
       "source": "🜁router_log.json"
-    },
-    {
-      "name": "🜒obeliskos_glyph_parser.ps1",
-      "type": "PowerShell",
-      "details": "Glyph parsing with SQLite queries, implied <1 ms.",
-      "source": "🜒obeliskos_glyph_parser.ps1"
-    },
-    {
-      "name": "🜒Initialize-GlyphCodex.ps1",
-      "type": "PowerShell",
-      "details": "Initializes 33-glyph codex.",
-      "source": "🜒obeliskos_scaffold_older.markdown, 🜒Obelisk.GlyphEngine.psd1"
-    },
-    {
-      "name": "🜒obelisk_glyphforge.ps1",
-      "type": "PowerShell",
-      "details": "Script generation, 38,000 glyphs/sec.",
-      "source": "🜒ObeliskOS SWG Module OGF Script Writer Chapter (Version 5.markdown"
-    },
-    {
-      "name": "🜒obeliskos_lsu_manager.ps1",
-      "type": "PowerShell",
-      "details": "LSU allocation, <1.2 ms task initiation, 512,000 LSUs.",
-      "source": "🜒obeliskos_lsu_manager.ps1"
-    },
-    {
-      "name": "🜒symbol_core.txt",
-      "type": "PowerShell",
-      "details": "Core runtime, glyph execution, logging.",
-      "source": "🜒symbol_core.txt"
-    },
-    {
-      "name": "🜒glyph_codex_init.ps1",
-      "type": "PowerShell",
-      "details": "Glyph initialization, 33 glyphs.",
-      "source": "🜒codex_init_diagnostic.log"
-    },
-    {
-      "name": "🜒glyph_compressor.py",
-      "type": "Python",
-      "details": "Glyph compression for low-power devices.",
-      "source": "🜒glyph_compressor.py"
-    },
-    {
-      "name": "🜒init_glyph_mappings.py",
-      "type": "Python",
-      "details": "Initializes glyph mappings with 33 glyphs.",
-      "source": "🜒init_glyph_mappings.py"
-    },
-    {
-      "name": "🜒glyph_drone.py",
-      "type": "Python",
-      "details": "Drone control, 20 ms latency.",
-      "source": "🜒glyph_drone.py"
-    },
-    {
-      "name": "🜒symbol_api.py",
-      "type": "Python",
-      "details": "API backend for glyph execution.",
-      "source": "🜒symbol_api.py"
-    },
-    {
-      "name": "🜒kernel_core.py",
-      "type": "Python",
-      "details": "Kernel initialization with glyph parsing.",
-      "source": "🜒kernel_core.py"
-    },
-    {
-      "name": "🜒start_darkstar_service.py",
-      "type": "Python",
-      "details": "Starts Dark_Star service on port 8081.",
-      "source": "🜒start_darkstar_service.py"
-    },
-    {
-      "name": "🜒ogf_script_generator.py",
-      "type": "Python",
-      "details": "Generates OGF scripts for SWG.",
-      "source": "🜒ogf_script_generator.py"
-    },
-    {
-      "name": "🜒cleanup_codex.cs",
-      "type": "C#",
-      "details": "Rebuilds OGF suite components.",
-      "source": "🜒cleanup_codex.cs"
-    },
-    {
-      "name": "🜁server_attributes.py",
-      "type": "Python",
-      "details": "Defines server attributes for ObeliskOS.",
-      "source": "🜁server_attributes.py"
-    },
-    {
-      "name": "🜒obeliskos_task_orchestrator.ps1",
-      "type": "PowerShell",
-      "details": "Orchestrates tasks for SWG and drones.",
-      "source": "🜒obeliskos_task_orchestrator.ps1"
-    },
-    {
-      "name": "🜒generate_script_codex.ps1",
-      "type": "PowerShell",
-      "details": "Generates <DOCUMENT> blocks for scripts.",
-      "source": "🜒generate_script_codex.ps1"
-    },
-    {
-      "name": "🜒obelisk🜒codex🜒translator.ps1",
-      "type": "PowerShell",
-      "details": "Translates glyphs and scripts, 1024-glyph codex.",
-      "source": "🜒obelisk🜒codex🜒translator.ps1"
-    },
-    {
-      "name": "🜒fluxstar_hybrid.ps1",
-      "type": "PowerShell",
-      "details": "Context-aware SymbolToken editing, 10–20 ms.",
-      "source": "🜒fluxstar_hybrid.ps1"
-    },
-    {
-      "name": "🜒generated_script_20250508124500.ps1",
-      "type": "PowerShell",
-      "details": "Processes SWG data, trains Dark_Star, 97% accuracy.",
-      "source": "🜒generated_script_20250508124500.ps1"
-    },
-    {
-      "name": "🜒Get-GlyphStatus.ps1",
-      "type": "PowerShell",
-      "details": "Retrieves glyph codex status, implied <1 ms query.",
-      "source": "🜒Get-GlyphStatus.ps1"
-    },
-    {
-      "name": "🜒Validate-GlyphCodex.ps1",
-      "type": "PowerShell",
-      "details": "Validates glyph codex, 33 glyphs expected.",
-      "source": "🜒Validate-GlyphCodex.ps1"
-    },
-    {
-      "name": "🜒Invoke-GlyphCodexTest.ps1",
-      "type": "PowerShell",
-      "details": "Tests glyph codex, placeholder.",
-      "source": "🜒Obelisk.GlyphEngine.psd1"
-    },
-    {
-      "name": "🜒Deobfuscate-GlyphLog.ps1",
-      "type": "PowerShell",
-      "details": "Deobfuscates glyph logs, placeholder.",
-      "source": "🜒Obelisk.GlyphEngine.psd1"
-    },
-    {
-      "name": "🜒test_json_parse.py",
-      "type": "Python",
-      "details": "Tests JSON parsing for master codex.",
-      "source": "🜒test_json_parse.py"
-    },
-    {
-      "name": "🜒backup_codex.sh",
-      "type": "Bash",
-      "details": "Backs up critical ObeliskOS files.",
-      "source": "🜒backup_codex.sh"
-    },
-    {
-      "name": "🜒init_glyph.sh",
-      "type": "Bash",
-      "details": "Initializes system time glyph stack.",
-      "source": "🜒thirteenthtablet_memory_modules.txt"
-    },
-    {
-      "name": "🜒lock_asset.sh",
-      "type": "Bash",
-      "details": "Locks assets with glyph stack.",
-      "source": "🜒thirteenthtablet_memory_modules.txt"
-    },
-    {
-      "name": "🜒lookup_glyph.sh",
-      "type": "Bash",
-      "details": "Looks up glyph stack meanings.",
-      "source": "🜒thirteenthtablet_memory_modules.txt"
-    },
-    {
-      "name": "🜒glyph_training.sh",
-      "type": "Bash",
-      "details": "Interactive glyph training tutorial.",
-      "source": "🜒thirteenthtablet_memory_modules.txt"
-    },
-    {
-      "name": "🜒onboard_user.sh",
-      "type": "Bash",
-      "details": "Onboards users with setup tutorial.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒toggle_expansion.sh",
-      "type": "Bash",
-      "details": "Manages expansion packs like Star Wars Planets.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒setup_container.sh",
-      "type": "Bash",
-      "details": "Sets up Docker container for ObeliskOS.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒recover_codex.sh",
-      "type": "Bash",
-      "details": "Recovers codex data from backups.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒update_github.ps1",
-      "type": "PowerShell",
-      "details": "Updates GitHub repository.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒finalize_language.ps1",
-      "type": "PowerShell",
-      "details": "Finalizes language configurations.",
-      "source": "🜒README.md"
-    },
-    {
-      "name": "🜒keymaster.py",
-      "type": "Python",
-      "details": "Keymaster AI for glyph proposals and sharing.",
-      "source": "🜒keymaster.py"
-    },
-    {
-      "name": "🜒scroll_parser.py",
-      "type": "Python",
-      "details": "Parses scroll files, proposes glyphs based on usage.",
-      "source": "🜒scroll_parser.py"
-    },
-    {
-      "name": "🜒dark_star_cognition_core.py",
-      "type": "Python",
-      "details": "Dark_Star cognitive core, LLM integration.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_ethics.py",
-      "type": "Python",
-      "details": "Enforces ethical criteria.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_benevolence.py",
-      "type": "Python",
-      "details": "Ensures benevolent outputs.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_quantum_core.py",
-      "type": "Python",
-      "details": "Simulates quantum algorithms.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_test_orchestrator.py",
-      "type": "Python",
-      "details": "Simulates extreme test conditions.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒scroll_map_overlay.py",
-      "type": "Python",
-      "details": "Generates visualizations for reports.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒obeliskos_packager.py",
-      "type": "Python",
-      "details": "Compiles ObeliskOS into .exe.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_vector_indexer.py",
-      "type": "Python",
-      "details": "Vectorizes data for storage.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒bootstrap_obeliskos.py",
-      "type": "Python",
-      "details": "Bootstraps system with integrity checks.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_ideation.py",
-      "type": "Python",
-      "details": "Parses text and voice inputs.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_voice.py",
-      "type": "Python",
-      "details": "Processes voice commands.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_designer.py",
-      "type": "Python",
-      "details": "Generates design blueprints.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_code_generator.py",
-      "type": "Python",
-      "details": "Generates context-aware scripts.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_template_engine.py",
-      "type": "Python",
-      "details": "Templates for script generation.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_symcompress.py",
-      "type": "Python",
-      "details": "Compresses scripts for transmission.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_refiner.py",
-      "type": "Python",
-      "details": "Iteratively refines scripts.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒grid_simulator.py",
-      "type": "Python",
-      "details": "Simulates grid conditions.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_monitor.py",
-      "type": "Python",
-      "details": "Monitors system metrics.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_drift_predictor.py",
-      "type": "Python",
-      "details": "Predicts glyph drift.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_mesh_pipeline.py",
-      "type": "Python",
-      "details": "Distributes tasks across mesh nodes.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒dark_star_orchestrator.py",
-      "type": "Python",
-      "details": "Coordinates AI council voting.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_marketplace_api.py",
-      "type": "Python",
-      "details": "Manages external contributions.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_validate.py",
-      "type": "Python",
-      "details": "Validates external scripts.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_securityaudit.py",
-      "type": "Python",
-      "details": "Audits system security.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒obeliskos_core.py",
-      "type": "Python",
-      "details": "Core system with UI dashboard.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
-    },
-    {
-      "name": "🜒glyph_deploy.py",
-      "type": "Python",
-      "details": "Deploys scripts to nodes.",
-      "source": "🜒ObeliskOS_Development_Rules_DNA.markdown"
     }
   ],
   "logs": [
@@ -1163,60 +383,21 @@
       "type": "JSON",
       "details": "Test metrics, 7,053–18,215 glyphs/sec.",
       "source": "🜒internal_sim_results.json"
+    }
+  ],
+  "roadmap": [
+    {
+      "milestone": "Q3 2025",
+      "details": "Optimize IoT scripts, expand codex to 512 glyphs.",
+      "source": "🜒ObeliskOS_Master_Catalog_Drones.markdown"
     },
     {
-      "name": "🜒glyph_test_log.json",
-      "type": "JSON",
-      "details": "Encrypted glyph codex logs, ~95% reduction.",
-      "source": "🜒obeliskos_llm_guide_older_.markdown"
+      "milestone": "Q4 2025",
+      "details": "Enhance SWG modding for 100,000 entities/sec."
     },
     {
-      "name": "🜒symbol_core.log",
-      "type": "Log",
-      "details": "Runtime execution logs, obfuscated.",
-      "source": "🜒symbol_core.txt"
-    },
-    {
-      "name": "🜒codex_init_diagnostic.log",
-      "type": "Log",
-      "details": "Glyph initialization failures.",
-      "source": "🜒codex_init_diagnostic.log"
-    },
-    {
-      "name": "🜁dark_star_script_writer_log.json",
-      "type": "JSON",
-      "details": "Dark_Star script writer operations, DPI 5E-06%.",
-      "source": "🜁dark_star_script_writer_log.json"
-    },
-    {
-      "name": "🜁notifications.json",
-      "type": "JSON",
-      "details": "Script completion, 97% accuracy.",
-      "source": "🜁notifications.json"
-    },
-    {
-      "name": "🜁swg_parse_log.json",
-      "type": "JSON",
-      "details": "SWG data load failure.",
-      "source": "🜁swg_parse_log.json"
-    },
-    {
-      "name": "🜁swg_training_archive.json",
-      "type": "JSON",
-      "details": "SWG training, 97% accuracy, 100,000 glyphs.",
-      "source": "🜁swg_training_archive.json"
-    },
-    {
-      "name": "🜁system_operations.json",
-      "type": "JSON",
-      "details": "Script consolidation, 0 scripts.",
-      "source": "🜁system_operations.json"
-    },
-    {
-      "name": "🜁swg_process_log.json",
-      "type": "JSON",
-      "details": "SWG glyph processing, 97% accuracy, 149–250 MB.",
-      "source": "🜁swg_process_log.json"
-    },
-    {
-      "name": "
+      "milestone": "2028",
+      "details": "Full production for 100,000+ nodes."
+    }
+  ]
+}

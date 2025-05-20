@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "name": "LordDarkHelmet",
+      "role": "Lead Developer",
+      "needs": ["Obelisk Suite debugging (OGF, GlyphEngine)", "xAI API integration for HFS", "SSD upgrade for Zephyr testbed"],
+      "priorities": ["Resolve glyph_codex_init.ps1 errors", "Test ogf_chat_ui.html"]
+    },
+    {
+      "name": "Son",
+      "role": "Gamer",
+      "needs": ["High-performance gaming with OGF support", "Fast load times for War Thunder, For Honor"],
+      "requirements": {
+        "resolution": "1080p",
+        "frame_rate": "60–120 FPS",
+        "load_times": "~2–5 seconds"
+      }
+    },
+    {
+      "name": "Community Developers",
+      "role": "Potential Contributors",
+      "needs": ["OGF interface guidelines", "Thirteenth Tablet documentation"],
+      "status": "Not active as of May 15, 2025"
+    }
+  ]
+}

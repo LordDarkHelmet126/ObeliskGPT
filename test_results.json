@@ -1,0 +1,36 @@
+2025-05-13 12:48:36,374 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 12:48:36,375 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 12:48:36,375 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 12:48:36,375 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 12:52:59,133 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 12:52:59,134 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 12:52:59,429 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 12:52:59,429 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 12:56:47,712 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 12:56:47,712 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 12:56:47,712 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 12:56:47,713 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 13:00:25,771 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 13:00:25,771 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 13:00:25,771 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 13:00:25,771 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 13:38:31,190 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 13:38:31,190 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 13:38:31,190 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 13:38:31,190 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 13:43:08,444 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 13:43:08,445 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 13:43:08,445 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 13:43:08,445 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 14:13:04,105 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 14:13:04,106 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 14:13:04,106 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 14:13:04,106 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 14:32:52,769 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 14:32:52,769 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 14:32:52,769 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 14:32:52,769 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}
+2025-05-13 14:52:42,686 {'operation': 'TestGlyphParser', 'status': 'Success', 'details': {'glyph_id': 1}}
+2025-05-13 14:52:42,686 {'operation': 'TestLSUManager', 'status': 'Success', 'details': {'unit_count': 341}}
+2025-05-13 14:52:42,686 {'operation': 'TestSymbolAgent', 'status': 'Failed', 'details': {'error': 'Extra data: line 1 column 5 (char 4)'}}
+2025-05-13 14:52:42,686 {'operation': 'TestWave1', 'status': 'Failed', 'details': {'glyph_parser': True, 'lsu_manager': True, 'symbol_agent': False}}

@@ -1,0 +1,38 @@
+[
+  {
+    "glyph_id": 1,
+    "unicode": "\ud83d\udf01",
+    "semantic_role": "Verify Signature",
+    "vowel_harmony": "Neutral",
+    "type": "ACTION",
+    "payload_size": 10,
+    "binary_id": "00000000001",
+    "lineage": "🜰🜁",
+    "created": "2025-04-29T00:00:00Z",
+    "used_in": ["symbol_crypto_core.ps1", "ogf_chat_ui.html"]
+  },
+  {
+    "glyph_id": 2,
+    "unicode": "\ud83d\udf03",
+    "semantic_role": "Update Entity",
+    "vowel_harmony": "Active",
+    "type": "ACTION",
+    "payload_size": 8,
+    "binary_id": "00000000010",
+    "lineage": "🜰🜃",
+    "created": "2025-04-29T00:00:00Z",
+    "used_in": ["fluxstar_brain.ps1", "ogf_chat_ui.html"]
+  },
+  {
+    "glyph_id": 3,
+    "unicode": "\u26cb",
+    "semantic_role": "Model Pruning",
+    "vowel_harmony": "Passive",
+    "type": "CONTROL",
+    "payload_size": 12,
+    "binary_id": "00000000011",
+    "lineage": "🜰⚂",
+    "created": "2025-05-01T00:00:00Z",
+    "used_in": ["obeliskos_gpt_launcher.ps1", "keymaster.py"]
+  }
+]

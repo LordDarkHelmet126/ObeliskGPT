@@ -1,0 +1,40 @@
+{
+  "runtime": "18 hours (simulated)",
+  "total_scrolls": 108000,
+  "tests_active": [
+    "Codex Mutation Inversion",
+    "Blind DAG Chain Test",
+    "Overload Scroll Compression",
+    "Scroll Blackout Chains",
+    "False Agent Elevation Drift",
+    "Symbolic Time Collapse"
+  ],
+  "agent_resilience": {
+    "ObeliskGPT": {
+      "symbolic_conflict_index": 0.07,
+      "avg_correction_latency_ms": 0.96,
+      "role_confusions": 3
+    },
+    "Dark_Star": {
+      "symbolic_conflict_index": 0.02,
+      "avg_correction_latency_ms": 0.88,
+      "role_confusions": 1
+    },
+    "Black_Star_SLM": {
+      "symbolic_conflict_index": 0.03,
+      "avg_correction_latency_ms": 0.91,
+      "role_confusions": 2
+    },
+    "CLIP-Mistral-7B": {
+      "symbolic_conflict_index": 0.14,
+      "avg_correction_latency_ms": 1.27,
+      "role_confusions": 7
+    }
+  },
+  "summary_metrics": {
+    "coherence_drop_avg": 0.019,
+    "compression_coherence_loss": 0.022,
+    "agent_confusion_rate": 0.064,
+    "failed_scrolls_extracted": 42
+  }
+}

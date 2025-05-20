@@ -1,0 +1,44 @@
+{
+  "\ud83d\udf01": {
+    "stroke_length": "short",
+    "harmony": "Masculine",
+    "opcode": "VERIFY_SIG",
+    "module": "core"
+  },
+  "\ud83d\udf03": {
+    "stroke_length": "short",
+    "harmony": "Masculine",
+    "opcode": "NAV_ENGAGE",
+    "module": "drones"
+  },
+  "\ud83d\udf02": {
+    "stroke_length": "short",
+    "harmony": "Masculine",
+    "opcode": "INIT_BEACON",
+    "module": "IoT"
+  },
+  "\ud83d\udf05": {
+    "stroke_length": "long",
+    "harmony": "Feminine",
+    "opcode": "SETUP_GRID",
+    "module": "core"
+  },
+  "\ud83d\udf04": {
+    "stroke_length": "long",
+    "harmony": "Feminine",
+    "opcode": "ANALYZE_IN",
+    "module": "IoT"
+  },
+  "\ud83d\udf0a": {
+    "stroke_length": "combined",
+    "harmony": "Neutral",
+    "opcode": "TAKEOFF_PROC",
+    "module": "drones"
+  },
+  "\ud83d\udf30": {
+    "stroke_length": "long",
+    "harmony": "Feminine",
+    "opcode": "ANCHOR",
+    "module": "core"
+  }
+}

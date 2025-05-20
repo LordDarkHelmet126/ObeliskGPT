@@ -1,0 +1,20 @@
+[
+  {
+    "glyph_id": 1,
+    "unicode": "\ud83d\udf01",
+    "semantic_role": "Verify Transaction",
+    "vowel_harmony": "Neutral",
+    "type": "ACTION",
+    "payload_size": 10,
+    "binary_id": "00000000001"
+  },
+  {
+    "glyph_id": 2,
+    "unicode": "\ud83d\udf03",
+    "semantic_role": "Update Entity",
+    "vowel_harmony": "Active",
+    "type": "ACTION",
+    "payload_size": 8,
+    "binary_id": "00000000010"
+  }
+]

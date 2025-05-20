@@ -1,0 +1,15 @@
+{
+  "directories": [
+    "Scripts",
+    "Codices",
+    "Logs",
+    "Docs",
+    "JSON",
+    "Modules\\Obelisk.GlyphEngine",
+    "Keys",
+    "Dependencies",
+    "Snapshots",
+    "Concepts",
+    "Logs\\Status"
+  ]
+}

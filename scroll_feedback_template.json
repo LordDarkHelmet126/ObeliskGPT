@@ -1,0 +1,31 @@
+{
+  "scroll_id": "scroll_crypto_001",
+  "outcome": {
+    "success": true,
+    "coherence": 0.975,
+    "latency": 1.42,
+    "agent_feedback": {
+      "ObeliskGPT": "validated",
+      "Dark_Star": "coherence_high",
+      "Black_Star": "executed_sync"
+    },
+    "task_metrics": {
+      "\ud83d\udf01": {
+        "latency": 0.4,
+        "success": true
+      },
+      "\ud83d\udd37": {
+        "latency": 0.3,
+        "success": true
+      },
+      "\ud83d\udf03": {
+        "latency": 0.5,
+        "success": true
+      },
+      "\ud83d\udf0a": {
+        "latency": 0.22,
+        "success": true
+      }
+    }
+  }
+}

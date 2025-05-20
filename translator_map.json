@@ -1,0 +1,42 @@
+{
+  "\ud83d\udf01": {
+    "to_lua": "VERIFY_SIG()",
+    "to_english": "Validate transaction"
+  },
+  "\ud83d\udf03": {
+    "to_lua": "NAV_ENGAGE()",
+    "to_english": "Navigate to coordinates"
+  },
+  "\ud83d\udf02": {
+    "to_lua": "INIT_BEACON()",
+    "to_english": "Initialize signal beacon"
+  },
+  "\ud83d\udf05": {
+    "to_lua": "SETUP_GRID()",
+    "to_english": "Allocate memory grid"
+  },
+  "\ud83d\udf04": {
+    "to_lua": "ANALYZE_IN()",
+    "to_english": "Analyze input stream"
+  },
+  "\ud83d\udf30": {
+    "to_lua": "ANCHOR()",
+    "to_english": "Begin or End sequence"
+  },
+  "\ud83d\udd38": {
+    "to_lua": "GEN_MISSION()",
+    "to_english": "Generate mission structure"
+  },
+  "\ud83d\udd37": {
+    "to_lua": "UPDATE_ENTITY()",
+    "to_english": "Update entity state"
+  },
+  "\ud83d\udf0b": {
+    "to_lua": "LAND_PROC()",
+    "to_english": "Execute landing protocol"
+  },
+  "\ud83d\udf0a": {
+    "to_lua": "TAKEOFF_PROC()",
+    "to_english": "Execute takeoff protocol"
+  }
+}

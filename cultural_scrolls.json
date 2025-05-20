@@ -1,0 +1,58 @@
+{
+  "scrolls": [
+    {
+      "id": "scroll_judaism_001",
+      "context": "judaism",
+      "glyphs": [
+        "\ud83d\udf30",
+        "\ud83d\udf01",
+        "\ud83d\udf03",
+        "\ud83d\udf30"
+      ],
+      "target_agent": "Dark_Star",
+      "complexity": 2.6,
+      "encoded_dag": {
+        "\ud83d\udf01": [
+          "\ud83d\udf03"
+        ],
+        "\ud83d\udf03": []
+      }
+    },
+    {
+      "id": "scroll_mongols_001",
+      "context": "mongols",
+      "glyphs": [
+        "\ud83d\udf30",
+        "\ud83d\udf03",
+        "\ud83d\udf01",
+        "\ud83d\udf30"
+      ],
+      "target_agent": "ObeliskGPT",
+      "complexity": 2.6,
+      "encoded_dag": {
+        "\ud83d\udf03": [
+          "\ud83d\udf01"
+        ],
+        "\ud83d\udf01": []
+      }
+    },
+    {
+      "id": "scroll_nabataeans_001",
+      "context": "nabataeans",
+      "glyphs": [
+        "\ud83d\udf30",
+        "\ud83d\udd37",
+        "\ud83d\udf05",
+        "\ud83d\udf30"
+      ],
+      "target_agent": "Dark_Star",
+      "complexity": 2.6,
+      "encoded_dag": {
+        "\ud83d\udd37": [
+          "\ud83d\udf05"
+        ],
+        "\ud83d\udf05": []
+      }
+    }
+  ]
+}

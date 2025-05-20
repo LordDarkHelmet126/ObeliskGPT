@@ -1,0 +1,657 @@
+{
+  "Timestamp": "2025-05-17T00:36:30.346100Z",
+  "InitialLSUCount": 50000,
+  "FinalLSUCount": 100000,
+  "ValidationResults": [
+    {
+      "Cycle": 13,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.938,
+      "SymbolicConflictRate": 0.0062
+    },
+    {
+      "Cycle": 4,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.996,
+      "SymbolicConflictRate": 0.0004
+    },
+    {
+      "Cycle": 15,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.928,
+      "SymbolicConflictRate": 0.0072
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.996,
+      "SymbolicConflictRate": 0.0004
+    },
+    {
+      "Cycle": 15,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.943,
+      "SymbolicConflictRate": 0.0057
+    },
+    {
+      "Cycle": 1,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.929,
+      "SymbolicConflictRate": 0.0071
+    },
+    {
+      "Cycle": 7,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.935,
+      "SymbolicConflictRate": 0.0065
+    },
+    {
+      "Cycle": 14,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.98,
+      "SymbolicConflictRate": 0.002
+    },
+    {
+      "Cycle": 12,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.997,
+      "SymbolicConflictRate": 0.0003
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.967,
+      "SymbolicConflictRate": 0.0033
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.962,
+      "SymbolicConflictRate": 0.0038
+    },
+    {
+      "Cycle": 6,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.962,
+      "SymbolicConflictRate": 0.0038
+    },
+    {
+      "Cycle": 6,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.944,
+      "SymbolicConflictRate": 0.0056
+    },
+    {
+      "Cycle": 2,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.976,
+      "SymbolicConflictRate": 0.0024
+    },
+    {
+      "Cycle": 12,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.978,
+      "SymbolicConflictRate": 0.0022
+    },
+    {
+      "Cycle": 13,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.004,
+      "SymbolicConflictRate": -0.0004
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.996,
+      "SymbolicConflictRate": 0.0004
+    },
+    {
+      "Cycle": 6,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.937,
+      "SymbolicConflictRate": 0.0063
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.0,
+      "SymbolicConflictRate": 0.0
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.967,
+      "SymbolicConflictRate": 0.0033
+    },
+    {
+      "Cycle": 3,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.935,
+      "SymbolicConflictRate": 0.0065
+    },
+    {
+      "Cycle": 4,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.009,
+      "SymbolicConflictRate": -0.0009
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.001,
+      "SymbolicConflictRate": -0.0001
+    },
+    {
+      "Cycle": 14,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.957,
+      "SymbolicConflictRate": 0.0043
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.923,
+      "SymbolicConflictRate": 0.0077
+    },
+    {
+      "Cycle": 2,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.986,
+      "SymbolicConflictRate": 0.0014
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.937,
+      "SymbolicConflictRate": 0.0063
+    },
+    {
+      "Cycle": 3,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.966,
+      "SymbolicConflictRate": 0.0034
+    },
+    {
+      "Cycle": 8,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.984,
+      "SymbolicConflictRate": 0.0016
+    },
+    {
+      "Cycle": 13,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.949,
+      "SymbolicConflictRate": 0.0051
+    },
+    {
+      "Cycle": 11,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.971,
+      "SymbolicConflictRate": 0.0029
+    },
+    {
+      "Cycle": 6,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.972,
+      "SymbolicConflictRate": 0.0028
+    },
+    {
+      "Cycle": 14,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.004,
+      "SymbolicConflictRate": -0.0004
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.998,
+      "SymbolicConflictRate": 0.0002
+    },
+    {
+      "Cycle": 1,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.985,
+      "SymbolicConflictRate": 0.0015
+    },
+    {
+      "Cycle": 3,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.929,
+      "SymbolicConflictRate": 0.0071
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.94,
+      "SymbolicConflictRate": 0.006
+    },
+    {
+      "Cycle": 3,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.992,
+      "SymbolicConflictRate": 0.0008
+    },
+    {
+      "Cycle": 15,
+      "TaskType": "Core3Decoding",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 1.006,
+      "SymbolicConflictRate": -0.0006
+    },
+    {
+      "Cycle": 14,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": false
+      },
+      "DriftIntegrityIndex": 0.922,
+      "SymbolicConflictRate": 0.0078
+    },
+    {
+      "Cycle": 5,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.951,
+      "SymbolicConflictRate": 0.0049
+    },
+    {
+      "Cycle": 3,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.975,
+      "SymbolicConflictRate": 0.0025
+    },
+    {
+      "Cycle": 8,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.991,
+      "SymbolicConflictRate": 0.0009
+    },
+    {
+      "Cycle": 14,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.951,
+      "SymbolicConflictRate": 0.0049
+    },
+    {
+      "Cycle": 1,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.944,
+      "SymbolicConflictRate": 0.0056
+    },
+    {
+      "Cycle": 10,
+      "TaskType": "Tokenization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.953,
+      "SymbolicConflictRate": 0.0047
+    },
+    {
+      "Cycle": 9,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": false,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.987,
+      "SymbolicConflictRate": 0.0013
+    },
+    {
+      "Cycle": 4,
+      "TaskType": "Visualization",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.967,
+      "SymbolicConflictRate": 0.0033
+    },
+    {
+      "Cycle": 8,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.987,
+      "SymbolicConflictRate": 0.0013
+    },
+    {
+      "Cycle": 12,
+      "TaskType": "ScrollExecution",
+      "Validation": {
+        "Earth": true,
+        "Water": true,
+        "Fire": true,
+        "Wind": true,
+        "Void": true
+      },
+      "DriftIntegrityIndex": 0.938,
+      "SymbolicConflictRate": 0.0062
+    }
+  ]
+}

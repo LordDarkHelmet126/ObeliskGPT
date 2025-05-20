@@ -1,0 +1,16 @@
+{
+  "powershell": [
+    {"module": "Sqlite", "version": "Unknown", "status": "Required for glyph_mappings.sqlite"},
+    {"module": "PSScriptAnalyzer", "version": "1.21.0", "status": "Used by obeliskos_compliance_rescript.ps1"}
+  ],
+  "python": [
+    {"package": "sqlite3", "version": "3.8+", "status": "Required for glyph_mappings.sqlite"},
+    {"package": "requests", "version": "2.28.0", "status": "Used by connect_grok.ps1"}
+  ],
+  "bash": [
+    {"tool": "shellcheck", "version": "0.8.0", "status": "Used for setup_container.sh"}
+  ],
+  "issues": [
+    {"dependency": "Sqlite", "error": "Missing for glyph_codex_init.ps1", "resolution": "Install via Install-Module Sqlite"}
+  ]
+}

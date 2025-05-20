@@ -1,0 +1,14 @@
+{
+  "api_key": "<OBELISKOS_XAI_API_KEY>",
+  "endpoint": "https://api.x.ai/v1/grok",
+  "plan": "SuperGrok (assumed)",
+  "quotas": {
+    "requests_per_minute": 100,
+    "tokens_per_month": 1000000
+  },
+  "last_error": {
+    "timestamp": "2025-05-15T09:00:00Z",
+    "code": "429",
+    "message": "Rate limit exceeded"
+  }
+}

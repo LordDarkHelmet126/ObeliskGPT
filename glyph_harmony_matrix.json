@@ -1,0 +1,52 @@
+{
+  "\ud83d\udf01": {
+    "role": "Action",
+    "harmony": "Masculine",
+    "shape": "Angular"
+  },
+  "\ud83d\udf03": {
+    "role": "Action",
+    "harmony": "Masculine",
+    "shape": "Angular"
+  },
+  "\ud83d\udf02": {
+    "role": "Action",
+    "harmony": "Masculine",
+    "shape": "Angular"
+  },
+  "\ud83d\udf05": {
+    "role": "Control",
+    "harmony": "Feminine",
+    "shape": "Curved"
+  },
+  "\ud83d\udf04": {
+    "role": "Universal",
+    "harmony": "Neutral",
+    "shape": "Symmetric"
+  },
+  "\ud83d\udf30": {
+    "role": "Anchor",
+    "harmony": "Feminine",
+    "shape": "Curved"
+  },
+  "\ud83d\udd38": {
+    "role": "Module Action",
+    "harmony": "Masculine",
+    "shape": "Angular"
+  },
+  "\ud83d\udd37": {
+    "role": "Module Update",
+    "harmony": "Neutral",
+    "shape": "Symmetric"
+  },
+  "\ud83d\udf0b": {
+    "role": "Procedure",
+    "harmony": "Feminine",
+    "shape": "Curved"
+  },
+  "\ud83d\udf0a": {
+    "role": "Procedure",
+    "harmony": "Neutral",
+    "shape": "Symmetric"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "test_suite": "Obelisk Suite Wave 1",
+  "timestamp": "2025-05-13T19:53:00Z",
+  "inputs": {
+    "glyph_parser": {
+      "glyphs": ["🜁", "🜃", "♋"],
+      "conditions": {"memory": "256 MB", "packet_loss": "10%"},
+      "expected_output": {"latency": "<2 ms", "throughput": "12000–129000 glyphs/sec"}
+    },
+    "ogf_chat_ui": {
+      "interface": "ogf_chat_ui.html",
+      "conditions": {"update_frequency": "100 ms", "load_time": "<10 ms"},
+      "expected_output": {"cache_hit_rate": "95%", "status": "Rendered"}
+    },
+    "fluxstar_hybrid": {
+      "context": {"app": "SWG", "priority": "high", "latency_target": "10 ms"},
+      "conditions": {"memory": "149–250 MB"},
+      "expected_output": {"coherence": "97%", "entities_per_sec": "18000–54000"}
+    }
+  },
+  "results": {
+    "glyph_parser": {"status": "success", "latency": "0.78 ms", "throughput": "129000 glyphs/sec"},
+    "ogf_chat_ui": {"status": "pending", "details": "Awaiting test"},
+    "fluxstar_hybrid": {"status": "success", "coherence": "97%", "entities_per_sec": "18000"}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "failed_scrolls": [
+    {
+      "scroll_id": "scroll_mining_402_mut",
+      "failure": "Agent role mismatch (\ud83d\udf01 \u2192 CLIP-Mistral-7B)"
+    },
+    {
+      "scroll_id": "scroll_dag_blackout_017",
+      "failure": "Missing DAG mid-node, fork unresolved"
+    },
+    {
+      "scroll_id": "scroll_compress_test_051",
+      "failure": "Compression loss >3%"
+    },
+    {
+      "scroll_id": "scroll_unreal_alias_099x",
+      "failure": ".msh + .fx conflict"
+    },
+    {
+      "scroll_id": "scroll_blackout_404b",
+      "failure": "No agent match for \ud83d\udf0c"
+    }
+  ]
+}

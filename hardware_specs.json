@@ -1,0 +1,32 @@
+{
+  "zephyr_testbed": {
+    "cpu": "Intel Core i7-14700F",
+    "cores": 20,
+    "ram": "32 GB",
+    "gpu": "NVIDIA RTX 4060",
+    "tflops": "~15",
+    "ssd": {
+      "model": "T-FORCE TM8FFW00 (placeholder)",
+      "capacity": "2 TB (assumed)",
+      "read_speed": "~5000–7400 MB/s",
+      "write_speed": "~5000–7400 MB/s",
+      "latency": "<0.5 ms",
+      "firmware": "Unknown"
+    },
+    "os": "Windows 11 24H2",
+    "status": "Active, planned for donation to support gaming and OGF rendering"
+  },
+  "laptop": {
+    "cpu": "Unknown (e.g., Intel Core i7-12700H)",
+    "ram": "Unknown (e.g., 16 GB)",
+    "gpu": "Unknown (e.g., NVIDIA RTX 3050)",
+    "ports": "Unknown (e.g., USB-C, HDMI)",
+    "os": "Unknown (e.g., Windows 11)",
+    "status": "Secondary device for ObeliskOS development"
+  },
+  "hdd": {
+    "model": "Unknown Portable HDD",
+    "latency": "423 ms",
+    "status": "Slow, targeted for replacement with SanDisk Pro-G40 4TB (~$600, <2 ms latency)"
+  }
+}

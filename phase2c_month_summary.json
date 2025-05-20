@@ -1,0 +1,71 @@
+{
+  "simulation_duration": "30 days (accelerated)",
+  "scrolls_executed": 43200,
+  "glyphs_processed": 415680,
+  "agents": {
+    "ObeliskGPT": {
+      "decisions": 12960,
+      "avg_latency_ms": 1.39,
+      "confidence_avg": 0.962,
+      "fallbacks": 11,
+      "reweight_events": 4
+    },
+    "Dark_Star": {
+      "decisions": 14400,
+      "avg_latency_ms": 1.31,
+      "confidence_avg": 0.981,
+      "fallbacks": 2,
+      "reweight_events": 0
+    },
+    "Black_Star_SLM": {
+      "decisions": 12960,
+      "avg_latency_ms": 0.91,
+      "confidence_avg": 0.986,
+      "fallbacks": 0,
+      "reweight_events": 2
+    },
+    "CLIP-Mistral-7B": {
+      "decisions": 2880,
+      "avg_latency_ms": 1.45,
+      "confidence_avg": 0.954,
+      "fallbacks": 1,
+      "reweight_events": 1
+    }
+  },
+  "scroll_stats": {
+    "avg_scroll_complexity": 7.4,
+    "avg_DAG_depth": 5.8,
+    "avg_fork_count": 3.9,
+    "mutation_promotions": 31,
+    "coherence_drift_events": 12,
+    "conflict_resolutions": 18,
+    "scroll_failures": 28,
+    "coherence_score_avg": 0.968
+  },
+  "unreal_asset_stats": {
+    "scrolls_tested": 1240,
+    "asset_hook_accuracy": 0.946,
+    "msh_failures": 12,
+    "fx_chain_failures": 6,
+    "coherence_unreal_avg": 0.961
+  },
+  "system_metrics": {
+    "mesh_utilization_avg": 94.3,
+    "memory_use_mb": 268.5,
+    "power_avg_watt": 1.08,
+    "scroll_energy_variance": 0.006
+  },
+  "archive_location": "D:\\ObeliskOS\\LLM PHASE2 OUTPUT\\obeliskos_scroll_runtime_phase2.zip",
+  "generated_artifacts": [
+    "scroll_execution_log.json",
+    "glyph_recall.jsonl",
+    "agent_profile_report.json",
+    "scroll_cost_log.json",
+    "mutation_trace.jsonl",
+    "lsu_load_profile.json",
+    "scroll_conflict_log.json",
+    "unreal_asset_log.json",
+    "feedback_weight.json",
+    "scroll_mutation_spectrum.json"
+  ]
+}

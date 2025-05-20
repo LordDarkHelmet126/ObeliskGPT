@@ -1,0 +1,36 @@
+{
+  "team": [
+    {
+      "name": "LordDarkHelmet",
+      "role": "Lead Developer, Architect",
+      "responsibilities": [
+        "Conceptual design",
+        "Obelisk Suite development (OGF, GlyphEngine, HFS, MUXEDIT, Thirteenth Tablet)",
+        "Script development (PowerShell, Python)",
+        "Codex management",
+        "Hardware planning (SSD upgrade)"
+      ],
+      "contact": "https://console.x.ai"
+    }
+  ],
+  "stakeholders": [
+    {
+      "entity": "xAI API Team",
+      "role": "API Provider",
+      "responsibilities": ["Provide API access for HFS integration", "Support rate limit issues"],
+      "contact": "https://console.x.ai"
+    },
+    {
+      "entity": "Community Contributors",
+      "role": "Potential Fork Developers",
+      "responsibilities": ["Develop extensions for OGF, Thirteenth Tablet via SSP, ADX, GFTI"],
+      "contact": "https://github.com/LordDarkHelmet126/ObeliskOS.git",
+      "status": "Not active as of May 15, 2025"
+    }
+  ],
+  "communication": {
+    "primary": "GitHub Issues",
+    "secondary": "xAI Console",
+    "log": "F:\\OBELISK-OS\\Final Consolidated Folder\\Logs\\interaction_log.json"
+  }
+}

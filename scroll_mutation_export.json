@@ -1,0 +1,33 @@
+{
+  "mutation_trace": [
+    {
+      "scroll_id": "scroll_judaism_002a",
+      "origin": "scroll_judaism_001",
+      "mutation": "embed \ud83d\udf0c"
+    },
+    {
+      "scroll_id": "scroll_unreal_nav_003b_mut",
+      "origin": "scroll_unreal_nav_001",
+      "mutation": "swap \ud83d\udf03 \u2192 \ud83d\udd37"
+    },
+    {
+      "scroll_id": "scroll_crypto_018x_mut",
+      "origin": "scroll_crypto_001",
+      "mutation": "truncate DAG depth 6\u21924"
+    },
+    {
+      "scroll_id": "scroll_neuro_vision_004",
+      "origin": "scroll_neuro_base",
+      "mutation": "recombine \ud83d\udf0c \ud83d\udf01 \ud83d\udd37"
+    },
+    {
+      "scroll_id": "scroll_meso_sync_006c",
+      "origin": "scroll_meso_sync_006",
+      "mutation": "embed \ud83d\udf04 + \ud83d\udf03"
+    }
+  ],
+  "mutation_count": 5,
+  "max_depth": 8,
+  "observed_drift": "bounded (\u22640.4%)",
+  "coherence_floor": 0.965
+}

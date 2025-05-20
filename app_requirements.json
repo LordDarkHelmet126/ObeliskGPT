@@ -1,0 +1,28 @@
+{
+  "applications": [
+    {
+      "name": "SWG Gaming (OGF)",
+      "requirements": {
+        "entities_per_sec": "18000–54000",
+        "coherence": "97%",
+        "latency": "<10 ms",
+        "memory": "149–250 MB",
+        "ui_update_frequency": "100 ms",
+        "ui_load_time": "<10 ms"
+      },
+      "scripts": ["fluxstar_brain.ps1", "ogf_chat_ui.html"],
+      "blockers": ["Data load error (E:\\SWG_Data\\quest_1.lua)", "Untested OGF rendering"]
+    },
+    {
+      "name": "GlyphEngine (Codex Management)",
+      "requirements": {
+        "glyph_count": "512",
+        "parsing_latency": "<2 ms",
+        "throughput": "12000–129000 glyphs/sec",
+        "memory": "<400 MB"
+      },
+      "scripts": ["glyph_codex_init.ps1", "Obelisk.GlyphEngine.psm1"],
+      "blockers": ["Parameters error in glyph_codex_init.ps1"]
+    }
+  ]
+}

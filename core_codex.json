@@ -1,0 +1,62 @@
+{
+  "\ud83d\udf01": {
+    "type": "action",
+    "description": "Verify Signature",
+    "encoding": "0x01",
+    "bytes": 8
+  },
+  "\ud83d\udf03": {
+    "type": "action",
+    "description": "Trajectory Engine",
+    "encoding": "0x02",
+    "bytes": 8
+  },
+  "\ud83d\udf02": {
+    "type": "action",
+    "description": "Initialize Beacon",
+    "encoding": "0x03",
+    "bytes": 8
+  },
+  "\ud83d\udf05": {
+    "type": "control",
+    "description": "Setup Memory Grid",
+    "encoding": "0x04",
+    "bytes": 8
+  },
+  "\ud83d\udf04": {
+    "type": "universal",
+    "description": "Analyze Input",
+    "encoding": "0x05",
+    "bytes": 8
+  },
+  "\ud83d\udf30": {
+    "type": "anchor",
+    "description": "Anchor Start/End",
+    "encoding": "0x06",
+    "bytes": 6
+  },
+  "\ud83d\udd38": {
+    "type": "module",
+    "description": "Generate Mission",
+    "encoding": "0x07",
+    "bytes": 8
+  },
+  "\ud83d\udd37": {
+    "type": "module",
+    "description": "Entity Update",
+    "encoding": "0x08",
+    "bytes": 8
+  },
+  "\ud83d\udf0b": {
+    "type": "procedure",
+    "description": "Land Procedure",
+    "encoding": "0x09",
+    "bytes": 8
+  },
+  "\ud83d\udf0a": {
+    "type": "procedure",
+    "description": "TakeOff Procedure",
+    "encoding": "0x0A",
+    "bytes": 8
+  }
+}

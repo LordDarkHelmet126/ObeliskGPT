@@ -1,0 +1,100 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<!-- MUXEDIT Metadata: ScriptID=9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b, Version=1.0, Author=LordDarkHelmet, Created=2025-05-13, Purpose=OGFInterfaceRendering, Dependencies=ui_server.ps1, ValidationStatus=Pending -->
+<!-- Description: Codex-aware HTML interface for Obelisk Glyph Framework (OGF), rendering SWG and system modules -->
+<!-- Encoding: UTF-8 BOM 🜰 -->
+<!-- Codex: file_id=9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b, schema=ogf_ui_v1, lines=100, words=400, glyphs=20, dependencies=ui_server.ps1, validation_status=pending -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obelisk Glyph Framework UI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #000; color: #0f0; }
+        .glyph-panel { display: flex; flex-wrap: wrap; gap: 10px; }
+        .glyph { font-size: 24px; cursor: pointer; }
+        #output { margin-top: 20px; border: 1px solid #0f0; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>ObeliskOS OGF Interface</h1>
+    <div class="glyph-panel" id="glyphPanel">
+        <!-- Glyphs loaded dynamically -->
+    </div>
+    <div id="output">Status: Ready</div>
+    <script>
+        const glyphs = ["🜁", "🜃", "♋", "⚂"];
+        const panel = document.getElementById("glyphPanel");
+        const output = document.getElementById("output");
+        
+        glyphs.forEach(g => {
+            const span = document.createElement("span");
+            span.className = "glyph";
+            span.textContent = g;
+            span.onclick = () => {
+                fetch("http://localhost:8080/ui_server.ps1", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ glyph: g })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    output.textContent = `Status: ${data.message}`;
+                    logEvent(`Glyph ${g} activated`);
+                })
+                .catch(error => {
+                    output.textContent = `Error: ${error}`;
+                    logEvent(`Glyph ${g} failed: ${error}`);
+                });
+            };
+            panel.appendChild(span);
+        });
+
+        function logEvent(message) {
+            fetch("http://localhost:8080/log_ui_event", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message, glyph: "⚖" })
+            });
+        }
+    </script>
+</body>
+</html>
+<!-- ---CODEX--- -->

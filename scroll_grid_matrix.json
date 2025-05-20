@@ -1,0 +1,62 @@
+{
+  "\ud83d\udf01": {
+    "domains": [
+      "crypto",
+      "SWG"
+    ],
+    "agent": "ObeliskGPT",
+    "lsu_profile": "cache",
+    "cost": 0.4
+  },
+  "\ud83d\udf03": {
+    "domains": [
+      "drone",
+      "culture"
+    ],
+    "agent": "Black Star",
+    "lsu_profile": "push",
+    "cost": 0.5
+  },
+  "\ud83d\udf04": {
+    "domains": [
+      "IoT",
+      "DNA"
+    ],
+    "agent": "Dark_Star",
+    "lsu_profile": "communication",
+    "cost": 0.6
+  },
+  "\ud83d\udd38": {
+    "domains": [
+      "SWG"
+    ],
+    "agent": "ObeliskGPT",
+    "lsu_profile": "cache",
+    "cost": 0.7
+  },
+  "\ud83d\udd37": {
+    "domains": [
+      "SWG",
+      "culture"
+    ],
+    "agent": "ObeliskGPT",
+    "lsu_profile": "buffer",
+    "cost": 0.8
+  },
+  "\ud83d\udf0b": {
+    "domains": [
+      "drone"
+    ],
+    "agent": "Black Star",
+    "lsu_profile": "procedure",
+    "cost": 0.3
+  },
+  "\ud83d\udf05": {
+    "domains": [
+      "IoT"
+    ],
+    "agent": "Dark_Star",
+    "lsu_profile": "cache",
+    "cost": 0.6
+  }
+}

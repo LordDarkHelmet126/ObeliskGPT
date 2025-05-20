@@ -1,0 +1,342 @@
+[
+  {
+    "Wave": 1,
+    "UseCase": "CryptocurrencyMining",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9973,
+    "AvgLatencyMs": 2.525,
+    "DriftIntegrityIndex": 0.964,
+    "SymbolicConflictRate": 0.0036
+  },
+  {
+    "Wave": 2,
+    "UseCase": "CryptocurrencyMining",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.107,
+    "DriftIntegrityIndex": 0.992,
+    "SymbolicConflictRate": 0.0008
+  },
+  {
+    "Wave": 3,
+    "UseCase": "CryptocurrencyMining",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9995,
+    "AvgLatencyMs": 2.494,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0029
+  },
+  {
+    "Wave": 4,
+    "UseCase": "CryptocurrencyMining",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9985,
+    "AvgLatencyMs": 1.783,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0025
+  },
+  {
+    "Wave": 5,
+    "UseCase": "CryptocurrencyMining",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9998,
+    "AvgLatencyMs": 1.822,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0029
+  },
+  {
+    "Wave": 1,
+    "UseCase": "LLM_Modulation",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9978,
+    "AvgLatencyMs": 1.178,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0025
+  },
+  {
+    "Wave": 2,
+    "UseCase": "LLM_Modulation",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9973,
+    "AvgLatencyMs": 1.858,
+    "DriftIntegrityIndex": 0.954,
+    "SymbolicConflictRate": 0.0046
+  },
+  {
+    "Wave": 3,
+    "UseCase": "LLM_Modulation",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9988,
+    "AvgLatencyMs": 1.913,
+    "DriftIntegrityIndex": 0.97,
+    "SymbolicConflictRate": 0.003
+  },
+  {
+    "Wave": 4,
+    "UseCase": "LLM_Modulation",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9972,
+    "AvgLatencyMs": 1.828,
+    "DriftIntegrityIndex": 0.958,
+    "SymbolicConflictRate": 0.0042
+  },
+  {
+    "Wave": 5,
+    "UseCase": "LLM_Modulation",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9995,
+    "AvgLatencyMs": 2.276,
+    "DriftIntegrityIndex": 0.947,
+    "SymbolicConflictRate": 0.0053
+  },
+  {
+    "Wave": 1,
+    "UseCase": "RCPlaneLanding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 1.0,
+    "AvgLatencyMs": 2.484,
+    "DriftIntegrityIndex": 0.946,
+    "SymbolicConflictRate": 0.0054
+  },
+  {
+    "Wave": 2,
+    "UseCase": "RCPlaneLanding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9982,
+    "AvgLatencyMs": 1.207,
+    "DriftIntegrityIndex": 0.977,
+    "SymbolicConflictRate": 0.0023
+  },
+  {
+    "Wave": 3,
+    "UseCase": "RCPlaneLanding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9982,
+    "AvgLatencyMs": 2.333,
+    "DriftIntegrityIndex": 0.956,
+    "SymbolicConflictRate": 0.0044
+  },
+  {
+    "Wave": 4,
+    "UseCase": "RCPlaneLanding",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 1.939,
+    "DriftIntegrityIndex": 0.962,
+    "SymbolicConflictRate": 0.0038
+  },
+  {
+    "Wave": 5,
+    "UseCase": "RCPlaneLanding",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9987,
+    "AvgLatencyMs": 1.958,
+    "DriftIntegrityIndex": 0.998,
+    "SymbolicConflictRate": 0.0002
+  },
+  {
+    "Wave": 1,
+    "UseCase": "UnrealEngineScripting",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9985,
+    "AvgLatencyMs": 2.481,
+    "DriftIntegrityIndex": 0.947,
+    "SymbolicConflictRate": 0.0053
+  },
+  {
+    "Wave": 2,
+    "UseCase": "UnrealEngineScripting",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9989,
+    "AvgLatencyMs": 1.703,
+    "DriftIntegrityIndex": 0.951,
+    "SymbolicConflictRate": 0.0049
+  },
+  {
+    "Wave": 3,
+    "UseCase": "UnrealEngineScripting",
+    "Validation": {
+      "Earth": true,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9991,
+    "AvgLatencyMs": 1.418,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0029
+  },
+  {
+    "Wave": 4,
+    "UseCase": "UnrealEngineScripting",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.997,
+    "AvgLatencyMs": 1.576,
+    "DriftIntegrityIndex": 0.976,
+    "SymbolicConflictRate": 0.0024
+  },
+  {
+    "Wave": 5,
+    "UseCase": "UnrealEngineScripting",
+    "Validation": {
+      "Earth": false,
+      "Water": true,
+      "Fire": true,
+      "Wind": true,
+      "Void": true,
+      "DriftIntegrity": false,
+      "SymbolicConflict": false
+    },
+    "SuccessRate": 0.9975,
+    "AvgLatencyMs": 2.168,
+    "DriftIntegrityIndex": 0.954,
+    "SymbolicConflictRate": 0.0046
+  }
+]

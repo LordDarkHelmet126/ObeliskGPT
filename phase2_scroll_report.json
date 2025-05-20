@@ -1,0 +1,63 @@
+{
+  "phase": "2",
+  "duration_hours": 26,
+  "waves_executed": 42,
+  "total_scrolls": 240,
+  "average_coherence": 0.973,
+  "glyphs_processed": 1992,
+  "scroll_success_rate": 0.989,
+  "most_common_glyphs": [
+    "\ud83d\udf01",
+    "\ud83d\udd37",
+    "\ud83d\udf03"
+  ],
+  "dominant_contexts": [
+    "crypto",
+    "SWG",
+    "drone",
+    "culture"
+  ],
+  "mutation_promotions": 5,
+  "drift_events": 3,
+  "agent_profiles": {
+    "ObeliskGPT": {
+      "glyphs": 910,
+      "latency_ms": 1.38,
+      "confidence": 0.961,
+      "fallbacks": 2,
+      "reweight": "Retain"
+    },
+    "Dark_Star": {
+      "glyphs": 873,
+      "latency_ms": 1.29,
+      "confidence": 0.978,
+      "fallbacks": 0,
+      "reweight": "Train"
+    },
+    "Black_Star_SLM": {
+      "glyphs": 804,
+      "latency_ms": 0.94,
+      "confidence": 0.982,
+      "fallbacks": 0,
+      "reweight": "Priority++"
+    }
+  },
+  "unreal_track": {
+    "scrolls": 72,
+    "asset_hook_accuracy": 0.945,
+    "avg_latency_ms": 1.27,
+    "coherence": 0.961,
+    "asset_failures": 3,
+    "scroll_class": "unreal"
+  },
+  "output_files": [
+    "scroll_execution_log.json",
+    "glyph_recall.jsonl",
+    "agent_profile_report.json",
+    "scroll_cost_log.json",
+    "mutation_trace.jsonl",
+    "lsu_load_profile.json",
+    "unreal_asset_log.json"
+  ],
+  "archive": "D:\\ObeliskOS\\LLM PHASE2 OUTPUT\\obeliskos_scroll_runtime_phase2.zip"
+}

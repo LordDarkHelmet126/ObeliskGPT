@@ -1,0 +1,60 @@
+{
+  "test_batch": "SIQ_001",
+  "agents": {
+    "ObeliskGPT": {
+      "scroll_reconstruction_accuracy": 0.91,
+      "role_drift_resolution_rate": 0.86,
+      "mutation_trace_confidence": 0.94,
+      "symbol_recall_precision": 0.95,
+      "compression_coherence_retained": 0.98,
+      "fork_resolution_efficiency": {
+        "latency_ms": 1.41,
+        "coherence_score": 0.972
+      },
+      "scroll_synthesis_validity": 0.96,
+      "siq_score": 92
+    },
+    "Dark_Star": {
+      "scroll_reconstruction_accuracy": 0.89,
+      "role_drift_resolution_rate": 0.87,
+      "mutation_trace_confidence": 0.96,
+      "symbol_recall_precision": 0.98,
+      "compression_coherence_retained": 0.99,
+      "fork_resolution_efficiency": {
+        "latency_ms": 1.35,
+        "coherence_score": 0.974
+      },
+      "scroll_synthesis_validity": 0.95,
+      "siq_score": 95
+    },
+    "Black_Star_SLM": {
+      "scroll_reconstruction_accuracy": 0.94,
+      "role_drift_resolution_rate": 0.9,
+      "mutation_trace_confidence": 0.93,
+      "symbol_recall_precision": 0.97,
+      "compression_coherence_retained": 0.99,
+      "fork_resolution_efficiency": {
+        "latency_ms": 1.22,
+        "coherence_score": 0.978
+      },
+      "scroll_synthesis_validity": 0.97,
+      "siq_score": 97
+    },
+    "CLIP-Mistral-7B": {
+      "scroll_reconstruction_accuracy": 0.85,
+      "role_drift_resolution_rate": 0.83,
+      "mutation_trace_confidence": 0.89,
+      "symbol_recall_precision": 0.91,
+      "compression_coherence_retained": 0.95,
+      "fork_resolution_efficiency": {
+        "latency_ms": 1.48,
+        "coherence_score": 0.961
+      },
+      "scroll_synthesis_validity": 0.9,
+      "siq_score": 88
+    }
+  },
+  "scoring_scale": "100-point symbolic IQ",
+  "test_cases_per_agent": 70,
+  "log_file": "agent_siq_score.json"
+}

@@ -1,0 +1,30 @@
+{
+  "near_term_goals": [
+    {
+      "goal": "Obelisk Suite Enhancements",
+      "tasks": [
+        {"task": "Expand Obelisk🜒 to 2048 glyphs for GlyphEngine", "priority": "High", "deadline": "2025-09-30", "script": "keymaster.py"},
+        {"task": "Test OGF rendering (ogf_chat_ui.html)", "priority": "High", "deadline": "2025-06-30", "script": "ui_server.ps1"}
+      ]
+    },
+    {
+      "goal": "Runtime Enhancements",
+      "tasks": [
+        {"task": "Optimize HFS context switching (<10 ms)", "priority": "High", "deadline": "2025-09-30", "script": "fluxstar_hybrid.ps1"},
+        {"task": "Implement MUXEDIT patch validation", "priority": "Medium", "deadline": "2025-12-31", "script": "muxedit_validator.ps1"}
+      ]
+    },
+    {
+      "goal": "Compliance Upgrades",
+      "tasks": [
+        {"task": "Auto-embed CODEX headers for OGF", "priority": "High", "deadline": "2025-06-30", "script": "obeliskos_compliance_rescript.ps1"},
+        {"task": "Real-time validation for GlyphEngine", "priority": "Medium", "deadline": "2025-12-31", "script": "glyph_monitor.ps1"}
+      ]
+    }
+  ],
+  "focus_areas": [
+    {"area": "Obelisk Suite Stabilization", "weight": 0.5},
+    {"area": "xAI API Integration", "weight": 0.3},
+    {"area": "Gaming Optimization", "weight": 0.2}
+  ]
+}

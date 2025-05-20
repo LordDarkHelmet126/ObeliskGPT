@@ -1,0 +1,30 @@
+{
+  "\ud83d\udf01 (VERIFY_SIG)": {
+    "impact": 0.95,
+    "likelihood": 0.3
+  },
+  "\ud83d\udf03 (NAV_ENGAGE)": {
+    "impact": 0.9,
+    "likelihood": 0.45
+  },
+  "\ud83d\udf0b (LAND_PROC)": {
+    "impact": 0.98,
+    "likelihood": 0.4
+  },
+  "\ud83d\udd37 (UPDATE_ENTITY)": {
+    "impact": 0.8,
+    "likelihood": 0.25
+  },
+  "\ud83d\udf30 (ANCHOR)": {
+    "impact": 0.75,
+    "likelihood": 0.1
+  },
+  "\ud83d\udf04 (ANALYZE_INPUT)": {
+    "impact": 0.85,
+    "likelihood": 0.35
+  },
+  "\ud83d\udf0c (NEURAL_ANCHOR)": {
+    "impact": 0.88,
+    "likelihood": 0.2
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "scroll_id": "scroll_crypto_001",
+  "scope": {
+    "context": "cryptocurrency",
+    "target_agent": "ObeliskGPT",
+    "mode": "multiplex",
+    "complexity": 3.2
+  },
+  "header": {
+    "glyphs": [
+      "\ud83d\udf30",
+      "\ud83d\udf01",
+      "\ud83d\udd37",
+      "\ud83d\udf03",
+      "\ud83d\udf0a",
+      "\ud83d\udf30"
+    ],
+    "scroll_version": "v1.0",
+    "timestamp": "2025-05-15T20:00:00Z"
+  },
+  "execution_graph": {
+    "\ud83d\udf01": [
+      "\ud83d\udd37"
+    ],
+    "\ud83d\udd37": [
+      "\ud83d\udf03"
+    ],
+    "\ud83d\udf03": [
+      "\ud83d\udf0a"
+    ],
+    "\ud83d\udf0a": []
+  },
+  "outcome": {
+    "success": null,
+    "coherence": null,
+    "latency": null,
+    "agent_feedback": {}
+  }
+}

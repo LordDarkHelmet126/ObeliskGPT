@@ -1,0 +1,35 @@
+{
+  "budget": {
+    "hardware": {
+      "ssd": {
+        "item": "SanDisk Professional Pro-G40 4TB",
+        "cost": 600,
+        "status": "Planned purchase by May 18, 2025"
+      },
+      "gaming_setup": {
+        "item": "Monitor, accessories for Zephyr testbed",
+        "cost": 400,
+        "status": "Planned purchase by May 18, 2025"
+      },
+      "total": 1000
+    },
+    "api": {
+      "xai_api": {
+        "plan": "SuperGrok (assumed)",
+        "cost": "Unknown (estimated $3–$25/million tokens)",
+        "status": "Active, verify at https://console.x.ai"
+      }
+    }
+  },
+  "resources": {
+    "development_time": {
+      "hours_per_week": "Unknown (estimated 20–40)",
+      "constraints": "Solo developer, potential community support"
+    },
+    "compute": {
+      "primary": "Zephyr testbed",
+      "secondary": "Laptop (specs unknown)",
+      "status": "Sufficient for Wave 1 and Obelisk Suite"
+    }
+  }
+}

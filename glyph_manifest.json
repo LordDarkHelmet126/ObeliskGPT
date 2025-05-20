@@ -1,0 +1,62 @@
+{
+  "\ud83d\udf01": {
+    "lua_function": "VERIFY_SIG()",
+    "agent": "ObeliskGPT",
+    "role": "validation",
+    "context": [
+      "crypto",
+      "ledger"
+    ],
+    "scroll_scope": "node_operation",
+    "encoded": "0x01",
+    "bytes": 8
+  },
+  "\ud83d\udd37": {
+    "lua_function": "UPDATE_ENTITY()",
+    "agent": "ObeliskGPT",
+    "role": "state_update",
+    "context": [
+      "crypto",
+      "entity"
+    ],
+    "scroll_scope": "ledger_sync",
+    "encoded": "0x08",
+    "bytes": 8
+  },
+  "\ud83d\udf03": {
+    "lua_function": "NAV_ENGAGE()",
+    "agent": "ObeliskGPT",
+    "role": "navigation",
+    "context": [
+      "blockchain",
+      "coordination"
+    ],
+    "scroll_scope": "routing",
+    "encoded": "0x02",
+    "bytes": 8
+  },
+  "\ud83d\udf0a": {
+    "lua_function": "TAKEOFF_PROC()",
+    "agent": "ObeliskGPT",
+    "role": "initiation",
+    "context": [
+      "staking",
+      "activation"
+    ],
+    "scroll_scope": "consensus_start",
+    "encoded": "0x0A",
+    "bytes": 8
+  },
+  "\ud83d\udf30": {
+    "lua_function": "ANCHOR()",
+    "agent": "Dark_Star",
+    "role": "anchor",
+    "context": [
+      "security",
+      "framing"
+    ],
+    "scroll_scope": "begin_end",
+    "encoded": "0x06",
+    "bytes": 6
+  }
+}

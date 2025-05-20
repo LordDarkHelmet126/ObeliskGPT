@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/LordDarkHelmet126/ObeliskOS.git",
+  "branches": [
+    {"name": "main", "status": "Production"},
+    {"name": "dev", "status": "Development, includes Obelisk Suite"}
+  ],
+  "access": {
+    "method": "Public (assumed)",
+    "credentials": "None required for read; GitHub token for write",
+    "status": "Active, mirror of F:\\OBELISK-OS"
+  },
+  "recent_commits": [
+    {
+      "timestamp": "2025-05-13T00:00:00Z",
+      "message": "Add ObeliskLogRepairAndAnalyze.ps1 for JSON parsing",
+      "commit_id": "abcdef1234567890"
+    }
+  ]
+}

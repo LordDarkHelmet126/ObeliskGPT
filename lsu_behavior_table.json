@@ -1,0 +1,47 @@
+{
+  "\ud83d\udf01": {
+    "task": "Verify Signature",
+    "LSU": "0xD3FF",
+    "mode": "Push Data"
+  },
+  "\ud83d\udd38": {
+    "task": "Generate Mission",
+    "LSU": "0xA2C1",
+    "mode": "Mesh"
+  },
+  "\ud83d\udf03": {
+    "task": "Trajectory Engine",
+    "LSU": "0xE1B2",
+    "mode": "Execute"
+  },
+  "\ud83d\udf02": {
+    "task": "Initialize Beacon",
+    "LSU": "0xB1AA",
+    "mode": "Buffer"
+  },
+  "\ud83d\udf05": {
+    "task": "Setup Memory Grid",
+    "LSU": "0xC4D2",
+    "mode": "Cache"
+  },
+  "\ud83d\udf04": {
+    "task": "Analyze Input",
+    "LSU": "0xF2C3",
+    "mode": "Control"
+  },
+  "\ud83d\udd37": {
+    "task": "Entity Update",
+    "LSU": "0xA6E1",
+    "mode": "Communicate"
+  },
+  "\ud83d\udf0b": {
+    "task": "Land Procedure",
+    "LSU": "0xDD91",
+    "mode": "Procedure"
+  },
+  "\ud83d\udf0a": {
+    "task": "TakeOff Procedure",
+    "LSU": "0xDD90",
+    "mode": "Procedure"
+  }
+}

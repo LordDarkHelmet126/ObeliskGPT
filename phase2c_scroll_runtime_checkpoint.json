@@ -1,0 +1,53 @@
+{
+  "runtime_hours": 31,
+  "scrolls_executed": 6228,
+  "avg_glyphs_per_scroll": 9.3,
+  "active_domains": [
+    "LLM",
+    "Crypto",
+    "SWG",
+    "Unreal",
+    "DNA Modeling"
+  ],
+  "mutation_rate": 0.913,
+  "agents": {
+    "ObeliskGPT": {
+      "latency_ms": 1.36,
+      "confidence": 0.962,
+      "fallbacks": 1
+    },
+    "Dark_Star": {
+      "latency_ms": 1.29,
+      "confidence": 0.98,
+      "fallbacks": 0
+    },
+    "Black_Star_SLM": {
+      "latency_ms": 0.91,
+      "confidence": 0.988,
+      "fallbacks": 0
+    },
+    "CLIP-Mistral-7B": {
+      "latency_ms": 1.45,
+      "confidence": 0.956,
+      "fallbacks": 1
+    }
+  },
+  "unreal_asset_hook_accuracy": 0.978,
+  "drift_triggered_reweights": 2,
+  "mesh_active_percent": 93,
+  "cache_hit_ratio": 0.979,
+  "top_mutations": [
+    {
+      "from": "\ud83d\udf01",
+      "to": "\ud83d\udf03"
+    },
+    {
+      "from": "\ud83d\udd38",
+      "to": "\ud83d\udf0c"
+    },
+    {
+      "from": "\ud83d\udd37",
+      "to": "\ud83d\udf0b"
+    }
+  ]
+}

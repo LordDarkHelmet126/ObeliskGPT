@@ -1,0 +1,17 @@
+{
+  "script_requirements": [
+    {"rule": "Begin with UTF-8 BOM", "glyph": "🜰", "validator": "obeliskos_compliance_rescript.ps1"},
+    {"rule": "Include 🜰 glyph in header", "validator": "obeliskos_compliance_rescript.ps1"},
+    {"rule": "Contain MUXEDIT Metadata block", "fields": ["ScriptID", "Version", "Author", "Created", "Purpose", "Dependencies", "ValidationStatus"], "validator": "obeliskos_compliance_rescript.ps1"},
+    {"rule": "End with ---CODEX--- footer", "validator": "obeliskos_compliance_rescript.ps1"},
+    {"rule": "Validate via validate_outputs.ps1", "criteria": ["Earth", "Water", "Fire", "Wind", "Void", "Light", "Time", "Space", "Matter", "Energy", "Life", "Mind"]}
+  ],
+  "artifact_requirements": [
+    {"rule": "Encrypt via glyph_encrypt.ps1", "algorithms": ["AES-256", "Dilithium", "Kyber512"], "validator": "glyph_encrypt.ps1"},
+    {"rule": "SSI ≥ 0.99996", "validator": "symbol_codexlineage.ps1"},
+    {"rule": "LII ≥ 0.9999", "validator": "symbol_codexlineage.ps1"},
+    {"rule": "DPI < 0.00001%", "validator": "glyph_drift_engine.py"},
+    {"rule": "FDI < 0.00001%", "validator": "glyph_drift_engine.py"},
+    {"rule": "GDPR Compliance ≥ 99.9999%", "validator": "glyph_benevolence.ps1"}
+  ]
+}
