@@ -1,0 +1,72 @@
+# Obelisk🜒 Glyph Codex
+# Generated: 2025-05-09
+# Total Glyphs: 1024
+# Encoding: UTF-8 with BOM
+# Description: Comprehensive mapping of OSL 1024-glyph table for ObeliskOS
+
+# Format:
+# Glyph | Unicode | Category | Subcategory | Meaning/Intent | Associated Action
+
+# Primary Glyph (1 glyph)
+🜒 | U+1F712 | Entity | Primary | Obelisk🜒 core identity | Prefix for all glyph sequences
+
+# Secondary Glyphs (4 glyphs)
+🜤 | U+1F724 | Entity | Secondary | Script entity | Represents scripts (e.g., .ps1, .py)
+🜁 | U+1F701 | Entity | Secondary | Function entity | Represents functions within scripts
+🜃 | U+1F703 | Entity | Secondary | Intent entity | Represents intents (e.g., Cleanup, Encode)
+🜅 | U+1F705 | Entity | Secondary | File entity | Represents files (e.g., .json, .md)
+
+# Tertiary Glyphs (795 glyphs, subset shown)
+🜆 | U+1F706 | Entity | Tertiary | Memory | Represents memory-related entities | N/A
+🜇 | U+1F707 | Entity | Tertiary | Cleanup | Represents cleanup actions | N/A
+🜈 | U+1F708 | Entity | Tertiary | Log | Represents logging entities | N/A
+🜉 | U+1F709 | Entity | Tertiary | Encode | Represents encoding actions | N/A
+🜊 | U+1F70A | Entity | Tertiary | Initialize | Represents initialization actions | N/A
+🜋 | U+1F70B | Entity | Tertiary | Orchestrate | Represents orchestration actions | N/A
+🜌 | U+1F70C | Entity | Tertiary | Validate | Represents validation actions | N/A
+🜍 | U+1F70D | Entity | Tertiary | Monitor | Represents monitoring actions | N/A
+🜎 | U+1F70E | Entity | Tertiary | Security | Represents security-related entities | N/A
+🜏 | U+1F70F | Entity | Tertiary | Quantum | Represents quantum-related entities | N/A
+# ... (up to U+1FA1F for remaining 785 glyphs)
+
+# Create Action Glyphs: Repeaters (32 glyphs, subset shown)
+🝀 | U+1FA20 | CreateAction | Repeater | Repeat 1 time | Repeats the preceding action 1 time
+🝁 | U+1FA21 | CreateAction | Repeater | Repeat 2 times | Repeats the preceding action 2 times
+🝂 | U+1FA22 | CreateAction | Repeater | Repeat 3 times | Repeats the preceding action 3 times
+🝃 | U+1FA23 | CreateAction | Repeater | Repeat 4 times | Repeats the preceding action 4 times
+🝄 | U+1FA24 | CreateAction | Repeater | Repeat 5 times | Repeats the preceding action 5 times
+# ... (up to U+1FA3F for remaining 27 glyphs)
+
+# Create Action Glyphs: Multipliers (32 glyphs, subset shown)
+🝠 | U+1FA40 | CreateAction | Multiplier | Multiply by 1 | Multiplies the preceding action's effect by 1 (no change)
+🝡 | U+1FA41 | CreateAction | Multiplier | Multiply by 2 | Multiplies the preceding action's effect by 2
+🝢 | U+1FA42 | CreateAction | Multiplier | Multiply by 3 | Multiplies the preceding action's effect by 3
+🝣 | U+1FA43 | CreateAction | Multiplier | Multiply by 4 | Multiplies the preceding action's effect by 4
+🝤 | U+1FA44 | CreateAction | Multiplier | Multiply by 5 | Multiplies the preceding action's effect by 5
+# ... (up to U+1FA5F for remaining 27 glyphs)
+
+# Create Action Glyphs: Intent Modifiers (80 glyphs, subset shown)
+🞀 | U+1FA60 | CreateAction | IntentModifier | High priority | Executes the action with high priority
+🞁 | U+1FA61 | CreateAction | IntentModifier | Low priority | Executes the action with low priority
+🞂 | U+1FA62 | CreateAction | IntentModifier | Background execution | Executes the action in the background
+🞃 | U+1FA63 | CreateAction | IntentModifier | Synchronize | Synchronizes the action with other processes
+🞄 | U+1FA64 | CreateAction | IntentModifier | Async execution | Executes the action asynchronously
+# ... (up to U+1FAAF for remaining 75 glyphs)
+
+# Create Action Glyphs: Control Flow (40 glyphs, subset shown)
+🞰 | U+1FAB0 | CreateAction | ControlFlow | If condition | Applies the action if a condition is met
+🞱 | U+1FAB1 | CreateAction | ControlFlow | Else condition | Applies the action if the preceding condition fails
+🞲 | U+1FAB2 | CreateAction | ControlFlow | Loop start | Starts a loop for the following actions
+🞳 | U+1FAB3 | CreateAction | ControlFlow | Loop end | Ends a loop for the preceding actions
+🞴 | U+1FAB4 | CreateAction | ControlFlow | Stop execution | Stops the execution of the action sequence
+# ... (up to U+1FAD9 for remaining 35 glyphs)
+
+# Create Action Glyphs: Arithmetic/Logic Operators (40 glyphs, subset shown)
+🞺 | U+1FADA | CreateAction | Operator | Add | Adds a value to the preceding action's result
+🞻 | U+1FADB | CreateAction | Operator | Subtract | Subtracts a value from the preceding action's result
+🞼 | U+1FADC | CreateAction | Operator | And | Applies a logical AND to the preceding conditions
+🞽 | U+1FADD | CreateAction | Operator | Or | Applies a logical OR to the preceding conditions
+🞾 | U+1FADE | CreateAction | Operator | Not | Applies a logical NOT to the preceding condition
+# ... (up to U+1FB03 for remaining 35 glyphs)
+
+# End of Codex

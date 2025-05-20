@@ -1,0 +1,37 @@
+-- MUXEDIT Metadata: ScriptID=2h3i4j5k-6l7m-8n9o-0p1q-2r3s4t5u, Version=1.0, Author=LordDarkHelmet, Created=2025-05-08
+-- Description: SQLite schema for ObeliskOS glyph mappings
+-- Encoding: UTF-8 with BOM
+
+CREATE TABLE main_glyphs (
+    glyph_id INTEGER PRIMARY KEY,
+    unicode TEXT,
+    semantic_role TEXT,
+    vowel_harmony TEXT CHECK(vowel_harmony IN ('Neutral', 'Active')),
+    type TEXT CHECK(type IN ('ACTION', 'GENERAL')),
+    payload_size INTEGER,
+    binary_id TEXT
+);
+
+CREATE TABLE module_glyphs (
+    module_id TEXT,
+    special_glyph_id INTEGER,
+    unicode TEXT,
+    semantic_role TEXT,
+    action_glyph_id INTEGER,
+    combo_status BOOLEAN,
+    payload_size INTEGER,
+    PRIMARY KEY (module_id, special_glyph_id)
+);
+
+-- Sample data
+INSERT INTO main_glyphs (glyph_id, unicode, semantic_role, vowel_harmony, type, payload_size, binary_id) VALUES
+(1, '🜁', 'Verify Transaction', 'Neutral', 'ACTION', 10, '00000000001'),
+(2, '🜃', 'Update Entity', 'Active', 'ACTION', 8, '00000000010'),
+(3, '🜄', 'Plan Path', 'Neutral', 'ACTION', 8, '00000000011'),
+(4, '♌', 'Synchronize Device', 'Active', 'GENERAL', 6, '00000000100');
+
+INSERT INTO module_glyphs (module_id, special_glyph_id, unicode, semantic_role, action_glyph_id, combo_status, payload_size) VALUES
+('Finance', 1, '🔶', 'Transaction Verify', 1, TRUE, 6),
+('Gaming', 1, '🔷', 'Entity Update', 2, TRUE, 6),
+('Drones', 1, '🔼', 'Path Planning', 3, TRUE, 6),
+('IoT', 1, '🔸', 'Device Sync', 4, TRUE, 6);

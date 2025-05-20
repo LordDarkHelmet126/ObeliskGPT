@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerConfig>
+    <Environment>Development</Environment>
+    <Host>localhost</Host>
+    <Port>8080</Port>
+    <LogLevel>Debug</LogLevel>
+    <Metrics>
+        <Metric Name="Latency" Enabled="true" />
+        <Metric Name="LSUCount" Enabled="true" />
+    </Metrics>
+</ServerConfig>

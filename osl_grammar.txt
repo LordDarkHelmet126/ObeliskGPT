@@ -1,0 +1,17 @@
+<program> ::= <statement>*
+<statement> ::= <task> | <control> | <event> | <action>
+<task> ::= <glyph_type> <glyph_payload> <glyph_metadata>
+<control> ::= <glyph_type> <condition> <glyph_payload>
+<event> ::= <glyph_type> <event_data> <glyph_metadata>
+<action> ::= <glyph_type> <action_data>
+<glyph_type> ::= "𐤀" | "𐤁" | ... | "𐰊"  # 33 Base Glyphs
+<glyph_payload> ::= <data> | <glyph_sequence>
+<glyph_metadata> ::= <overlay> | ε
+<overlay> ::= "Priority" <priority> | "Repeat" <count>
+<priority> ::= "High" | "Normal" | "Low"
+<count> ::= <integer>
+<glyph_sequence> ::= <glyph_type> | <glyph_type> <glyph_type> | <glyph_type> <glyph_type> <glyph_type>
+<event_data> ::= <event_type> <value>
+<event_type> ::= "AnomalyDetected" | "CriticalDrift" | ...
+<action_data> ::= <action_type> <parameters>
+<action_type> ::= "UploadScript" | "StandbyAndLaunch" | ...

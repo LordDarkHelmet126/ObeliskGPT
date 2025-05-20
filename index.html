@@ -1,0 +1,126 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWG Tatooine Modding UI</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.9/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body className="bg-gray-900 text-white font-sans">
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState } = React;
+
+        const ModdingUI = () => {
+            const [mission, setMission] = useState({
+                type: 'delivery',
+                planet: 'tatooine',
+                gridNode: 'quad_8_7_1',
+                npc: 'jawa_trader',
+                offWorld: false,
+                objective: 'Deliver mission bag to Jawa camp',
+                reward: { credits: 800, wearable: 'vest_smuggler' },
+                missionBag: 'mission_bag_standard'
+            });
+            const [structure, setStructure] = useState({
+                type: 'shared_player_house_tatooine_small_style_01',
+                position: { x: 150, y: 75, z: 0 },
+                door: 'standard_door',
+                category: 'housing'
+            });
+            const [harvester, setHarvester] = useState({
+                type: 'shared_mining_liquid_moisture_harvester',
+                position: { x: 200, y: 100, z: 0 },
+                resourceType: 'water',
+                capacity: 500,
+                ingredientHopper: 'ingredient_hopper_standard',
+                outputHopper: 'output_hopper_standard'
+            });
+            const [wearable, setWearable] = useState({
+                type: 'vest',
+                slot: 'chest',
+                palette: 'palette_tatooine_cloth.pal',
+                position: 'none' // For NPC/player, not world placement
+            });
+
+            const handleMissionChange = (field, value) => {
+                setMission({ ...mission, [field]: value });
+            };
+
+            const handleStructureChange = (field, value) => {
+                setStructure({ ...structure, [field]: value });
+            };
+
+            const handleHarvesterChange = (field, value) => {
+                setHarvester({ ...harvester, [field]: value });
+            };
+
+            const handleWearableChange = (field, value) => {
+                setWearable({ ...wearable, [field]: value });
+            };
+
+            const generateMissionScript = () => {
+                const oslScript = `
+^📜:Event:CreateMission:Name=jawa_delivery:NodeID=${mission.gridNode}:NPC=${mission.npc}:Objective=${mission.objective}:RewardCredits=${mission.reward.credits}
+^🎨:Event:ConfigureNPC:Name=${mission.npc}:Palette=npc_jawa.pal:NodeID=${mission.gridNode}:Wearable=${mission.reward.wearable}
+^🖼️:Event:ConfigureArrangement:Type=mission_bag:ObjectID=${mission.missionBag}:Position=${mission.gridNode}
+^👗:Event:ConfigureWearable:Type=${mission.reward.wearable}:Slot=chest:Palette=palette_tatooine_cloth.pal
+                `;
+                console.log('Generated OSL:', oslScript);
+                // Send to obeliskos_launcher.ps1 via API
+            };
+
+            const generateStructureScript = () => {
+                const oslScript = `
+^🏠:Event:ConfigurePlayerStructure:Type=${structure.type}:Position=${structure.position.x},${structure.position.y},${structure.position.z}:Category=${structure.category}
+^🖼️:Event:ConfigureArrangement:Type=door:ObjectID=${structure.door}:Position=${structure.position.x},${structure.position.y},${structure.position.z}
+                `;
+                console.log('Generated OSL:', oslScript);
+                // Send to obeliskos_launcher.ps1
+            };
+
+            const generateHarvesterScript = () => {
+                const oslScript = `
+^⛏️:Event:ConfigureHarvester:Type=${harvester.type}:Position=${harvester.position.x},${harvester.position.y},${harvester.position.z}:Resource
