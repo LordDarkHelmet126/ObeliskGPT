@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "created": "2025-05-19T16:31:00-04:00",
+  "techniques": [
+    {
+      "id": "EV2_151",
+      "technique": "Symbiotic Core Pulse",
+      "fit": "Obelisk Core",
+      "evolution": "Two",
+      "overlap": "98% with Celestial Core Surge (EV2_001)",
+      "metrics": {
+        "latency_ms": 1.1,
+        "throughput_tasks_sec": 2300,
+        "memory_mb": 140,
+        "scalability_nodes": 1000000,
+        "adoption_percent": 14,
+        "power_w": 10,
+        "coherence_percent": 99.9999,
+        "innovation": 5,
+        "composite_score": 0.975
+      },
+      "glyph": null,
+      "action_glyph": "🜄",
+      "action_semantic": "Amplify (10x throughput for core tasks)",
+      "semantic_role": "Task initialization with high coherence",
+      "visual_style": {
+        "shape": "Symmetric",
+        "stroke": "Bold",
+        "color": "Black ink, gold accent",
+        "inspiration": "Hebrew Aleph unity",
+        "rendering": "Parchment, 800x600 clarity"
+      },
+      "harmony": "Neutral",
+      "binary_encoding": "0xA100000000000151",
+      "chaining_examples": ["🜄🝑🜅🝐", "🜆🝑🜇🝓"]
+    }
+    // Add ~3975 more entries after selection (omitted for brevity)
+  ]
+}

@@ -1,0 +1,6 @@
+Star,SuccessRate,AvgLatencyMs,DriftIntegrityIndex,SymbolicConflictRate
+Blue Star Nexus,0.9982,1.9284,0.966,0.0034
+Copper Star Mark,0.9986,1.9362,0.9735,0.0018
+Dark_Star,0.9985,1.8885,0.9753,0.0026
+Pink Star,0.9988,2.1002,0.9648,0.0035
+Silver Star,0.9984,1.9631,0.9779,0.0036

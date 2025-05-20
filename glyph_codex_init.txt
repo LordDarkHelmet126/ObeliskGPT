@@ -1,0 +1,36 @@
+# MUXEDIT Metadata: ScriptID=5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c, Version=2.0, Author=LordDarkHelmet, Created=2025-05-19
+# Description: Encrypts OSL glyphs for external output, ensuring obfuscation
+# Encoding: UTF-8
+
+function Invoke-GlyphEncryption {
+    param (
+        [string]$Glyph,
+        [string]$OutputPath
+    )
+    $glyphMap = @{
+        "🜁" = "א"; "🜂" = "🜃"; "🜃" = "🜄"; "🜄" = "🜅"; "🜅" = "🜆"; "🜆" = "🜇"; "🜇" = "🜈"; "🜈" = "🜉";
+        "🝐" = "ב"; "🝑" = "ג"; "🝒" = "ד"; "🝓" = "ה"; "🝔" = "ו"; "🝕" = "ז"; "🝖" = "ח"; "🝗" = "ט"; "🝘" = "י";
+        "🝙" = "ך"; "🝚" = "כ"; "🝛" = "ל"; "🝜" = "ם"; "🝝" = "מ"; "🝞" = "ן"; "🝟" = "נ"; "🝠" = "ס"; "🝡" = "ע";
+        "🝢" = "פ"; "🝣" = "ץ"; "🝤" = "צ"; "🝥" = "ק"; "🝦" = "ר"; "🝧" = "ש"; "🝨" = "ת"; "🝩" = "א"; "🝪" = "ב"
+    }
+    $substituted = $glyphMap[$Glyph]
+    if (-not $substituted) { $substituted = "א" }
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($substituted)
+    $base64 = [System.Convert]::ToBase64String($bytes)
+    $aes = New-Object System.Security.Cryptography.AesManaged
+    $aes.KeySize = 256
+    $aes.Key = [System.Text.Encoding]::UTF8.GetBytes("ObeliskOSKey12345678901234567890")
+    $aes.IV = [System.Text.Encoding]::UTF8.GetBytes("ObeliskOSIV12345")
+    $encryptor = $aes.CreateEncryptor()
+    $bytesToEncrypt = [System.Text.Encoding]::UTF8.GetBytes($base64)
+    $encrypted = $encryptor.TransformFinalBlock($bytesToEncrypt, 0, $bytesToEncrypt.Length)
+    $encryptedBase64 = [System.Convert]::ToBase64String($encrypted)
+    $signature = "DilithiumSignaturePlaceholder"
+    $result = "U2FsdGVkX1+$encryptedBase64+$signature"
+    $logEntry = @{ Timestamp = (Get-Date -Format "o"); Glyph = $Glyph; Encrypted = $result; Preserve = $true; GlyphError = $true }
+    $logEntry | ConvertTo-Json | Add-Content -Path "E:\ALL SCRIPTS FOR BOOK\DARK_STAR\Final Consolidated Folder\Logs\glyph_error_$(Get-Date -Format 'yyyyMMdd').log"
+    $securityLog = @{ Timestamp = (Get-Date -Format "o"); Action = "Glyph Encryption"; Glyph = $Glyph; Status = "Success" }
+    $securityLog | ConvertTo-Json | Add-Content -Path "E:\ALL SCRIPTS FOR BOOK\DARK_STAR\Final Consolidated Folder\Logs\security_log.json"
+    Set-Content -Path $OutputPath -Value $result -Encoding UTF8
+    Write-Output "Glyph encrypted and saved to $OutputPath"
+}

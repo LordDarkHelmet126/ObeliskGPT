@@ -1,0 +1,20 @@
+# MUXEDIT Metadata: ScriptID=01316ce4-e232-43c8-9e51-5f1fb6e5324c, Version=1.1, Author=LordDarkHelmet, Created=2025-05-19
+# Description: Dual CBII/Plotly UI for OGF task selection and glyph decoding
+# Encoding: UTF-8
+
+function Start-UIServer {
+    param ($UserInput)
+    $Mode = Select-UIMode -Input $UserInput -Script ui_config.osl # CBII or Plotly
+    if ($Mode -eq "CBII") {
+        $Dialogue = Process-CBIIFlow -Input $UserInput -Script obeliskos_chat_interface.osl
+        $Comboglyph = Map-DialogueToGlyph -Dialogue $Dialogue -Script glyph_mappings.sqlite
+    } else {
+        $Comboglyph = Map-InputToGlyph -Input $UserInput -Script glyph_mappings.sqlite
+    }
+    $Tasks = Parse-Comboglyph -Comboglyph $Comboglyph -Script glyph_parser.osl
+    $Results = Execute-Tasks -Tasks $Tasks -Script lsu_manager.osl
+    $Output = Decode-Glyphs -Results $Results -Script glyph_parser.osl
+    Render-Output -Output $Output -Mode $Mode -Script plotly_bridge.osl
+    Write-Log -LogFile ui_log.osl -Status $Output.Status -Latency $Latency
+    return $Output
+}

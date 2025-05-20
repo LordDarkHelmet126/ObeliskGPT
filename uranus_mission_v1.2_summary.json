@@ -1,0 +1,12 @@
+{
+  "TotalCycles": 60,
+  "BatteryDepletedCycles": 1,
+  "RetriesTriggered": 3,
+  "WorldReactionsTriggered": 3,
+  "MissionAdaptations": 2,
+  "AvgLatencyMs": 2.339,
+  "AvgDriftIntegrityIndex": 0.9831,
+  "AvgSymbolicConflictRate": 0.0032,
+  "MissionSuccessRate": 0.9991,
+  "FinalBatteryLevel": 23.82
+}

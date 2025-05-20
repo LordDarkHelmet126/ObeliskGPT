@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "created": "2025-05-19T16:31:00-04:00",
+  "cycles": [
+    {
+      "cycle": 1,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Lua Translation (0.8)", "Community Glyph Library (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "Plotly Visualization (0.2)"]
+    },
+    {
+      "cycle": 2,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Community Glyph Library (0.8)", "UTF-8 BOM Embedding (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "Combo Glyph Processing (0.2)", "Black Star SLM (0.2)"]
+    },
+    {
+      "cycle": 3,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Lua Translation (0.8)", "Custom Glyph Header (0.7)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "HFS Context Switching (0.2)"]
+    },
+    {
+      "cycle": 4,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Community Glyph Library (0.8)", "Lua Translation (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "Plotly Visualization (0.2)", "SHA-3 Checksums (0.2)"]
+    },
+    {
+      "cycle": 5,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["UTF-8 BOM Embedding (0.8)", "Combo Glyph Processing (0.7)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "Black Star SLM (0.2)"]
+    },
+    {
+      "cycle": 6,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Lua Translation (0.8)", "Community Glyph Library (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "HFS Context Switching (0.2)", "Plotly Visualization (0.2)"]
+    },
+    {
+      "cycle": 7,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Custom Glyph Header (0.7)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "SHA-3 Checksums (0.2)", "Dilithium Signatures (0.2)"]
+    },
+    {
+      "cycle": 8,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Community Glyph Library (0.8)", "Lua Translation (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "Combo Glyph Processing (0.2)", "Black Star SLM (0.2)"]
+    },
+    {
+      "cycle": 9,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Community Glyph Library (0.8)", "Lua Translation (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "Plotly Visualization (0.2)"]
+    },
+    {
+      "cycle": 10,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["UTF-8 BOM Embedding (0.8)", "Custom Glyph Header (0.7)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "HFS Context Switching (0.2)", "SHA-3 Checksums (0.2)"]
+    },
+    {
+      "cycle": 11,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Lua Translation (0.8)", "Community Glyph Library (0.8)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "RLE Compression (0.2)", "Plotly Visualization (0.2)"]
+    },
+    {
+      "cycle": 12,
+      "shuffle": "Weighted",
+      "prioritized_techniques": ["Combo Glyph Processing (0.7)", "Ogham Overlay (0.2)", "CBII NLP (0.2)", "Black Star SLM (0.2)", "HFS Context Switching (0.2)", "Dilithium Signatures (0.2)"]
+    }
+  ]
+}

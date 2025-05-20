@@ -1,0 +1,120 @@
+# MUXEDIT Metadata: ScriptID=7b9e3f2a-8c4d-4b9e-a2f3-6e7d9c1b2f3a, Version=1.0, Author=LordDarkHelmet, Created=2025-05-20
+# Purpose: Validates glyph sequences from CSV/XLSX files for ObeliskOS OSL compatibility
+# Encoding: UTF-8
+# Dependencies: ImportExcel module, System.Data.SQLite
+
+param (
+    [Parameter(Mandatory=$true)][string]$GlyphFilePath,
+    [Parameter(Mandatory=$true)][string]$CodexPath = "D:\ObeliskOS\Sqlite\glyph_mappings.sqlite",
+    [string]$LogPath = "D:\ObeliskOS\Logs\glyph_validation_log.jsonl"
+)
+
+# Initialize logging
+function Write-Log {
+    param ([string]$Message)
+    $logEntry = @{Timestamp=(Get-Date -Format "o"); Message=$Message} | ConvertTo-Json -Compress
+    Add-Content -Path $LogPath -Value $logEntry
+}
+
+# Load glyph sequences
+function Get-GlyphSequences {
+    param ([string]$FilePath)
+    try {
+        if ($FilePath -match "\.xlsx$") {
+            $data = Import-Excel -Path $FilePath -WorksheetName "Sheet1" | Select-Object -ExpandProperty Glyph_Sequence
+        } elseif ($FilePath -match "\.csv$") {
+            $data = Import-Csv -Path $FilePath | Select-Object -ExpandProperty Glyph_Sequence
+        } else {
+            throw "Unsupported file format. Use .xlsx or .csv"
+        }
+        Write-Log "Loaded $($data.Count) glyph sequences from $FilePath"
+        return $data
+    } catch {
+        Write-Log "Error loading sequences: $_"
+        throw
+    }
+}
+
+# Validate sequence against codex
+function Test-GlyphSequence {
+    param (
+        [string]$Sequence,
+        [System.Data.SQLite.SQLiteConnection]$Conn
+    )
+    $valid = $true
+    $glyphs = $Sequence.ToCharArray()
+    
+    # Check length (1-4 glyphs)
+    if ($glyphs.Length -lt 1 -or $glyphs.Length -gt 4) {
+        Write-Log "Invalid sequence length: $Sequence"
+        return $false
+    }
+
+    # Check each glyph against codex
+    foreach ($glyph in $glyphs) {
+        $query = "SELECT COUNT(*) FROM glyph_mappings WHERE glyph = @glyph"
+        $cmd = $Conn.CreateCommand()
+        $cmd.CommandText = $query
+        $cmd.Parameters.AddWithValue("@glyph", $glyph)
+        $count = $cmd.ExecuteScalar()
+        if ($count -eq 0) {
+            Write-Log "Invalid glyph in sequence: $glyph ($Sequence)"
+            $valid = $false
+        }
+    }
+
+    # Five Rings validation (simplified)
+    if ($valid) {
+        $dimensions = @("Earth", "Water", "Fire", "Wind", "Void")
+        foreach ($dim in $dimensions) {
+            $query = "SELECT coherence FROM validation_results WHERE sequence = @seq AND dimension = @dim"
+            $cmd = $Conn.CreateCommand()
+            $cmd.CommandText = $query
+            $cmd.Parameters.AddWithValue("@seq", $Sequence)
+            $cmd.Parameters.AddWithValue("@dim", $dim)
+            $coherence = $cmd.ExecuteScalar()
+            if ($null -eq $coherence -or $coherence -lt 0.9999) {
+                Write-Log "Validation failed for $Sequence in $dim (Coherence: $($coherence ?? 'N/A'))"
+                $valid = $false
+            }
+        }
+    }
+
+    return $valid
+}
+
+# Main execution
+try {
+    Write-Log "Starting glyph sequence validation for $GlyphFilePath"
+    
+    # Connect to SQLite codex
+    $conn = New-Object System.Data.SQLite.SQLiteConnection
+    $conn.ConnectionString = "Data Source=$CodexPath;Version=3;"
+    $conn.Open()
+
+    # Load sequences
+    $sequences = Get-GlyphSequences -FilePath $GlyphFilePath
+
+    # Validate sequences
+    $validCount = 0
+    $invalidCount = 0
+    foreach ($seq in $sequences) {
+        if (Test-GlyphSequence -Sequence $seq -Conn $conn) {
+            $validCount++
+            Write-Log "Valid sequence: $seq"
+        } else {
+            $invalidCount++
+        }
+    }
+
+    # Log summary
+    Write-Log "Validation complete. Valid: $validCount, Invalid: $invalidCount"
+
+    # Output results
+    Write-Output "Validation Summary: $validCount valid, $invalidCount invalid sequences"
+} catch {
+    Write-Log "Fatal error: $_"
+    throw
+} finally {
+    if ($conn.State -eq 'Open') { $conn.Close() }
+}

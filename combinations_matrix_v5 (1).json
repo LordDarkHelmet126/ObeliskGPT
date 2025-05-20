@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "created": "2025-05-19T16:29:00-04:00",
+  "techniques": [
+    {
+      "id": "EV1_001",
+      "technique": "Nebulous LSU Flux",
+      "future_name": "🝓",
+      "fit": "Obelisk Core",
+      "evolution": "One",
+      "metrics": {
+        "latency_ms": 1.2,
+        "throughput_tasks_sec": 2200,
+        "memory_mb": 150,
+        "scalability_nodes": 1000000,
+        "adoption_percent": 13,
+        "power_w": 12,
+        "coherence_percent": 99.99956,
+        "innovation": 5,
+        "composite_score": 0.7175
+      },
+      "glyph": "🝓",
+      "action_glyph": "🜄",
+      "action_semantic": "Amplify (10x throughput for core tasks)",
+      "semantic_role": "Efficient glyph orchestration for LSU-based system initialization",
+      "visual_style": {
+        "shape": "Symmetric",
+        "stroke": "Bold",
+        "color": "Black ink, gold accent",
+        "inspiration": "Hebrew Aleph unity, Nabataean ligatures",
+        "rendering": "Parchment, 800x600 clarity"
+      },
+      "harmony": "Neutral",
+      "binary_encoding": "0xA100000000000003",
+      "chaining_examples": ["🜄🝓🜅🝐", "🜆🝓🜇🝑"]
+    },
+    {
+      "id": "EV2_001",
+      "technique": "Celestial Core Surge",
+      "future_name": "🝐",
+      "fit": "Obelisk Core",
+      "evolution": "Two",
+      "metrics": {
+        "latency_ms": 1.1,
+        "throughput_tasks_sec": 2300,
+        "memory_mb": 140,
+        "scalability_nodes": 1000000,
+        "adoption_percent": 14,
+        "power_w": 10,
+        "coherence_percent": 99.9999,
+        "innovation": 5,
+        "composite_score": 0.975
+      },
+      "glyph": "🝐",
+      "action_glyph": "🜄",
+      "action_semantic": "Amplify (10x throughput for core tasks)",
+      "semantic_role": "Ultra-efficient glyph orchestration for system initialization",
+      "visual_style": {
+        "shape": "Symmetric",
+        "stroke": "Bold",
+        "color": "Black ink, gold accent",
+        "inspiration": "Hebrew Aleph unity, Nabataean ligatures",
+        "rendering": "Parchment, 800x600 clarity"
+      },
+      "harmony": "Neutral",
+      "binary_encoding": "0xA100000000000001",
+      "chaining_examples": ["🜄🝐🜅🝑", "🜆🝐🜇🝓"]
+    },
+    {
+      "id": "EV2_3201",
+      "technique": "Astral Core Cascade",
+      "future_name": "🞠",
+      "fit": "Obelisk Core",
+      "evolution": "Two",
+      "metrics": {
+        "latency_ms": 1.05,
+        "throughput_tasks_sec": 2400,
+        "memory_mb": 135,
+        "scalability_nodes": 1000000,
+        "adoption_percent": 14.5,
+        "power_w": 8,
+        "coherence_percent": 99.9999,
+        "innovation": 5,
+        "composite_score": 0.99
+      },
+      "glyph": "🞠",
+      "action_glyph": "🜄",
+      "action_semantic": "Amplify (10x throughput for core orchestration)",
+      "semantic_role": "High-performance glyph orchestration for distributed system initialization",
+      "visual_style": {
+        "shape": "Symmetric",
+        "stroke": "Bold",
+        "color": "Black ink, gold accent",
+        "inspiration": "Hebrew Aleph unity, Nabataean ligatures, Mongolian hierarchy",
+        "rendering": "Parchment, 800x600 clarity, 3D depth"
+      },
+      "harmony": "Neutral",
+      "binary_encoding": "0xA100000000000101",
+      "chaining_examples": ["🜄🞠🜅🝑", "🜆🞠🜇🝓"]
+    }
+    // Add ~4947 more entries to reach ~5000 (omitted for brevity)
+  ]
+}

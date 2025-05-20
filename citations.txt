@@ -1,0 +1,24 @@
+@article{doudna2014,
+  author = {Doudna, Jennifer A. and Charpentier, Emmanuelle},
+  title = {The new frontier of genome engineering with CRISPR-Cas9},
+  journal = {Science},
+  volume = {346},
+  number = {6213},
+  year = {2014},
+  doi = {10.1126/science.1258096},
+  note = {Inspires computational genome model for Glyph Codex mutation}
+}
+@book{wolfram2002,
+  author = {Wolfram, Stephen},
+  title = {A New Kind of Science},
+  publisher = {Wolfram Media},
+  year = {2002},
+  note = {Guides cellular automata for LSU execution}
+}
+@book{healey1993,
+  author = {Healey, John F.},
+  title = {The Nabataean Tomb Inscriptions of Mada'in Salih},
+  publisher = {Oxford University Press},
+  year = {1993},
+  note = {Informs OSL vowel harmony and glyph design}
+}

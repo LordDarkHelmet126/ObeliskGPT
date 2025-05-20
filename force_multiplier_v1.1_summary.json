@@ -1,0 +1,22 @@
+{
+  "TotalCycles": 60,
+  "WorkloadPhases": [
+    "Initialization",
+    "Processing",
+    "Scaling",
+    "Peak Performance",
+    "Optimization"
+  ],
+  "SyntaxFallbacks": 3,
+  "CacheHits": 13,
+  "RetriesTriggered": 6,
+  "ConflictPreemptions": 3,
+  "DriftRollbacks": 1,
+  "MissionAdaptations": 3,
+  "WorldReactions": 2,
+  "AvgLatencyMs": 1.975,
+  "AvgDriftIntegrityIndex": 0.9988,
+  "AvgSymbolicConflictRate": 0.0001,
+  "MissionSuccessRate": 0.9998,
+  "FinalResourceLevel": 16.69
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "Cycle": 1,
+    "Phase": "Launch",
+    "AvgLatencyMs": 2.791,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0025,
+    "SuccessRate": 0.9998,
+    "ErrorRate": 0.0015,
+    "BatteryLevel": 53.04
+  },
+  {
+    "Cycle": 2,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.582,
+    "DriftIntegrityIndex": 0.992,
+    "SymbolicConflictRate": 0.004,
+    "SuccessRate": 0.9988,
+    "ErrorRate": 0.0043,
+    "BatteryLevel": 19.35
+  },
+  {
+    "Cycle": 3,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.65,
+    "DriftIntegrityIndex": 0.999,
+    "SymbolicConflictRate": 0.0039,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0026,
+    "BatteryLevel": 12.39
+  },
+  {
+    "Cycle": 4,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.236,
+    "DriftIntegrityIndex": 0.991,
+    "SymbolicConflictRate": 0.0038,
+    "SuccessRate": 0.998,
+    "ErrorRate": 0.0042,
+    "BatteryLevel": 17.17
+  },
+  {
+    "Cycle": 5,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.78,
+    "DriftIntegrityIndex": 0.987,
+    "SymbolicConflictRate": 0.0019,
+    "SuccessRate": 0.9988,
+    "ErrorRate": 0.0009,
+    "BatteryLevel": 62.15
+  },
+  {
+    "Cycle": 6,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.506,
+    "DriftIntegrityIndex": 0.984,
+    "SymbolicConflictRate": 0.0009,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0006,
+    "BatteryLevel": 31.46
+  },
+  {
+    "Cycle": 7,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.825,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0045,
+    "SuccessRate": 1.0,
+    "ErrorRate": 0.0029,
+    "BatteryLevel": 16.72
+  },
+  {
+    "Cycle": 8,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.141,
+    "DriftIntegrityIndex": 0.97,
+    "SymbolicConflictRate": 0.0013,
+    "SuccessRate": 0.9999,
+    "ErrorRate": 0.0031,
+    "BatteryLevel": 98.8
+  },
+  {
+    "Cycle": 9,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.434,
+    "DriftIntegrityIndex": 0.982,
+    "SymbolicConflictRate": 0.0031,
+    "SuccessRate": 0.9999,
+    "ErrorRate": 0.0042,
+    "BatteryLevel": 81.15
+  },
+  {
+    "Cycle": 10,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.48,
+    "DriftIntegrityIndex": 0.998,
+    "SymbolicConflictRate": 0.0015,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0027,
+    "BatteryLevel": 43.52
+  },
+  {
+    "Cycle": 11,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.5,
+    "DriftIntegrityIndex": 0.966,
+    "SymbolicConflictRate": 0.0034,
+    "SuccessRate": 0.9985,
+    "ErrorRate": 0.0027,
+    "BatteryLevel": 80.93
+  },
+  {
+    "Cycle": 12,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.033,
+    "DriftIntegrityIndex": 0.963,
+    "SymbolicConflictRate": 0.0013,
+    "SuccessRate": 0.9981,
+    "ErrorRate": 0.0012,
+    "BatteryLevel": 43.44
+  },
+  {
+    "Cycle": 13,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.069,
+    "DriftIntegrityIndex": 0.99,
+    "SymbolicConflictRate": 0.0021,
+    "SuccessRate": 0.9991,
+    "ErrorRate": 0.0032,
+    "BatteryLevel": 87.73
+  },
+  {
+    "Cycle": 14,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.415,
+    "DriftIntegrityIndex": 0.966,
+    "SymbolicConflictRate": 0.0029,
+    "SuccessRate": 0.9991,
+    "ErrorRate": 0.0009,
+    "BatteryLevel": 71.77
+  },
+  {
+    "Cycle": 15,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.507,
+    "DriftIntegrityIndex": 0.998,
+    "SymbolicConflictRate": 0.0025,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0027,
+    "BatteryLevel": 71.12
+  },
+  {
+    "Cycle": 16,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.352,
+    "DriftIntegrityIndex": 0.99,
+    "SymbolicConflictRate": 0.003,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0037,
+    "BatteryLevel": 62.58
+  },
+  {
+    "Cycle": 17,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.225,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0029,
+    "SuccessRate": 0.9996,
+    "ErrorRate": 0.0001,
+    "BatteryLevel": 92.91
+  },
+  {
+    "Cycle": 18,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.822,
+    "DriftIntegrityIndex": 0.992,
+    "SymbolicConflictRate": 0.0005,
+    "SuccessRate": 0.9995,
+    "ErrorRate": 0.0027,
+    "BatteryLevel": 37.53
+  },
+  {
+    "Cycle": 19,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.751,
+    "DriftIntegrityIndex": 0.973,
+    "SymbolicConflictRate": 0.0003,
+    "SuccessRate": 0.9995,
+    "ErrorRate": 0.0043,
+    "BatteryLevel": 98.88
+  },
+  {
+    "Cycle": 20,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.757,
+    "DriftIntegrityIndex": 0.963,
+    "SymbolicConflictRate": 0.0008,
+    "SuccessRate": 0.9995,
+    "ErrorRate": 0.0022,
+    "BatteryLevel": 73.37
+  },
+  {
+    "Cycle": 21,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.476,
+    "DriftIntegrityIndex": 0.982,
+    "SymbolicConflictRate": 0.0026,
+    "SuccessRate": 0.9985,
+    "ErrorRate": 0.0021,
+    "BatteryLevel": 33.24
+  },
+  {
+    "Cycle": 22,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.654,
+    "DriftIntegrityIndex": 0.971,
+    "SymbolicConflictRate": 0.0039,
+    "SuccessRate": 0.9986,
+    "ErrorRate": 0.0017,
+    "BatteryLevel": 96.13
+  },
+  {
+    "Cycle": 23,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.554,
+    "DriftIntegrityIndex": 0.992,
+    "SymbolicConflictRate": 0.0032,
+    "SuccessRate": 0.998,
+    "ErrorRate": 0.0006,
+    "BatteryLevel": 46.14
+  },
+  {
+    "Cycle": 24,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.709,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0005,
+    "SuccessRate": 0.9986,
+    "ErrorRate": 0.0043,
+    "BatteryLevel": 87.79
+  },
+  {
+    "Cycle": 25,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.195,
+    "DriftIntegrityIndex": 0.981,
+    "SymbolicConflictRate": 0.0019,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0032,
+    "BatteryLevel": 83.26
+  },
+  {
+    "Cycle": 26,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.733,
+    "DriftIntegrityIndex": 0.979,
+    "SymbolicConflictRate": 0.0035,
+    "SuccessRate": 0.9992,
+    "ErrorRate": 0.0029,
+    "BatteryLevel": 64.64
+  },
+  {
+    "Cycle": 27,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.416,
+    "DriftIntegrityIndex": 0.984,
+    "SymbolicConflictRate": 0.0024,
+    "SuccessRate": 1.0,
+    "ErrorRate": 0.0014,
+    "BatteryLevel": 58.71
+  },
+  {
+    "Cycle": 28,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.413,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0009,
+    "SuccessRate": 0.9992,
+    "ErrorRate": 0.0009,
+    "BatteryLevel": 97.51
+  },
+  {
+    "Cycle": 29,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.204,
+    "DriftIntegrityIndex": 0.977,
+    "SymbolicConflictRate": 0.0039,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0037,
+    "BatteryLevel": 50.86
+  },
+  {
+    "Cycle": 30,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.041,
+    "DriftIntegrityIndex": 0.964,
+    "SymbolicConflictRate": 0.0012,
+    "SuccessRate": 0.998,
+    "ErrorRate": 0.002,
+    "BatteryLevel": 37.96
+  },
+  {
+    "Cycle": 31,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.775,
+    "DriftIntegrityIndex": 0.985,
+    "SymbolicConflictRate": 0.0016,
+    "SuccessRate": 0.9981,
+    "ErrorRate": 0.0026,
+    "BatteryLevel": 32.07
+  },
+  {
+    "Cycle": 32,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.378,
+    "DriftIntegrityIndex": 0.976,
+    "SymbolicConflictRate": 0.004,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0042,
+    "BatteryLevel": 22.65
+  },
+  {
+    "Cycle": 33,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.782,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0006,
+    "SuccessRate": 0.9997,
+    "ErrorRate": 0.0011,
+    "BatteryLevel": 71.92
+  },
+  {
+    "Cycle": 34,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.987,
+    "DriftIntegrityIndex": 0.974,
+    "SymbolicConflictRate": 0.0032,
+    "SuccessRate": 0.9991,
+    "ErrorRate": 0.0024,
+    "BatteryLevel": 15.68
+  },
+  {
+    "Cycle": 35,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.207,
+    "DriftIntegrityIndex": 0.988,
+    "SymbolicConflictRate": 0.0037,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0013,
+    "BatteryLevel": 86.74
+  },
+  {
+    "Cycle": 36,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.79,
+    "DriftIntegrityIndex": 0.985,
+    "SymbolicConflictRate": 0.0016,
+    "SuccessRate": 0.9992,
+    "ErrorRate": 0.0002,
+    "BatteryLevel": 22.17
+  },
+  {
+    "Cycle": 37,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.323,
+    "DriftIntegrityIndex": 0.997,
+    "SymbolicConflictRate": 0.0004,
+    "SuccessRate": 0.9997,
+    "ErrorRate": 0.0034,
+    "BatteryLevel": 59.13
+  },
+  {
+    "Cycle": 38,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.275,
+    "DriftIntegrityIndex": 0.986,
+    "SymbolicConflictRate": 0.0043,
+    "SuccessRate": 0.9998,
+    "ErrorRate": 0.0021,
+    "BatteryLevel": 85.46
+  },
+  {
+    "Cycle": 39,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.071,
+    "DriftIntegrityIndex": 0.965,
+    "SymbolicConflictRate": 0.0017,
+    "SuccessRate": 0.9996,
+    "ErrorRate": 0.002,
+    "BatteryLevel": 92.6
+  },
+  {
+    "Cycle": 40,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.705,
+    "DriftIntegrityIndex": 0.996,
+    "SymbolicConflictRate": 0.003,
+    "SuccessRate": 0.9993,
+    "ErrorRate": 0.0039,
+    "BatteryLevel": 41.88
+  },
+  {
+    "Cycle": 41,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.74,
+    "DriftIntegrityIndex": 0.963,
+    "SymbolicConflictRate": 0.0026,
+    "SuccessRate": 0.9984,
+    "ErrorRate": 0.0004,
+    "BatteryLevel": 91.83
+  },
+  {
+    "Cycle": 42,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.16,
+    "DriftIntegrityIndex": 0.996,
+    "SymbolicConflictRate": 0.0011,
+    "SuccessRate": 0.9981,
+    "ErrorRate": 0.0,
+    "BatteryLevel": 84.41
+  },
+  {
+    "Cycle": 43,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.396,
+    "DriftIntegrityIndex": 0.987,
+    "SymbolicConflictRate": 0.0026,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0036,
+    "BatteryLevel": 82.86
+  },
+  {
+    "Cycle": 44,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.372,
+    "DriftIntegrityIndex": 0.995,
+    "SymbolicConflictRate": 0.0009,
+    "SuccessRate": 0.9992,
+    "ErrorRate": 0.0026,
+    "BatteryLevel": 57.69
+  },
+  {
+    "Cycle": 45,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.812,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0017,
+    "SuccessRate": 0.9984,
+    "ErrorRate": 0.0004,
+    "BatteryLevel": 53.89
+  },
+  {
+    "Cycle": 46,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.753,
+    "DriftIntegrityIndex": 0.99,
+    "SymbolicConflictRate": 0.0026,
+    "SuccessRate": 0.9988,
+    "ErrorRate": 0.0021,
+    "BatteryLevel": 38.92
+  },
+  {
+    "Cycle": 47,
+    "Phase": "Travel",
+    "AvgLatencyMs": 1.939,
+    "DriftIntegrityIndex": 0.961,
+    "SymbolicConflictRate": 0.0007,
+    "SuccessRate": 0.9991,
+    "ErrorRate": 0.0018,
+    "BatteryLevel": 79.01
+  },
+  {
+    "Cycle": 48,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.096,
+    "DriftIntegrityIndex": 0.966,
+    "SymbolicConflictRate": 0.0036,
+    "SuccessRate": 0.9996,
+    "ErrorRate": 0.0004,
+    "BatteryLevel": 70.65
+  },
+  {
+    "Cycle": 49,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.625,
+    "DriftIntegrityIndex": 0.975,
+    "SymbolicConflictRate": 0.0017,
+    "SuccessRate": 0.9985,
+    "ErrorRate": 0.003,
+    "BatteryLevel": 8.94
+  },
+  {
+    "Cycle": 50,
+    "Phase": "Travel",
+    "AvgLatencyMs": 2.094,
+    "DriftIntegrityIndex": 0.994,
+    "SymbolicConflictRate": 0.0023,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0036,
+    "BatteryLevel": 20.64
+  },
+  {
+    "Cycle": 51,
+    "Phase": "Navigation",
+    "AvgLatencyMs": 1.831,
+    "DriftIntegrityIndex": 0.991,
+    "SymbolicConflictRate": 0.0044,
+    "SuccessRate": 0.9995,
+    "ErrorRate": 0.0041,
+    "BatteryLevel": 94.16
+  },
+  {
+    "Cycle": 52,
+    "Phase": "Navigation",
+    "AvgLatencyMs": 1.957,
+    "DriftIntegrityIndex": 0.978,
+    "SymbolicConflictRate": 0.0033,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0022,
+    "BatteryLevel": 11.44
+  },
+  {
+    "Cycle": 53,
+    "Phase": "Navigation",
+    "AvgLatencyMs": 1.798,
+    "DriftIntegrityIndex": 0.989,
+    "SymbolicConflictRate": 0.0014,
+    "SuccessRate": 0.9992,
+    "ErrorRate": 0.0028,
+    "BatteryLevel": 76.75
+  },
+  {
+    "Cycle": 54,
+    "Phase": "Navigation",
+    "AvgLatencyMs": 2.684,
+    "DriftIntegrityIndex": 0.999,
+    "SymbolicConflictRate": 0.0004,
+    "SuccessRate": 0.9996,
+    "ErrorRate": 0.0016,
+    "BatteryLevel": 41.02
+  },
+  {
+    "Cycle": 55,
+    "Phase": "Navigation",
+    "AvgLatencyMs": 2.237,
+    "DriftIntegrityIndex": 0.994,
+    "SymbolicConflictRate": 0.0034,
+    "SuccessRate": 0.9991,
+    "ErrorRate": 0.0007,
+    "BatteryLevel": 47.79
+  },
+  {
+    "Cycle": 56,
+    "Phase": "Entry",
+    "AvgLatencyMs": 2.039,
+    "DriftIntegrityIndex": 0.988,
+    "SymbolicConflictRate": 0.001,
+    "SuccessRate": 0.9994,
+    "ErrorRate": 0.0013,
+    "BatteryLevel": 48.51
+  },
+  {
+    "Cycle": 57,
+    "Phase": "Entry",
+    "AvgLatencyMs": 2.1,
+    "DriftIntegrityIndex": 0.965,
+    "SymbolicConflictRate": 0.002,
+    "SuccessRate": 0.9987,
+    "ErrorRate": 0.0043,
+    "BatteryLevel": 76.04
+  },
+  {
+    "Cycle": 58,
+    "Phase": "Entry",
+    "AvgLatencyMs": 2.115,
+    "DriftIntegrityIndex": 0.97,
+    "SymbolicConflictRate": 0.0016,
+    "SuccessRate": 0.9983,
+    "ErrorRate": 0.0004,
+    "BatteryLevel": 70.09
+  },
+  {
+    "Cycle": 59,
+    "Phase": "Landing",
+    "AvgLatencyMs": 2.051,
+    "DriftIntegrityIndex": 0.985,
+    "SymbolicConflictRate": 0.0037,
+    "SuccessRate": 0.9982,
+    "ErrorRate": 0.0025,
+    "BatteryLevel": 77.23
+  },
+  {
+    "Cycle": 60,
+    "Phase": "Landing",
+    "AvgLatencyMs": 1.953,
+    "DriftIntegrityIndex": 0.986,
+    "SymbolicConflictRate": 0.0038,
+    "SuccessRate": 0.9998,
+    "ErrorRate": 0.0033,
+    "BatteryLevel": 22.83
+  }
+]

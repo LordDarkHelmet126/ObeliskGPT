@@ -1,0 +1,878 @@
+{
+  "scripts": [
+    {
+      "name": "obeliskos_launcher.ps1",
+      "layer": "Core",
+      "role": "Initializes ObeliskOS, allocates LSUs",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "8c2d9e23-4b5e-4f8c-a2d3-6f7e3e9d0b2c",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "lsu_manager.ps1",
+      "layer": "Core",
+      "role": "Manages LSU allocation and execution",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "9a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "lsu_cache.ps1",
+      "layer": "Core",
+      "role": "Caches LSU data for efficiency",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_parser.ps1",
+      "layer": "Cognitive",
+      "role": "Parses OSL glyphs for execution",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "c3d4e5f6-g7h8-9i0j-k1l2-m3n4o5p6",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obelisk_glyphforge.ps1",
+      "layer": "OGF",
+      "role": "Generates .lua scripts from OSL glyphs",
+      "status": "In Progress",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "7b8c9d0e-1f2g-3h4i-5j6k-7l8m9n0p",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-05-18"
+      }
+    },
+    {
+      "name": "ogf_script_generator.py",
+      "layer": "OGF",
+      "role": "Temporary Python script for .lua generation",
+      "status": "In Progress",
+      "language": {
+        "current": "Python",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "d4e5f6g7-h8i9-0j1k-l2m3-n4o5p6q7",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "symbol_glyph_runner.ps1",
+      "layer": "Cognitive",
+      "role": "Executes OSL glyph sequences",
+      "status": "Planned",
+      "language": {
+        "current": "Python",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-05-18"
+      }
+    },
+    {
+      "name": "dark_star_glyph_runner.py",
+      "layer": "Cognitive",
+      "role": "Temporary Python script for glyph execution",
+      "status": "In Progress",
+      "language": {
+        "current": "Python",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "symbol_agent_dispatch.ps1",
+      "layer": "Distributed",
+      "role": "Routes scrolls to agents/LSUs, parses DAGs",
+      "status": "Planned",
+      "language": {
+        "current": "Python",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-05-18"
+      }
+    },
+    {
+      "name": "agent_dispatch_enhanced.py",
+      "layer": "Distributed",
+      "role": "Temporary Python script for agent dispatch",
+      "status": "In Progress",
+      "language": {
+        "current": "Python",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_encrypt.ps1",
+      "layer": "Security",
+      "role": "Handles AES-256, Dilithium encryption",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "symbol_codexlineage.ps1",
+      "layer": "Security",
+      "role": "Tracks script and data provenance",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_benevolence.ps1",
+      "layer": "Security",
+      "role": "Ensures GDPR compliance, ethical outputs",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "k1l2m3n4-o5p6-q7r8-s9t0-u1v2w3x4",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "ui_server.ps1",
+      "layer": "Visualization",
+      "role": "Serves real-time metrics via web interface",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "l2m3n4o5-p6q7-r8s9-t0u1-v2w3x4y5",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "scroll_map_overlay.ps1",
+      "layer": "Visualization",
+      "role": "Generates visual overlays for scrolls",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "m3n4o5p6-q7r8-s9t0-u1v2-w3x4y5z6",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_multinode_expander_v2.ps1",
+      "layer": "Distributed",
+      "role": "Shards tasks across nodes",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "n4o5p6q7-r8s9-t0u1-v2w3-x4y5z6a7",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "fluxstar_hybrid.ps1",
+      "layer": "Cognitive",
+      "role": "Manages context-aware SymbolToken editing",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "o5p6q7r8-s9t0-u1v2-w3x4-y5z6a7b8",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "fluxstar_lsu.ps1",
+      "layer": "Cognitive",
+      "role": "Integrates LSUs for task execution",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "p6q7r8s9-t0u1-v2w3-x4y5-z6a7b8c9",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "fluxstar_brain.ps1",
+      "layer": "Cognitive",
+      "role": "Processes cognitive tasks, glyph reasoning",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "q7r8s9t0-u1v2-w3x4-y5z6-a7b8c9d0",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "validate_outputs.ps1",
+      "layer": "Security",
+      "role": "Performs Five Rings Validation",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "r8s9t0u1-v2w3-x4y5-z6a7-b8c9d0e1",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_log_manager.ps1",
+      "layer": "Core",
+      "role": "Manages unified logging in JSON Lines",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "s9t0u1v2-w3x4-y5z6-a7b8-c9d0e1f2",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_rules_updater.ps1",
+      "layer": "Core",
+      "role": "Updates rule book dynamically",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "t0u1v2w3-x4y5-z6a7-b8c9-d0e1f2g3",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "muxedit_applier.ps1",
+      "layer": "Core",
+      "role": "Applies MUXEDIT patches",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "u1v2w3x4-y5z6-a7b8-c9d0-e1f2g3h4",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "muxedit_validator.ps1",
+      "layer": "Core",
+      "role": "Validates MUXEDIT patches",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "v2w3x4y5-z6a7-b8c9-d0e1-f2g3h4i5",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "codex_evolver.ps1",
+      "layer": "Cognitive",
+      "role": "Performs genome-inspired glyph edits",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "w3x4y5z6-a7b8-c9d0-e1f2-g3h4i5j6",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_drone_script_generator.ps1",
+      "layer": "OGF",
+      "role": "Generates .lua scripts for drones",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "x4y5z6a7-b8c9-d0e1-f2g3-h4i5j6k7",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_crypto_validator.ps1",
+      "layer": "OGF",
+      "role": "Validates cryptocurrency transactions",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "y5z6a7b8-c9d0-e1f2-g3h4-i5j6k7l8",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_monitor.ps1",
+      "layer": "Core",
+      "role": "Monitors performance metrics",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "z6a7b8c9-d0e1-f2g3-h4i5-j6k7l8m9",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "symbol_drift.ps1",
+      "layer": "Security",
+      "role": "Prevents symbolic drift",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "a7b8c9d0-e1f2-g3h4-i5j6-k7l8m9n0",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_ethics.ps1",
+      "layer": "Security",
+      "role": "Enforces ethical constraints",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "b8c9d0e1-f2g3-h4i5-j6k7-l8m9n0o1",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_packager.ps1",
+      "layer": "Core",
+      "role": "Packages system into .exe",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "c9d0e1f2-g3h4-i5j6-k7l8-m9n0o1p2",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_ideation.ps1",
+      "layer": "Cognitive",
+      "role": "Parses inputs for script generation",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "d0e1f2g3-h4i5-j6k7-l8m9-n0o1p2q3",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_designer.ps1",
+      "layer": "Cognitive",
+      "role": "Generates script specifications",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "e1f2g3h4-i5j6-k7l8-m9n0-o1p2q3r4",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_code_generator.ps1",
+      "layer": "Cognitive",
+      "role": "Generates script code",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "f2g3h4i5-j6k7-l8m9-n0o1-p2q3r4s5",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_refiner.ps1",
+      "layer": "Cognitive",
+      "role": "Optimizes generated scripts",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "g3h4i5j6-k7l8-m9n0-o1p2-q3r4s5t6",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_mesh_pipeline.ps1",
+      "layer": "Distributed",
+      "role": "Orchestrates distributed tasks",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "h4i5j6k7-l8m9-n0o1-p2q3-r4s5t6u7",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_marketplace_api.ps1",
+      "layer": "Distributed",
+      "role": "Integrates community contributions",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "i5j6k7l8-m9n0-o1p2-q3r4-s5t6u7v8",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "scroll_loader.ps1",
+      "layer": "Cognitive",
+      "role": "Loads scrolls for agent dispatch",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "j6k7l8m9-n0o1-p2q3-r4s5-t6u7v8w9",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "dark_star_cognition_core.ps1",
+      "layer": "Cognitive",
+      "role": "Manages Dark_Star cognitive processing",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "k7l8m9n0-o1p2-q3r4-s5t6-u7v8w9x0",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskgpt_core.ps1",
+      "layer": "Cognitive",
+      "role": "Manages ObeliskGPT cognitive processing",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "l8m9n0o1-p2q3-r4s5-t6u7-v8w9x0y1",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "black_star_core.ps1",
+      "layer": "Cognitive",
+      "role": "Manages Black Star SLM processing",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "m9n0o1p2-q3r4-s5t6-u7v8-w9x0y1z2",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_quantum_core.ps1",
+      "layer": "Security",
+      "role": "Simulates quantum algorithms",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "n0o1p2q3-r4s5-t6u7-v8w9-x0y1z2a3",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_test_orchestrator.ps1",
+      "layer": "Security",
+      "role": "Orchestrates testing scenarios",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "o1p2q3r4-s5t6-u7v8-w9x0-y1z2a3b4",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "simulation_engine.ps1",
+      "layer": "Security",
+      "role": "Simulates hardware constraints",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "p2q3r4s5-t6u7-v8w9-x0y1-z2a3b4c5",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_compliance_rescript.ps1",
+      "layer": "Core",
+      "role": "Enforces naming and encoding compliance",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "q3r4s5t6-u7v8-w9x0-y1z2-a3b4c5d6",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "concatenate_scripts_muxedit.ps1",
+      "layer": "Core",
+      "role": "Consolidates scripts into obeliskos_scripts.txt",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "High",
+      "muxedit_metadata": {
+        "ScriptID": "r4s5t6u7-v8w9-x0y1-z2a3-b4c5d6e7",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "analyze_md_files.ps1",
+      "layer": "Core",
+      "role": "Analyzes MD file overwrites",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "s5t6u7v8-w9x0-y1z2-a3b4-c5d6e7f8",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_vector_indexer.ps1",
+      "layer": "Core",
+      "role": "Vectorizes data for packaging",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "t6u7v8w9-x0y1-z2a3-b4c5-d6e7f8g9",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "glyph_template_engine.ps1",
+      "layer": "Cognitive",
+      "role": "Generates output templates",
+      "status": "Complete",
+      "language": {
+        "current": "PowerShell",
+        "target": "PowerShell"
+      },
+      "priority": "Medium",
+      "muxedit_metadata": {
+        "ScriptID": "u7v8w9x0-y1z2-a3b4-c5d6-e7f8g9h0",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "obeliskos_ui_edit.html",
+      "layer": "Visualization",
+      "role": "HTML interface for UI editing",
+      "status": "Complete",
+      "language": {
+        "current": "HTML",
+        "target": "HTML"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "v8w9x0y1-z2a3-b4c5-d6e7-f8g9h0i1",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    },
+    {
+      "name": "lua_scroll_player.html",
+      "layer": "Visualization",
+      "role": "HTML interface for .lua playback",
+      "status": "Complete",
+      "language": {
+        "current": "HTML",
+        "target": "HTML"
+      },
+      "priority": "Low",
+      "muxedit_metadata": {
+        "ScriptID": "w9x0y1z2-a3b4-c5d6-e7f8-g9h0i1j2",
+        "Version": "1.0",
+        "Author": "LordDarkHelmet",
+        "Created": "2025-04-30"
+      }
+    }
+  ],
+  "metadata": {
+    "timestamp": "2025-05-18T22:22:00-04:00",
+    "total_scripts": 60,
+    "consolidation_target": "50-60",
+    "repository": "F:\\OBELISK-OS",
+    "log_file": "interaction_log.json"
+  }
+}

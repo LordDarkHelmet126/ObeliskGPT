@@ -1,0 +1,141 @@
+# MUXEDIT Metadata: ScriptID=7b1259f0-0dbe-4b3b-8fa8-ccd8c1f6d0f1, Version=1.5, Author=LordDarkHelmet, Created=2025-05-16
+# Description: Final SpaceX-level precision stress test for LSUs, incorporating all dataset metrics
+# Encoding: UTF-8
+
+# Configuration
+$LSU_COUNT = 50000
+$LSU_MAX_COUNT = 100000
+$DATASET_PATH = "D:\ObeliskOS\Data\dataset_100gb"
+$METRICS_CSV = "D:\ObeliskOS\ObeliskOS_Scroll_Test_Metrics.csv"
+$METRICS_JSON = "D:\ObeliskOS\obeliskos_cycle_metrics.json"
+$SCROLL_CSV = "D:\ObeliskOS\Extended_Scroll_Metrics.csv"
+$PHASE5_LOG = "D:\ObeliskOS\obeliskos_phase5_simulation_log.json"
+$PHASE5PLUS_LOG = "D:\ObeliskOS\obeliskos_phase5plus_validation_log.json"
+$LOG_PATH = "D:\ObeliskOS\Logs\lsu_stress_test_log.json"
+$GLYPH_MAPPINGS = "D:\ObeliskOS\glyph_mappings.json"
+$CORE3_LUA_PATH = "D:\ObeliskOS\Core3\sample.lua"
+$SCROLL_MANIFEST = "D:\ObeliskOS\scroll_manifest.yaml"
+$NETWORK_DISRUPTION_RATE = 0.2
+$TARGET_LATENCY_MS = 3.0
+$TARGET_COHERENCE = 98.5
+$TARGET_THROUGHPUT = 100000000  # 100M glyphs/sec
+$TARGET_ERROR_RATE = 0.005
+$MAX_INVERSE_COHERENCE_HITS = 5
+$MAX_COOP_MISFIRES = 2
+$MAX_TEMPORAL_COLLAPSE = 1
+$TARGET_LOAD_SKEW = 0.2
+$TARGET_DRIFT_INTEGRITY_INDEX = 0.999
+$TARGET_SYMBOLIC_CONFLICT_RATE = 0.00001
+
+# Initialize LSUs
+function Initialize-LSUs {
+    param ([int]$Count)
+    $lsus = @()
+    for ($i = 0; $i -lt $Count; $i++) {
+        $lsu = @{
+            Id = [guid]::NewGuid()
+            StateVector = New-Object byte[] 1900
+            InstructionBuffer = New-Object byte[] 256
+            Status = "Idle"
+            LastExecutionTime = 0
+            ErrorCount = 0
+            UnitType = $null
+            InverseCoherenceHits = 0
+            CoopMisfires = 0
+            TemporalCollapseEvents = 0
+            DriftIntegrityIndex = 1.0
+            SymbolicConflictRate = 0.0
+            SyntaxValid = $true
+        }
+        $lsus += $lsu
+    }
+    Write-Output "Initialized $Count LSUs"
+    return $lsus
+}
+
+# Assign Unit Types
+function Assign-UnitTypes {
+    param ($LSUs, $Metrics)
+    $unitTypes = @("sniper_pair", "fireteam", "squad", "platoon", "company")
+    $lsusPerType = [math]::Floor($LSUs.Count / $unitTypes.Count)
+    $index = 0
+    foreach ($type in $unitTypes) {
+        for ($i = 0; $i -lt $lsusPerType; $i++) {
+            if ($index -lt $LSUs.Count) {
+                $LSUs[$index].UnitType = $type
+                $index++
+            }
+        }
+    }
+    return $LSUs
+}
+
+# Simulate Task with Dataset Metrics
+function Execute-LSUTask {
+    param ($LSU, [string]$TaskType, $Data, [double]$DisruptionRate, $Metrics, $ScrollMetrics, $Phase5Metrics, $Phase5PlusMetrics)
+    $startTime = Get-Date
+    try {
+        if ((Get-Random -Minimum 0 -Maximum 1) -lt $DisruptionRate) { throw "Network disruption" }
+        $unitMetrics = $Metrics | Where-Object { $_."unit_type" -eq $LSU.UnitType } | Select-Object -First 1
+        $scrollMetric = $ScrollMetrics | Where-Object { $_."unit_type" -eq $LSU.UnitType } | Select-Object -First 1
+        $phase5Metric = $Phase5Metrics | Where-Object { $_."TaskType" -eq $TaskType } | Select-Object -First 1
+        $phase5PlusMetric = $Phase5PlusMetrics | Where-Object { $_."TaskType" -eq $TaskType } | Select-Object -First 1
+        $simulatedLatency = if ($phase5PlusMetric) { $phase5PlusMetric.AvgLatencyMs } elseif ($unitMetrics) { $unitMetrics.latency_ms } else { 1.54 }
+        $simulatedCoherence = if ($unitMetrics) { $unitMetrics.coherence } else { 98.22 }
+        $simulatedThroughput = if ($unitMetrics) { $unitMetrics.throughput * 1e7 } else { $TARGET_THROUGHPUT }
+        $simulatedLoadSkew = if ($unitMetrics) { $unitMetrics.load_skew } else { 0.222 }
+        $simulatedComplexity = if ($scrollMetric) { $scrollMetric.complexity } else { 0.69 }
+        $simulatedForkScore = if ($scrollMetric) { $scrollMetric.fork_score } else { 2.97 }
+        $simulatedDII = if ($phase5PlusMetric) { $phase5PlusMetric.DriftIntegrityIndex } elseif ($phase5Metric) { $phase5Metric.DriftIntegrityIndex } else { 0.966 }
+        $simulatedSCR = if ($phase5PlusMetric) { $phase5PlusMetric.SymbolicConflictRate } elseif ($phase5Metric) { $phase5Metric.SymbolicConflictRate } else { 0.0033 }
+        
+        switch ($TaskType) {
+            "Tokenization" {
+                $tokens = $Data | ConvertTo-Json | Measure-Object -Character
+                $LSU.StateVector[0] = $tokens.Characters % 256
+                $LSU.SyntaxValid = $tokens.Characters -gt 0
+            }
+            "Visualization" {
+                $LSU.StateVector[1] = (Get-Random -Minimum 0 -Maximum 256)
+                $LSU.SyntaxValid = $true
+            }
+            "ScrollExecution" {
+                $glyph = ($Data -match "🜁") ? "🜁" : "🜃"
+                $LSU.StateVector[2] = [byte][char]$glyph
+                $scroll = @{ Grid = ($Data -match "grid ([0-9x]+)") ? $matches[1] : "Unknown"; Glyph = $glyph; Action = $Data; Complexity = $simulatedComplexity; ForkScore = $simulatedForkScore }
+                $scroll | ConvertTo-Json | Out-File -Append -FilePath $SCROLL_MANIFEST
+                $LSU.SyntaxValid = $glyph -ne $null
+            }
+            "Core3Decoding" {
+                $luaContent = $Data
+                $LSU.StateVector[3] = ($luaContent -match "tradeMission|npcConversationStop") ? 1 : 0
+                $LSU.SyntaxValid = $luaContent -ne $null
+                if ($simulatedCoherence -lt $TARGET_COHERENCE) { $LSU.InverseCoherenceHits++ }
+            }
+        }
+        $LSU.Status = if ($simulatedLatency -le $TARGET_LATENCY_MS -and $simulatedThroughput -ge $TARGET_THROUGHPUT -and $simulatedLoadSkew -le $TARGET_LOAD_SKEW -and $simulatedDII -ge $TARGET_DRIFT_INTEGRITY_INDEX -and $simulatedSCR -le $TARGET_SYMBOLIC_CONFLICT_RATE -and $LSU.SyntaxValid) { "Completed" } else { "Failed" }
+        $LSU.LastExecutionTime = $simulatedLatency
+        $LSU.ErrorCount = if ($LSU.Status -eq "Failed") { $LSU.ErrorCount + 1 } else { $LSU.ErrorCount }
+        $LSU.InverseCoherenceHits += if ($simulatedCoherence -lt $TARGET_COHERENCE) { 1 } else { 0 }
+        $LSU.CoopMisfires += if ($simulatedForkScore -gt 5) { 1 } else { 0 }
+        $LSU.TemporalCollapseEvents += if ($simulatedLoadSkew -gt $TARGET_LOAD_SKEW) { 1 } else { 0 }
+        $LSU.DriftIntegrityIndex = $simulatedDII
+        $LSU.SymbolicConflictRate = $simulatedSCR
+    } catch {
+        $LSU.Status = "Failed"
+        $LSU.ErrorCount++
+        $LSU.TemporalCollapseEvents++
+        $LSU.SyntaxValid = $false
+        Write-Error "Task $TaskType failed on LSU $($LSU.Id): $_"
+    }
+    return $LSU
+}
+
+# Optimize LSUs
+function Optimize-LSUs {
+    param ($LSUs, [int]$TargetCount, $Metrics)
+    foreach ($lsu in $LSUs) {
+        $lsu.StateVector = New-Object byte[] 1800  # 1.8 KB
+        $lsu.Status = "Optimized"
+        if ($lsu.UnitType -eq "platoon") {
+            $lsu.InstructionBuffer = New-Object byte[] 512  # Double
