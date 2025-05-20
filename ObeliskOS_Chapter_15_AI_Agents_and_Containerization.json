@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "🜰 ObeliskOS Chapter 15: AI Agents and Containerization",
+    "subtitle": "A Dissertation-Level Reference for AI-Driven Agents and Containerized Workflows in 🜰 ObeliskOS",
+    "author": "LordDarkHelmet",
+    "date": "2025-05-18",
+    "version": "6.0",
+    "status": "Draft",
+    "repository": ["E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\docs", "F:\\OBELISK-OS\\docs"],
+    "log": ["E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\Final Consolidated Folder\\Logs", "F:\\OBELISK-OS\\Final Consolidated Folder\\Logs"],
+    "glyph": "🜰",
+    "codex": "---CODEX---\nfile_id: a1b2c3d4-e5f6-7890-abcd-ef1234567890\nschema: obeliskos_codex_v1\nlines: 5000\nwords: 100000\nglyphs: 1000\ntranslator_ready: true\n---CODEX---"
+  },
+  "sections": [
+    {
+      "title": "AI Agent Frameworks",
+      "pages": 75,
+      "documents": ["starship_crew.json", "cast_loader.py", "cast_builder_server.py"],
+      "content": {
+        "overview": "This section details the AI agent frameworks in 🜰 ObeliskOS, leveraging 🜃 Dark_Star for scroll_writer, task_executor, and ui_emotion roles, as defined in starship_crew.json (wave 14). Agents are loaded via cast_loader.py and interfaced through cast_builder_server.py, supporting 🜁 OGF’s UI workflows.",
+        "math": {
+          "agent_latency": "L_a = t_l + t_e, where t_l ≈ 0.002 s (loading), t_e ≈ 0.001 s (execution), targeting L_a < 0.003 s (Fire Ring).",
+          "throughput": "T_a = N_a / L_a, where N_a = 1,000 agents, yielding T_a ≈ 333,333 agents/s."
+        },
+        "language": {
+          "grammar": "<agent_command> ::= <role> <task>\n<role> ::= 'scroll_writer' | 'task_executor' | 'ui_emotion'\n<task> ::= <string>",
+          "glyphs": "🜃 for task execution, stored in glyph_mappings.sqlite."
+        },
+        "delivery": "Web-based UI via ui_server.ps1 (wave 11), packaged as .exe with obeliskos_packager.ps1, glyph-only output (🜃 events) via glyph_encrypt.ps1.",
+        "scripts_present": ["cast_loader.py", "cast_builder_server.py", "ui_server.ps1"],
+        "scripts_needed": [
+          {
+            "name": "symbol_agent_manager.ps1",
+            "purpose": "Manages agent lifecycle, PowerShell with JSONL output, MUXEDIT metadata.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          },
+          {
+            "name": "glyph_agent_validator.ps1",
+            "purpose": "Validates agent execution (LII >0.9999), integrates with validate_outputs.ps1.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Ancestry-Driven Narratives",
+      "pages": 75,
+      "documents": ["gpt_ancestry_integration_block.txt"],
+      "content": {
+        "overview": "This section covers AI-driven narrative generation using gpt_ancestry_integration_block.txt (wave 22), expanding user ancestry data into historical arcs for 🜁 OGF’s SWG modding, integrated with 🜃 Dark_Star’s cognition.",
+        "math": {
+          "narrative_throughput": "T_n = N_n / L_g, where N_n = 1,000 narratives, L_g ≈ 0.01 s, yielding T_n ≈ 100,000 narratives/s.",
+          "accuracy": "A_n = 1 - N_e / N_n, targeting A_n ≥ 0.97, with N_e ≤ 30 errors per 1,000."
+        },
+        "language": {
+          "grammar": "<prompt> ::= <context> <query>\n<context> ::= <string>\n<query> ::= <string>",
+          "glyphs": "🜃 for narrative generation, stored in glyph_mappings.sqlite."
+        },
+        "delivery": "API endpoint via glyph_marketplace_api.ps1 (wave 11), glyph-only output (🜃 events) via glyph_encrypt.ps1.",
+        "scripts_present": ["glyph_marketplace_api.ps1"],
+        "scripts_needed": [
+          {
+            "name": "glyph_ancestry_parser.ps1",
+            "purpose": "Parses ancestry data into OSL glyphs, PowerShell with JSONL output.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          },
+          {
+            "name": "symbol_narrative_validator.ps1",
+            "purpose": "Validates narrative accuracy, integrates with validate_outputs.ps1.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Task Timeline Orchestration",
+      "pages": 75,
+      "documents": ["timeline_weaver.json"],
+      "content": {
+        "overview": "This section details task timeline orchestration using timeline_weaver.json (wave 20), enabling 🜃 Dark_Star to build event timelines for distributed workflows, integrated with 🜁 OGF’s orchestration.",
+        "math": {
+          "timeline_latency": "L_t = t_p + t_s, where t_p ≈ 0.002 s (planning), t_s ≈ 0.001 s (scheduling), targeting L_t < 0.003 s.",
+          "throughput": "T_t = N_t / L_t, where N_t = 1,000 timelines, yielding T_t ≈ 333,333 timelines/s."
+        },
+        "language": {
+          "grammar": "<timeline> ::= <event> <schedule>\n<event> ::= <string>\n<schedule> ::= <timestamp>",
+          "glyphs": "🜃 for timeline events, stored in glyph_mappings.sqlite."
+        },
+        "delivery": ".exe via obeliskos_packager.ps1, glyph-only output (🜃 events) via glyph_encrypt.ps1.",
+        "scripts_present": ["obeliskos_packager.ps1"],
+        "scripts_needed": [
+          {
+            "name": "glyph_timeline_weaver.ps1",
+            "purpose": "Implements timeline scheduling, PowerShell with JSONL output.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          },
+          {
+            "name": "symbol_timeline_validator.ps1",
+            "purpose": "Validates timeline accuracy, integrates with validate_outputs.ps1.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Macro Execution",
+      "pages": 75,
+      "documents": ["macro_grok.json"],
+      "content": {
+        "overview": "This section covers macro execution using macro_grok.json (wave 20), enabling 🜃 Dark_Star to execute combat loops and escape sequences, integrated with 🜁 OGF’s AI workflows.",
+        "math": {
+          "macro_latency": "L_m = t_e + t_p, where t_e ≈ 0.002 s (execution), t_p ≈ 0.001 s (processing), targeting L_m < 0.003 s.",
+          "accuracy": "A_m = 1 - N_e / N_m, targeting A_m ≥ 0.9999, with N_e ≤ 1 per 10,000 macros."
+        },
+        "language": {
+          "grammar": "<macro> ::= <command> <sequence>\n<command> ::= <string>\n<sequence> ::= <string>",
+          "glyphs": "🜁 for macro execution, stored in glyph_mappings.sqlite."
+        },
+        "delivery": ".exe via obeliskos_packager.ps1, glyph-only output (🜁 events) via glyph_encrypt.ps1.",
+        "scripts_present": ["obeliskos_packager.ps1"],
+        "scripts_needed": [
+          {
+            "name": "glyph_macro_executor.ps1",
+            "purpose": "Executes macro sequences, PowerShell with JSONL output.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          },
+          {
+            "name": "symbol_macro_validator.ps1",
+            "purpose": "Validates macro execution, integrates with validate_outputs.ps1.",
+            "format": "PowerShell, UTF-8 BOM, 🜰-embedded BOM."
+          }
+        ]
+      }
+    }
+  ]
+}

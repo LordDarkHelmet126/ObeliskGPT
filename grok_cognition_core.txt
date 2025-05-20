@@ -1,0 +1,91 @@
+```python
+import json
+import logging
+import asyncio
+import requests
+from pathlib import Path
+from glyph_bus import ConceptBus
+
+class GrokCognitionCore:
+    def __init__(self, api_key, endpoint='https://api.x.ai/v1/grok'):
+        self.logger = logging.getLogger('GrokCognitionCore')
+        self.bus = ConceptBus()
+        self.api_key = api_key
+        self.endpoint = endpoint
+        self.mappings_file = Path('D:/ObeliskOS/Updated components/cache/glyph_mappings.sqlite')
+        self.log_file = Path('D:/ObeliskOS/Updated components/logs/cognition_log.json')
+        self.codex_file = Path('D:/ObeliskOS/Updated components/codices/master_codex_64.json')
+        self.log_file.parent.mkdir(exist_ok=True)
+
+    async def process_input(self, input_text, context=None):
+        """Process user input or glyph using Grok, updating mappings."""
+        self.logger.info(f"Processing input: {input_text}")
+        try:
+            # Load codex
+            with open(self.codex_file, 'r', encoding='utf-8') as f:
+                codex = json.load(f)
+
+            # Prepare API request
+            headers = {'Authorization': f'Bearer {self.api_key}'}
+            payload = {
+                'prompt': f"Interpret input in ObeliskOS context: {input_text}",
+                'context': context or {'codex': codex['glyphs'], 'mode': 'coexist'},
+                'max_tokens': 2048,
+                'temperature': 0.7
+            }
+
+            # Call Grok API (simulated for now)
+            response = await self.call_grok_api(payload, headers)
+            if not response:
+                raise ValueError("No response from Grok")
+
+            # Map to glyph
+            matched_glyph = None
+            for glyph_data in codex['glyphs']:
+                if glyph_data['translated'].lower() in response.lower():
+                    matched_glyph = glyph_data['glyph']
+                    break
+            if not matched_glyph:
+                matched_glyph = '𐤁𐢃𐢓'  # Fallback
+
+            # Update mappings (simplified, assumes SQLite integration)
+            mapping_entry = {
+                'input': input_text,
+                'glyph': matched_glyph,
+                'response': response,
+                'timestamp': logging.time.time(),
+                'ai_signature': 'Grok'
+            }
+            await self.log_cognition(mapping_entry)
+
+            # Publish result
+            await self.bus.publish('cognition_result', mapping_entry)
+            return mapping_entry
+        except Exception as e:
+            self.logger.error(f"Cognition failed: {e}")
+            raise
+
+    async def call_grok_api(self, payload, headers):
+        """Simulate Grok API call (replace with real API when available)."""
+        await asyncio.sleep(1)  # Simulate API latency
+        return f"Interpreted: {payload['prompt']}"
+
+    async def log_cognition(self, entry):
+        """Log cognition events."""
+        logs = []
+        if self.log_file.exists():
+            with open(self.log_file, 'r', encoding='utf-8') as f:
+                logs = json.load(f)
+        logs.append(entry)
+        with open(self.log_file, 'w', encoding='utf-8') as f:
+            json.dump(logs, f, indent=2)
+        self.logger.info(f"Cognition logged: {entry['input']}")
+
+async def main():
+    cognition = GrokCognitionCore(api_key='YOUR_XAI_API_KEY')
+    result = await cognition.process_input("Add a drone telemetry dashboard")
+    print(result)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```

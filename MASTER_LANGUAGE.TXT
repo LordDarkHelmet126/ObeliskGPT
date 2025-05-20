@@ -1,0 +1,1827 @@
+﻿{
+  "base_codex": [
+    {
+      "glyph": "א",
+      "unicode": "U+05D0",
+      "semantic_role": "Program Initiation",
+      "vowel_harmony": "Neutral",
+      "type": "ROOT",
+      "payload_size": 8,
+      "visual_description": "Hebrew Aleph, a slanted 'Y' with a crossbar, symbolizing the beginning of execution"
+    },
+    {
+      "glyph": "🜁",
+      "unicode": "U+1F701",
+      "semantic_role": "Verify Signature Chain",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Alchemical symbol for air, a triangle with a horizontal line, representing trust and verification"
+    },
+    {
+      "glyph": "🜃",
+      "unicode": "U+1F703",
+      "semantic_role": "Trajectory Engine",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Alchemical symbol for earth, an inverted triangle with a horizontal line, symbolizing grounded navigation"
+    },
+    {
+      "glyph": "🜄",
+      "unicode": "U+1F704",
+      "semantic_role": "Analyze Input",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Alchemical symbol for water, an inverted triangle, representing fluidity in data analysis"
+    },
+    {
+      "glyph": "🜂",
+      "unicode": "U+1F702",
+      "semantic_role": "Control Loop",
+      "vowel_harmony": "Feminine",
+      "type": "CONTROL",
+      "payload_size": 12,
+      "visual_description": "Alchemical symbol for fire, a triangle, symbolizing dynamic iteration and control"
+    },
+    {
+      "glyph": "♈",
+      "unicode": "U+2648",
+      "semantic_role": "Optimize Crypto Queries",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Aries zodiac symbol, a 'V' with curled ends, symbolizing cryptographic optimization"
+    },
+    {
+      "glyph": "♉",
+      "unicode": "U+2649",
+      "semantic_role": "AI Training Optimization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Taurus zodiac symbol, a circle with horns, symbolizing AI training efficiency"
+    },
+    {
+      "glyph": "♊",
+      "unicode": "U+264A",
+      "semantic_role": "Model Inference",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Gemini zodiac symbol, Roman numeral II, symbolizing AI inference"
+    },
+    {
+      "glyph": "♋",
+      "unicode": "U+264B",
+      "semantic_role": "Swarm Coordination",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Cancer zodiac symbol, a sideways '69', symbolizing coordinated movement"
+    },
+    {
+      "glyph": "♌",
+      "unicode": "U+264C",
+      "semantic_role": "IoT Synchronization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Leo zodiac symbol, a curled 'S', symbolizing IoT connectivity"
+    },
+    {
+      "glyph": "♍",
+      "unicode": "U+264D",
+      "semantic_role": "Quantum Adaptation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Virgo zodiac symbol, an 'M' with a loop, symbolizing quantum flexibility"
+    },
+    {
+      "glyph": "♎",
+      "unicode": "U+264E",
+      "semantic_role": "Data Preprocessing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Libra zodiac symbol, a line with a half-circle above, symbolizing data preparation"
+    },
+    {
+      "glyph": "♏",
+      "unicode": "U+264F",
+      "semantic_role": "Path Planning",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Scorpio zodiac symbol, an 'M' with a stinger, symbolizing navigation planning"
+    },
+    {
+      "glyph": "♐",
+      "unicode": "U+2650",
+      "semantic_role": "Model Evaluation",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Sagittarius zodiac symbol, an arrow with a crossbar, symbolizing evaluation"
+    },
+    {
+      "glyph": "♑",
+      "unicode": "U+2651",
+      "semantic_role": "Obstacle Avoidance",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Capricorn zodiac symbol, a 'V' with a curled tail, symbolizing avoidance maneuvers"
+    },
+    {
+      "glyph": "♒",
+      "unicode": "U+2652",
+      "semantic_role": "Hyperparameter Tuning",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Aquarius zodiac symbol, two wavy lines, symbolizing fine-tuning"
+    },
+    {
+      "glyph": "♓",
+      "unicode": "U+2653",
+      "semantic_role": "Feature Extraction",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Pisces zodiac symbol, two fish connected by a line, symbolizing data extraction"
+    },
+    {
+      "glyph": "⚀",
+      "unicode": "U+2680",
+      "semantic_role": "Loss Function Optimization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with one dot, symbolizing optimization processes"
+    },
+    {
+      "glyph": "⚁",
+      "unicode": "U+2681",
+      "semantic_role": "Gradient Descent",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with two dots, symbolizing iterative descent"
+    },
+    {
+      "glyph": "⚂",
+      "unicode": "U+2682",
+      "semantic_role": "Model Pruning",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with three dots, symbolizing trimming inefficiencies"
+    },
+    {
+      "glyph": "⚃",
+      "unicode": "U+2683",
+      "semantic_role": "Transfer Learning",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with four dots, symbolizing knowledge transfer"
+    },
+    {
+      "glyph": "⚄",
+      "unicode": "U+2684",
+      "semantic_role": "Model Quantization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with five dots, symbolizing model compression"
+    },
+    {
+      "glyph": "⚅",
+      "unicode": "U+2685",
+      "semantic_role": "Batch Normalization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Die with six dots, symbolizing batch standardization"
+    },
+    {
+      "glyph": "☀",
+      "unicode": "U+2600",
+      "semantic_role": "Dropout Regularization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Sun with rays, symbolizing regularization"
+    },
+    {
+      "glyph": "☁",
+      "unicode": "U+2601",
+      "semantic_role": "Cross-Validation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Cloud, symbolizing validation processes"
+    },
+    {
+      "glyph": "☂",
+      "unicode": "U+2602",
+      "semantic_role": "Data Augmentation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Umbrella, symbolizing data expansion"
+    },
+    {
+      "glyph": "☃",
+      "unicode": "U+2603",
+      "semantic_role": "Ensemble Learning",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Snowman, symbolizing collective learning"
+    },
+    {
+      "glyph": "☄",
+      "unicode": "U+2604",
+      "semantic_role": "Model Fine-Tuning",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Comet, symbolizing precision tuning"
+    },
+    {
+      "glyph": "★",
+      "unicode": "U+2605",
+      "semantic_role": "Anomaly Detection",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Black star, symbolizing outlier detection"
+    },
+    {
+      "glyph": "☆",
+      "unicode": "U+2606",
+      "semantic_role": "Predictive Maintenance",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White star, symbolizing foresight"
+    },
+    {
+      "glyph": "☇",
+      "unicode": "U+2607",
+      "semantic_role": "Reinforcement Learning",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Lightning, symbolizing adaptive learning"
+    },
+    {
+      "glyph": "☈",
+      "unicode": "U+2608",
+      "semantic_role": "Generative Modeling",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Thunderstorm, symbolizing creative generation"
+    },
+    {
+      "glyph": "☉",
+      "unicode": "U+2609",
+      "semantic_role": "Neural Architecture Search",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Sun with a dot, symbolizing structural exploration"
+    },
+    {
+      "glyph": "☊",
+      "unicode": "U+260A",
+      "semantic_role": "Model Distillation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Ascending node, symbolizing knowledge distillation"
+    },
+    {
+      "glyph": "☋",
+      "unicode": "U+260B",
+      "semantic_role": "Explainable AI",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Descending node, symbolizing clarity"
+    },
+    {
+      "glyph": "☌",
+      "unicode": "U+260C",
+      "semantic_role": "Synthetic Data Generation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Conjunction, symbolizing artificial creation"
+    },
+    {
+      "glyph": "☍",
+      "unicode": "U+260D",
+      "semantic_role": "Model Versioning",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Opposition, symbolizing version tracking"
+    },
+    {
+      "glyph": "☎",
+      "unicode": "U+260E",
+      "semantic_role": "Active Learning",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Telephone, symbolizing interactive learning"
+    },
+    {
+      "glyph": "☏",
+      "unicode": "U+260F",
+      "semantic_role": "Model Monitoring",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Rotary phone, symbolizing oversight"
+    },
+    {
+      "glyph": "♰",
+      "unicode": "U+2670",
+      "semantic_role": "Bias Mitigation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "West Syriac cross, symbolizing fairness"
+    },
+    {
+      "glyph": "♱",
+      "unicode": "U+2671",
+      "semantic_role": "Fairness Assessment",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "East Syriac cross, symbolizing equity evaluation"
+    },
+    {
+      "glyph": "⚆",
+      "unicode": "U+2686",
+      "semantic_role": "Model Deployment",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with one dot, symbolizing deployment"
+    },
+    {
+      "glyph": "⚇",
+      "unicode": "U+2687",
+      "semantic_role": "Model Rollback",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with two dots, symbolizing reversion"
+    },
+    {
+      "glyph": "⚈",
+      "unicode": "U+2688",
+      "semantic_role": "Data Drift Detection",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Black die with one dot, symbolizing drift detection"
+    },
+    {
+      "glyph": "⚉",
+      "unicode": "U+2689",
+      "semantic_role": "Model Interpretability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Black die with two dots, symbolizing transparency"
+    },
+    {
+      "glyph": "⚊",
+      "unicode": "U+268A",
+      "semantic_role": "Model Compression",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Monad symbol, symbolizing size reduction"
+    },
+    {
+      "glyph": "⚋",
+      "unicode": "U+268B",
+      "semantic_role": "Adversarial Training",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Dyad symbol, symbolizing robust training"
+    },
+    {
+      "glyph": "⚌",
+      "unicode": "U+268C",
+      "semantic_role": "Model Benchmarking",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with three dots, symbolizing performance evaluation"
+    },
+    {
+      "glyph": "⚍",
+      "unicode": "U+268D",
+      "semantic_role": "Model Auditing",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with four dots, symbolizing audit processes"
+    },
+    {
+      "glyph": "⚎",
+      "unicode": "U+268E",
+      "semantic_role": "Model Scaling",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with five dots, symbolizing scalability"
+    },
+    {
+      "glyph": "⚏",
+      "unicode": "U+268F",
+      "semantic_role": "Model Synchronization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White die with six dots, symbolizing synchronization"
+    },
+    {
+      "glyph": "⚐",
+      "unicode": "U+2690",
+      "semantic_role": "Model Validation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "White flag, symbolizing validation"
+    },
+    {
+      "glyph": "⚑",
+      "unicode": "U+2691",
+      "semantic_role": "Model Optimization",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Black flag, symbolizing optimization"
+    },
+    {
+      "glyph": "⚒",
+      "unicode": "U+2692",
+      "semantic_role": "Model Security",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Hammer and pick, symbolizing security"
+    },
+    {
+      "glyph": "⚓",
+      "unicode": "U+2693",
+      "semantic_role": "Model Recovery",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Anchor, symbolizing recovery"
+    },
+    {
+      "glyph": "⚔",
+      "unicode": "U+2694",
+      "semantic_role": "Model Testing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Crossed swords, symbolizing testing"
+    },
+    {
+      "glyph": "⚕",
+      "unicode": "U+2695",
+      "semantic_role": "Model Debugging",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Staff of Asclepius, symbolizing debugging"
+    },
+    {
+      "glyph": "⚖",
+      "unicode": "U+2696",
+      "semantic_role": "Model Logging",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Scales, symbolizing logging"
+    },
+    {
+      "glyph": "⚗",
+      "unicode": "U+2697",
+      "semantic_role": "Model Feedback",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Alembic, symbolizing feedback loops"
+    },
+    {
+      "glyph": "⚘",
+      "unicode": "U+2698",
+      "semantic_role": "Model Adaptation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Flower, symbolizing adaptation"
+    },
+    {
+      "glyph": "⚙",
+      "unicode": "U+2699",
+      "semantic_role": "Model Enhancement",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Gear, symbolizing improvement"
+    },
+    {
+      "glyph": "⚚",
+      "unicode": "U+269A",
+      "semantic_role": "Model Integration",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Staff of Hermes, symbolizing integration"
+    },
+    {
+      "glyph": "⚛",
+      "unicode": "U+269B",
+      "semantic_role": "Model Collaboration",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Atom symbol, symbolizing teamwork"
+    },
+    {
+      "glyph": "⚜",
+      "unicode": "U+269C",
+      "semantic_role": "Model Sharing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Fleur-de-lis, symbolizing sharing"
+    },
+    {
+      "glyph": "ᚠ",
+      "unicode": "U+16A0",
+      "semantic_role": "Model Clustering",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Fehu, resembling an 'F' with angled branches, symbolizing clustering"
+    },
+    {
+      "glyph": "ᚡ",
+      "unicode": "U+16A1",
+      "semantic_role": "Model Federation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter V, resembling a 'V' with a crossbar, symbolizing federated learning"
+    },
+    {
+      "glyph": "ᚢ",
+      "unicode": "U+16A2",
+      "semantic_role": "Model Aggregation",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Uruz, resembling a 'U', symbolizing aggregation"
+    },
+    {
+      "glyph": "ᚣ",
+      "unicode": "U+16A3",
+      "semantic_role": "Model Distribution",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Yr, resembling an angled 'R', symbolizing distribution"
+    },
+    {
+      "glyph": "ᚤ",
+      "unicode": "U+16A4",
+      "semantic_role": "Model Parallelization",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Yr variant, resembling a hooked 'R', symbolizing parallel processing"
+    },
+    {
+      "glyph": "ᚥ",
+      "unicode": "U+16A5",
+      "semantic_role": "Model Serialization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter W, resembling a 'W', symbolizing serialization"
+    },
+    {
+      "glyph": "ᚦ",
+      "unicode": "U+16A6",
+      "semantic_role": "Model Deserialization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Thurisaz, resembling a thorn, symbolizing deserialization"
+    },
+    {
+      "glyph": "ᚧ",
+      "unicode": "U+16A7",
+      "semantic_role": "Model Encryption",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Eth, resembling a crossed 'D', symbolizing encryption"
+    },
+    {
+      "glyph": "ᚨ",
+      "unicode": "U+16A8",
+      "semantic_role": "Model Decryption",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ansuz, resembling an 'F' with a drooping line, symbolizing decryption"
+    },
+    {
+      "glyph": "ᚩ",
+      "unicode": "U+16A9",
+      "semantic_role": "Model Authentication",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Os, resembling an 'O', symbolizing authentication"
+    },
+    {
+      "glyph": "ᚪ",
+      "unicode": "U+16AA",
+      "semantic_role": "Model Authorization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ac, resembling an 'A', symbolizing authorization"
+    },
+    {
+      "glyph": "ᚫ",
+      "unicode": "U+16AB",
+      "semantic_role": "Model Access Control",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Aesc, resembling a crossed 'A', symbolizing access control"
+    },
+    {
+      "glyph": "ᚬ",
+      "unicode": "U+16AC",
+      "semantic_role": "Model Privacy",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Long-branch Yr, resembling a hooked 'Y', symbolizing privacy protection"
+    },
+    {
+      "glyph": "ᚭ",
+      "unicode": "U+16AD",
+      "semantic_role": "Model Anonymization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Yr, resembling a simplified 'Y', symbolizing anonymization"
+    },
+    {
+      "glyph": "ᚮ",
+      "unicode": "U+16AE",
+      "semantic_role": "Model Obfuscation",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter O, resembling a diamond, symbolizing obfuscation"
+    },
+    {
+      "glyph": "ᚯ",
+      "unicode": "U+16AF",
+      "semantic_role": "Model Integrity",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Dot, resembling a small dot, symbolizing integrity checks"
+    },
+    {
+      "glyph": "ᚰ",
+      "unicode": "U+16B0",
+      "semantic_role": "Model Availability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Bjarkan, resembling a 'B', symbolizing availability"
+    },
+    {
+      "glyph": "ᚱ",
+      "unicode": "U+16B1",
+      "semantic_role": "Model Consistency",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Raido, resembling an 'R', symbolizing consistency"
+    },
+    {
+      "glyph": "ᚲ",
+      "unicode": "U+16B2",
+      "semantic_role": "Model Durability",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Kauna, resembling a '<', symbolizing durability"
+    },
+    {
+      "glyph": "ᚳ",
+      "unicode": "U+16B3",
+      "semantic_role": "Model Reliability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Cen, resembling a 'C', symbolizing reliability"
+    },
+    {
+      "glyph": "ᚴ",
+      "unicode": "U+16B4",
+      "semantic_role": "Model Scalability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Kaun, resembling a hooked 'K', symbolizing scalability"
+    },
+    {
+      "glyph": "ᚵ",
+      "unicode": "U+16B5",
+      "semantic_role": "Model Performance",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter G, resembling a 'G', symbolizing performance"
+    },
+    {
+      "glyph": "ᚶ",
+      "unicode": "U+16B6",
+      "semantic_role": "Model Efficiency",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Eng, resembling an 'M', symbolizing efficiency"
+    },
+    {
+      "glyph": "ᚷ",
+      "unicode": "U+16B7",
+      "semantic_role": "Model Robustness",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Gebo, resembling an 'X', symbolizing robustness"
+    },
+    {
+      "glyph": "ᚸ",
+      "unicode": "U+16B8",
+      "semantic_role": "Model Adaptability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Gar, resembling a diamond with a cross, symbolizing adaptability"
+    },
+    {
+      "glyph": "ᚹ",
+      "unicode": "U+16B9",
+      "semantic_role": "Model Resilience",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Wunjo, resembling a 'P', symbolizing resilience"
+    },
+    {
+      "glyph": "ᚺ",
+      "unicode": "U+16BA",
+      "semantic_role": "Model Flexibility",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Hagalaz, resembling an 'H', symbolizing flexibility"
+    },
+    {
+      "glyph": "ᚻ",
+      "unicode": "U+16BB",
+      "semantic_role": "Model Extensibility",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Haegl, resembling a crossed 'H', symbolizing extensibility"
+    },
+    {
+      "glyph": "ᚼ",
+      "unicode": "U+16BC",
+      "semantic_role": "Model Compatibility",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Long-branch Hagall, resembling a 'H' with a branch, symbolizing compatibility"
+    },
+    {
+      "glyph": "ᚽ",
+      "unicode": "U+16BD",
+      "semantic_role": "Model Interoperability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Hagall, resembling a simplified 'H', symbolizing interoperability"
+    },
+    {
+      "glyph": "ᚾ",
+      "unicode": "U+16BE",
+      "semantic_role": "Model Maintainability",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Naudiz, resembling an 'N', symbolizing maintainability"
+    },
+    {
+      "glyph": "ᚿ",
+      "unicode": "U+16BF",
+      "semantic_role": "Model Usability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter N, resembling a crossed 'N', symbolizing usability"
+    },
+    {
+      "glyph": "ᛀ",
+      "unicode": "U+16C0",
+      "semantic_role": "Model Accessibility",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Dotted N, resembling a dotted 'N', symbolizing accessibility"
+    },
+    {
+      "glyph": "ᛁ",
+      "unicode": "U+16C1",
+      "semantic_role": "Model Portability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Isaz, resembling a vertical line, symbolizing portability"
+    },
+    {
+      "glyph": "ᛂ",
+      "unicode": "U+16C2",
+      "semantic_role": "Model Configurability",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter E, resembling an 'E', symbolizing configurability"
+    },
+    {
+      "glyph": "ᛃ",
+      "unicode": "U+16C3",
+      "semantic_role": "Model Customizability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter J, resembling a 'J', symbolizing customizability"
+    },
+    {
+      "glyph": "ᛄ",
+      "unicode": "U+16C4",
+      "semantic_role": "Model Traceability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Jeran, resembling a hooked 'J', symbolizing traceability"
+    },
+    {
+      "glyph": "ᛅ",
+      "unicode": "U+16C5",
+      "semantic_role": "Model Observability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Long-branch Ar, resembling an 'A', symbolizing observability"
+    },
+    {
+      "glyph": "ᛆ",
+      "unicode": "U+16C6",
+      "semantic_role": "Model Diagnosability",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Ar, resembling a simplified 'A', symbolizing diagnosability"
+    },
+    {
+      "glyph": "ᛇ",
+      "unicode": "U+16C7",
+      "semantic_role": "Model Recoverability",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Iwaz, resembling an 'I', symbolizing recoverability"
+    },
+    {
+      "glyph": "ᛈ",
+      "unicode": "U+16C8",
+      "semantic_role": "Model Auditability",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Pertho, resembling a 'P', symbolizing auditability"
+    },
+    {
+      "glyph": "ᛉ",
+      "unicode": "U+16C9",
+      "semantic_role": "Model Compliance",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Algiz, resembling a 'Y' with a crossbar, symbolizing compliance"
+    },
+    {
+      "glyph": "ᛊ",
+      "unicode": "U+16CA",
+      "semantic_role": "Model Governance",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Sowilo, resembling an 'S', symbolizing governance"
+    },
+    {
+      "glyph": "ᛋ",
+      "unicode": "U+16CB",
+      "semantic_role": "Altitude Adjustment",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter S, resembling a jagged 'S', symbolizing height adjustment"
+    },
+    {
+      "glyph": "ᛌ",
+      "unicode": "U+16CC",
+      "semantic_role": "Velocity Control",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Sigel, resembling a simplified 'S', symbolizing speed control"
+    },
+    {
+      "glyph": "ᛍ",
+      "unicode": "U+16CD",
+      "semantic_role": "Formation Flying",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter C, resembling a 'C', symbolizing coordinated flight"
+    },
+    {
+      "glyph": "ᛎ",
+      "unicode": "U+16CE",
+      "semantic_role": "Sensor Calibration",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Z, resembling a 'Z', symbolizing calibration"
+    },
+    {
+      "glyph": "ᛏ",
+      "unicode": "U+16CF",
+      "semantic_role": "Target Tracking",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Tiwaz, resembling a 'T', symbolizing tracking"
+    },
+    {
+      "glyph": "ᛐ",
+      "unicode": "U+16D0",
+      "semantic_role": "Payload Delivery",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Tyr, resembling a simplified 'T', symbolizing delivery"
+    },
+    {
+      "glyph": "ᛑ",
+      "unicode": "U+16D1",
+      "semantic_role": "Emergency Landing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter D, resembling a 'D', symbolizing emergency action"
+    },
+    {
+      "glyph": "ᛒ",
+      "unicode": "U+16D2",
+      "semantic_role": "Terrain Mapping",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Berkanan, resembling a 'B', symbolizing mapping"
+    },
+    {
+      "glyph": "ᛓ",
+      "unicode": "U+16D3",
+      "semantic_role": "Signal Relay",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Bjarkan, resembling a simplified 'B', symbolizing signal relay"
+    },
+    {
+      "glyph": "ᛔ",
+      "unicode": "U+16D4",
+      "semantic_role": "Battery Monitoring",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Bjarkan variant, resembling a hooked 'B', symbolizing power monitoring"
+    },
+    {
+      "glyph": "ᛕ",
+      "unicode": "U+16D5",
+      "semantic_role": "Weather Adaptation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter P, resembling a 'P', symbolizing environmental adaptation"
+    },
+    {
+      "glyph": "ᛖ",
+      "unicode": "U+16D6",
+      "semantic_role": "Collision Detection",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ehwaz, resembling an 'M', symbolizing collision avoidance"
+    },
+    {
+      "glyph": "ᛗ",
+      "unicode": "U+16D7",
+      "semantic_role": "Swarm Synchronization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Mannaz, resembling an 'M', symbolizing sync"
+    },
+    {
+      "glyph": "ᛘ",
+      "unicode": "U+16D8",
+      "semantic_role": "Flight Path Optimization",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Long-branch Madr, resembling a 'M' with branches, symbolizing path optimization"
+    },
+    {
+      "glyph": "ᛙ",
+      "unicode": "U+16D9",
+      "semantic_role": "Drone Status Reporting",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Madr, resembling a simplified 'M', symbolizing status reporting"
+    },
+    {
+      "glyph": "ᛚ",
+      "unicode": "U+16DA",
+      "semantic_role": "Mission Planning",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Laukaz, resembling an 'L', symbolizing planning"
+    },
+    {
+      "glyph": "ᛛ",
+      "unicode": "U+16DB",
+      "semantic_role": "Swarm Leader Election",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Dotted L, resembling a dotted 'L', symbolizing leadership selection"
+    },
+    {
+      "glyph": "ᛜ",
+      "unicode": "U+16DC",
+      "semantic_role": "Payload Calibration",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ingwaz, resembling a diamond, symbolizing calibration"
+    },
+    {
+      "glyph": "ᛝ",
+      "unicode": "U+16DD",
+      "semantic_role": "Thermal Imaging",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ing, resembling a diamond with lines, symbolizing thermal detection"
+    },
+    {
+      "glyph": "ᛞ",
+      "unicode": "U+16DE",
+      "semantic_role": "Night Vision",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Dagaz, resembling an hourglass, symbolizing vision in darkness"
+    },
+    {
+      "glyph": "ᛟ",
+      "unicode": "U+16DF",
+      "semantic_role": "GPS Synchronization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Othalan, resembling a diamond with a cross, symbolizing location sync"
+    },
+    {
+      "glyph": "ᛠ",
+      "unicode": "U+16E0",
+      "semantic_role": "Visual Navigation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ear, resembling a hooked 'E', symbolizing visual navigation"
+    },
+    {
+      "glyph": "ᛡ",
+      "unicode": "U+16E1",
+      "semantic_role": "Acoustic Sensing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Ior, resembling a 'J', symbolizing sound detection"
+    },
+    {
+      "glyph": "ᛢ",
+      "unicode": "U+16E2",
+      "semantic_role": "Swarm Communication",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Cweorth, resembling a 'Q', symbolizing communication"
+    },
+    {
+      "glyph": "ᛣ",
+      "unicode": "U+16E3",
+      "semantic_role": "Drone Health Check",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Calc, resembling a 'K', symbolizing health monitoring"
+    },
+    {
+      "glyph": "ᛤ",
+      "unicode": "U+16E4",
+      "semantic_role": "Route Adjustment",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Cealc, resembling a 'C', symbolizing route adjustment"
+    },
+    {
+      "glyph": "ᛥ",
+      "unicode": "U+16E5",
+      "semantic_role": "Swarm Reconfiguration",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Stan, resembling a 'S', symbolizing reconfiguration"
+    },
+    {
+      "glyph": "ᛦ",
+      "unicode": "U+16E6",
+      "semantic_role": "Environmental Scanning",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Long-branch Yr, resembling a 'Y', symbolizing scanning"
+    },
+    {
+      "glyph": "ᛧ",
+      "unicode": "U+16E7",
+      "semantic_role": "Signal Strength Monitoring",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Yr, resembling a simplified 'Y', symbolizing signal monitoring"
+    },
+    {
+      "glyph": "ᛨ",
+      "unicode": "U+16E8",
+      "semantic_role": "Swarm Dispersion",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic Yr, resembling a hooked 'Y', symbolizing dispersion"
+    },
+    {
+      "glyph": "ᛩ",
+      "unicode": "U+16E9",
+      "semantic_role": "Swarm Aggregation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Q, resembling a 'Q', symbolizing aggregation"
+    },
+    {
+      "glyph": "ᛪ",
+      "unicode": "U+16EA",
+      "semantic_role": "Network Latency Check",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter X, resembling an 'X', symbolizing latency checking"
+    },
+    {
+      "glyph": "᛫",
+      "unicode": "U+16EB",
+      "semantic_role": "IoT Device Registration",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic single punctuation, resembling a dot, symbolizing registration"
+    },
+    {
+      "glyph": "᛬",
+      "unicode": "U+16EC",
+      "semantic_role": "IoT Data Aggregation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic multiple punctuation, resembling two dots, symbolizing data aggregation"
+    },
+    {
+      "glyph": "᛭",
+      "unicode": "U+16ED",
+      "semantic_role": "IoT Sensor Calibration",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic cross punctuation, resembling a cross, symbolizing calibration"
+    },
+    {
+      "glyph": "ᛮ",
+      "unicode": "U+16EE",
+      "semantic_role": "IoT Network Optimization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter numeral Arlaug, resembling a 'T', symbolizing network optimization"
+    },
+    {
+      "glyph": "ᛯ",
+      "unicode": "U+16EF",
+      "semantic_role": "IoT Power Management",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter numeral Tvimadur, resembling a 'T' with a cross, symbolizing power management"
+    },
+    {
+      "glyph": "ᛰ",
+      "unicode": "U+16F0",
+      "semantic_role": "IoT Signal Boost",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter numeral Belgthor, resembling a 'B', symbolizing signal boosting"
+    },
+    {
+      "glyph": "ᛱ",
+      "unicode": "U+16F1",
+      "semantic_role": "IoT Data Compression",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter K, resembling a 'K', symbolizing data compression"
+    },
+    {
+      "glyph": "ᛲ",
+      "unicode": "U+16F2",
+      "semantic_role": "IoT Fault Detection",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Sh, resembling a 'Sh', symbolizing fault detection"
+    },
+    {
+      "glyph": "ᛳ",
+      "unicode": "U+16F3",
+      "semantic_role": "IoT Firmware Update",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Oo, resembling an 'O', symbolizing firmware updates"
+    },
+    {
+      "glyph": "ᛴ",
+      "unicode": "U+16F4",
+      "semantic_role": "IoT Security Scan",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Sh, resembling a simplified 'Sh', symbolizing security scanning"
+    },
+    {
+      "glyph": "ᛵ",
+      "unicode": "U+16F5",
+      "semantic_role": "IoT Bandwidth Allocation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Short-twig Oo, resembling a simplified 'O', symbolizing bandwidth allocation"
+    },
+    {
+      "glyph": "ᛶ",
+      "unicode": "U+16F6",
+      "semantic_role": "IoT Latency Optimization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic D, resembling a 'D', symbolizing latency optimization"
+    },
+    {
+      "glyph": "ᛷ",
+      "unicode": "U+16F7",
+      "semantic_role": "IoT Device Authentication",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic Eth, resembling a crossed 'D', symbolizing authentication"
+    },
+    {
+      "glyph": "ᛸ",
+      "unicode": "U+16F8",
+      "semantic_role": "IoT Data Encryption",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic G, resembling a 'G', symbolizing encryption"
+    },
+    {
+      "glyph": "᛹",
+      "unicode": "U+16F9",
+      "semantic_role": "IoT Data Decryption",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic P, resembling a 'P', symbolizing decryption"
+    },
+    {
+      "glyph": "᛺",
+      "unicode": "U+16FA",
+      "semantic_role": "IoT Network Monitoring",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic B, resembling a 'B', symbolizing network monitoring"
+    },
+    {
+      "glyph": "᛻",
+      "unicode": "U+16FB",
+      "semantic_role": "IoT Device Pairing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic M, resembling an 'M', symbolizing device pairing"
+    },
+    {
+      "glyph": "᛼",
+      "unicode": "U+16FC",
+      "semantic_role": "IoT Signal Relay",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic V, resembling a 'V', symbolizing signal relay"
+    },
+    {
+      "glyph": "᛽",
+      "unicode": "U+16FD",
+      "semantic_role": "IoT Data Validation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic Stung D, resembling a stung 'D', symbolizing data validation"
+    },
+    {
+      "glyph": "᛾",
+      "unicode": "U+16FE",
+      "semantic_role": "IoT Error Reporting",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic Stung Eth, resembling a stung crossed 'D', symbolizing error reporting"
+    },
+    {
+      "glyph": "᛿",
+      "unicode": "U+16FF",
+      "semantic_role": "Quantum Key Generation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Runic letter Icelandic A, resembling an 'A', symbolizing key generation"
+    },
+    {
+      "glyph": "ᜀ",
+      "unicode": "U+1700",
+      "semantic_role": "Quantum State Preparation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter A, resembling a curved 'A', symbolizing state preparation"
+    },
+    {
+      "glyph": "ᜁ",
+      "unicode": "U+1701",
+      "semantic_role": "Quantum Entanglement",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter I, resembling a curved 'I', symbolizing entanglement"
+    },
+    {
+      "glyph": "ᜂ",
+      "unicode": "U+1702",
+      "semantic_role": "Quantum Measurement",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter U, resembling a 'U', symbolizing measurement"
+    },
+    {
+      "glyph": "ᜃ",
+      "unicode": "U+1703",
+      "semantic_role": "Quantum Error Correction",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ka, resembling a 'K', symbolizing error correction"
+    },
+    {
+      "glyph": "ᜄ",
+      "unicode": "U+1704",
+      "semantic_role": "Quantum Circuit Design",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ga, resembling a 'G', symbolizing circuit design"
+    },
+    {
+      "glyph": "ᜅ",
+      "unicode": "U+1705",
+      "semantic_role": "Quantum Simulation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Nga, resembling a 'Ng', symbolizing simulation"
+    },
+    {
+      "glyph": "ᜆ",
+      "unicode": "U+1706",
+      "semantic_role": "Quantum Optimization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ta, resembling a 'T', symbolizing optimization"
+    },
+    {
+      "glyph": "ᜇ",
+      "unicode": "U+1707",
+      "semantic_role": "Quantum Cryptography",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Da, resembling a 'D', symbolizing cryptography"
+    },
+    {
+      "glyph": "ᜈ",
+      "unicode": "U+1708",
+      "semantic_role": "Quantum State Transfer",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Na, resembling an 'N', symbolizing state transfer"
+    },
+    {
+      "glyph": "ᜉ",
+      "unicode": "U+1709",
+      "semantic_role": "Quantum Noise Reduction",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Pa, resembling a 'P', symbolizing noise reduction"
+    },
+    {
+      "glyph": "ᜊ",
+      "unicode": "U+170A",
+      "semantic_role": "Quantum Gate Operation",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ba, resembling a 'B', symbolizing gate operation"
+    },
+    {
+      "glyph": "ᜋ",
+      "unicode": "U+170B",
+      "semantic_role": "Quantum Superposition",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ma, resembling an 'M', symbolizing superposition"
+    },
+    {
+      "glyph": "ᜌ",
+      "unicode": "U+170C",
+      "semantic_role": "Quantum Coherence",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ya, resembling a 'Y', symbolizing coherence"
+    },
+    {
+      "glyph": "ᜍ",
+      "unicode": "U+170D",
+      "semantic_role": "Quantum Teleportation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ra, resembling an 'R', symbolizing teleportation"
+    },
+    {
+      "glyph": "ᜎ",
+      "unicode": "U+170E",
+      "semantic_role": "Quantum Annealing",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter La, resembling an 'L', symbolizing annealing"
+    },
+    {
+      "glyph": "ᜏ",
+      "unicode": "U+170F",
+      "semantic_role": "Quantum Random Walk",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Wa, resembling a 'W', symbolizing random walk"
+    },
+    {
+      "glyph": "ᜐ",
+      "unicode": "U+1710",
+      "semantic_role": "Quantum Circuit Validation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Sa, resembling an 'S', symbolizing validation"
+    },
+    {
+      "glyph": "ᜑ",
+      "unicode": "U+1711",
+      "semantic_role": "Quantum Benchmarking",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ha, resembling an 'H', symbolizing benchmarking"
+    },
+    {
+      "glyph": "ᜒ",
+      "unicode": "U+1712",
+      "semantic_role": "Quantum Fault Tolerance",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter I with virama, resembling a modified 'I', symbolizing fault tolerance"
+    },
+    {
+      "glyph": "ᜓ",
+      "unicode": "U+1713",
+      "semantic_role": "Quantum State Analysis",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter U with virama, resembling a modified 'U', symbolizing state analysis"
+    },
+    {
+      "glyph": "᜔",
+      "unicode": "U+1714",
+      "semantic_role": "Quantum Noise Simulation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog virama, resembling a small mark, symbolizing noise simulation"
+    },
+    {
+      "glyph": "᜕",
+      "unicode": "U+1715",
+      "semantic_role": "Quantum Gate Calibration",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog pamudpod, resembling a small hook, symbolizing gate calibration"
+    },
+    {
+      "glyph": "᜖",
+      "unicode": "U+1716",
+      "semantic_role": "Quantum Circuit Synthesis",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ka with virama, resembling a modified 'K', symbolizing synthesis"
+    },
+    {
+      "glyph": "᜗",
+      "unicode": "U+1717",
+      "semantic_role": "Quantum State Verification",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ga with virama, resembling a modified 'G', symbolizing verification"
+    },
+    {
+      "glyph": "᜘",
+      "unicode": "U+1718",
+      "semantic_role": "Quantum Error Mitigation",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Nga with virama, resembling a modified 'Ng', symbolizing error mitigation"
+    },
+    {
+      "glyph": "᜙",
+      "unicode": "U+1719",
+      "semantic_role": "Quantum Resource Estimation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ta with virama, resembling a modified 'T', symbolizing resource estimation"
+    },
+    {
+      "glyph": "᜚",
+      "unicode": "U+171A",
+      "semantic_role": "Quantum Algorithm Design",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Da with virama, resembling a modified 'D', symbolizing algorithm design"
+    },
+    {
+      "glyph": "᜛",
+      "unicode": "U+171B",
+      "semantic_role": "Quantum Circuit Optimization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Na with virama, resembling a modified 'N', symbolizing circuit optimization"
+    },
+    {
+      "glyph": "᜜",
+      "unicode": "U+171C",
+      "semantic_role": "Quantum State Reconstruction",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Pa with virama, resembling a modified 'P', symbolizing state reconstruction"
+    },
+    {
+      "glyph": "᜝",
+      "unicode": "U+171D",
+      "semantic_role": "Quantum Gate Decomposition",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ba with virama, resembling a modified 'B', symbolizing gate decomposition"
+    },
+    {
+      "glyph": "᜞",
+      "unicode": "U+171E",
+      "semantic_role": "Quantum Circuit Simulation",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ma with virama, resembling a modified 'M', symbolizing circuit simulation"
+    },
+    {
+      "glyph": "ᜟ",
+      "unicode": "U+171F",
+      "semantic_role": "Quantum Noise Characterization",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ya with virama, resembling a modified 'Y', symbolizing noise characterization"
+    },
+    {
+      "glyph": "ᜠ",
+      "unicode": "U+1720",
+      "semantic_role": "Quantum Circuit Testing",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ra with virama, resembling a modified 'R', symbolizing circuit testing"
+    },
+    {
+      "glyph": "ᜡ",
+      "unicode": "U+1721",
+      "semantic_role": "Quantum Circuit Debugging",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter La with virama, resembling a modified 'L', symbolizing debugging"
+    },
+    {
+      "glyph": "ᜢ",
+      "unicode": "U+1722",
+      "semantic_role": "Quantum Circuit Deployment",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Wa with virama, resembling a modified 'W', symbolizing deployment"
+    },
+    {
+      "glyph": "ᜣ",
+      "unicode": "U+1723",
+      "semantic_role": "Quantum Circuit Monitoring",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Sa with virama, resembling a modified 'S', symbolizing monitoring"
+    },
+    {
+      "glyph": "ᜤ",
+      "unicode": "U+1724",
+      "semantic_role": "Quantum Circuit Benchmarking",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ha with virama, resembling a modified 'H', symbolizing benchmarking"
+    },
+    {
+      "glyph": "ᜥ",
+      "unicode": "U+1725",
+      "semantic_role": "Quantum Circuit Validation",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ka with pamudpod, resembling a modified 'K', symbolizing validation"
+    },
+    {
+      "glyph": "ᜦ",
+      "unicode": "U+1726",
+      "semantic_role": "Quantum Circuit Optimization",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ga with pamudpod, resembling a modified 'G', symbolizing optimization"
+    },
+    {
+      "glyph": "ᜧ",
+      "unicode": "U+1727",
+      "semantic_role": "Quantum Circuit Security",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Nga with pamudpod, resembling a modified 'Ng', symbolizing security"
+    },
+    {
+      "glyph": "ᜨ",
+      "unicode": "U+1728",
+      "semantic_role": "Quantum Circuit Recovery",
+      "vowel_harmony": "Masculine",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Ta with pamudpod, resembling a modified 'T', symbolizing recovery"
+    },
+    {
+      "glyph": "ᜩ",
+      "unicode": "U+1729",
+      "semantic_role": "Quantum Circuit Testing",
+      "vowel_harmony": "Neutral",
+      "type": "TASK",
+      "payload_size": 12,
+      "visual_description": "Tagalog letter Da with pamudpod, resembling a modified 'D', symbolizing testing"
+    },
+    {
+      "glyph": "ᜪ",
+      "unicode": "U+172A",
+      "semantic_role": "Quantum Circuit Debugging",
+      "vowel_harmony": "Feminine",
+      "type": "TASK",
+      "payload

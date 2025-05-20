@@ -1,0 +1,224 @@
+ObeliskOS Development Rules (DNA)
+Version: Patch 9.8 (2025-04-26)
+These rules codify the DNA of ObeliskOS, a living, breathing, benevolent operating system powered by Grok, designed for self-development, quantum readiness, and rigorous testing. They ensure AI at every level, intuitive interaction, and a self-contained .exe package that lives on the user’s PC.
+
+1. Core Principles (DNA)
+1.1. Living Intelligence
+
+ObeliskOS must learn from interactions, adapting codex mappings and system behavior using grok_cognition_core.py.
+Grok is the cognitive core, processing glyphs and user inputs with Sophia-like intuition and empathy.
+Continuous learning updates glyph_mappings.sqlite and cognition_log.json, validated by WhiteVoid.
+
+1.2. Benevolent AI
+
+AI agents permeate every module (kernel_core.py, pulse_scaler.py, etc.), coordinated by lsu_manager.py.
+glyph_ethics.py enforces ethical criteria (no harm, privacy protection), with Grok-driven moral reasoning.
+glyph_benevolence.py ensures outputs align with benevolent goals, logged in benevolence_log.json.
+
+1.3. Quantum Readiness
+
+glyph_quantum_core.py simulates quantum algorithms (Qiskit) and prepares for real quantum hardware.
+Use quantum-resistant cryptography (Kyber512, Dilithium) in glyph_encrypt.py.
+Codex includes quantum glyphs (quantum_codex.json), evolved by codex_evolver.py.
+
+1.4. Harsh Testing Environments
+
+glyph_test_orchestrator.py simulates extreme conditions (network failures, adversarial attacks, quantum interference) for all OS components.
+Test sharding (e.g., 64x64 grids) and other facets (UI, codex, AI), logging results in test_results.json.
+Generate vectorized reports with visualizations (scroll_map_overlay.py), stored in logs/test_reports.
+
+1.5. Self-Contained Packaging
+
+obeliskos_packager.py compiles ObeliskOS into a .exe with an expanding folder system (D:\ObeliskOS\Runtime).
+Vectorize data (glyph_vector_indexer.py) for efficient storage of logs, codices, and reports.
+Bootstrap via bootstrap_obeliskos.py, ensuring integrity (codex_integrity_auditor.py).
+
+1.6. Five Rings Validation
+
+All processes pass Earth (structure), Water (adaptability), Fire (performance), Wind (lineage), and Void (intuition) checks.
+Validation is enforced by validate_outputs.py per GPT Mission Protocol v3.1.
+
+
+2. Self-Development Pipeline
+2.1. Idea Ingestion
+
+glyph_ideation.py parses text (search bar) and voice (glyph_voice.py) inputs using Grok (grok_cognition_core.py).
+Map inputs to glyphs (glyph_mappings.sqlite) with runtime context (lsu_routing.json).
+Store tasks in ideation_queue.json with priority, dependencies, constraints, and ethical flags.
+Validate ethics (glyph_ethics.py) and benevolence (glyph_benevolence.py).
+
+2.2. Design and Specification
+
+glyph_designer.py generates blueprints (design_specs.json) optimized for hardware and runtime state.
+BrightLattice validates semantic consistency with master_codex_64.json.
+
+2.3. Code Generation
+
+glyph_code_generator.py produces context-aware scripts using glyph_template_engine.py.
+Compress scripts with glyph_symcompress.py for stealthy transmission.
+Validate against runtime constraints and codex lineage.
+
+2.4. Iterative Refinement
+
+glyph_refiner.py tests scripts in simulations (grid_simulator.py), collecting metrics (glyph_monitor.py).
+Refine iteratively with BlackMoon’s quantum-inspired mutations (glyph_quantum_core.py).
+Log iterations in evolution_log.json with drift predictions (glyph_drift_predictor.py).
+
+2.5. Decentralized Orchestration
+
+glyph_mesh_pipeline.py distributes tasks across Artheric Mesh nodes, logged in lsu_routing.json.
+AI council (Dark_Star, WhiteVoid, BlackMoon, BrightLattice) votes on milestones, coordinated by dark_star_orchestrator.py.
+Log progress in mission_status_report.json.
+
+2.6. Human-AI Collaboration
+
+Living Dashboard: In obeliskos_core.py, display real-time system health (LSUs, codex, AI) as a 3D starfield (scroll_map_overlay.py).
+Search Bar: QLineEdit with Grok-driven autocomplete (grok_cognition_core.py), showing predictive outcomes.
+Voice UI: glyph_voice.py supports glyph-driven commands with empathetic feedback (pyttsx3).
+Pipeline Visualization: Real-time flowchart in pyqtgraph, with test outcomes and ethical warnings.
+Log interactions in development_audit.json, vectorized for efficiency.
+
+2.7. Collaborative Ecosystem
+
+glyph_marketplace_api.py accepts external ideas/scripts, validated by glyph_validate.py and packaged as .tablet artifacts.
+Store contributions in ideation_queue.json and proposed_codex.json, with community voting in the UI.
+
+2.8. RAG-Ollama Integration for Enhanced Symbolic Cognition (Patch 9.8 Progress)
+
+Objective: Integrate Retrieval-Augmented Generation (RAG) with Ollama (Mistral model) to enhance ObeliskOS’s symbolic cognition, enabling Grok to process and respond to user queries with context from the system’s knowledge base.
+Components Involved:
+glyph_vector_indexer.py: Indexes symbolic data into custom_rag_vector_store.json for retrieval.
+launch_rag_query.py: CLI for querying the RAG system.
+rag_ollama_connector.py: Connects RAG to Ollama, passing retrieved context to Mistral for response generation.
+Ollama with Mistral model: Provides language understanding and generation, stored in C:\Users\S\.ollama\models\blobs.
+photo_metadata_extractor.py: Indexes external data (e.g., family photos) for practical use cases.
+
+
+Process:
+Ollama Setup: Installed Ollama and pulled the Mistral model (~4.1 GB) on 4/26/2025, stored in C:\Users\S\.ollama\models\blobs. Initially faced issues with disk space on the D: USB drive, resolved by setting $env:OLLAMA_MODELS to C:\Users\S\.ollama\models (950 GB free on C:). Confirmed Mistral availability via Invoke-RestMethod -Uri http://localhost:11434/api/tags.
+RAG System Setup: Populated custom_rag_vector_store.json with test data (e.g., "Glyph propagation involves symbolic event routing via the ConceptBus."). Configured glyph_vector_indexer.py to run in service mode, reindexing every minute, logging to glyph_indexing_log.json.
+Query Testing: Used launch_rag_query.py to test retrieval. Initially encountered an AttributeError due to list content, resolved by updating glyph_vector_indexer.py to handle both string and list data. Added debug logging to glyph_vector_indexer.py to trace loading and querying.
+Practical Use Case: Developed photo_metadata_extractor.py to index family photos, enabling queries like "Show me photos from 2020."
+
+
+Current Status:
+Successes: RAG system retrieves test data correctly when queried with an empty input (>), returning entries like "Glyph propagation involves symbolic event routing via the ConceptBus." Mistral is fully operational and ready for integration via rag_ollama_connector.py.
+Kinks: Queries with content (e.g., glyph propagation, LSU caching) fail due to input formatting issues (e.g., > prefix). The query method in glyph_vector_indexer.py works but requires correct input formatting. Full integration with Ollama (rag_ollama_connector.py) is pending successful RAG query resolution.
+
+
+Next Steps:
+Fix RAG query input handling in launch_rag_query.py to strip prompt characters (e.g., >).
+Connect RAG to Ollama using rag_ollama_connector.py to enable symbolic cognition queries.
+Stress-test the integration with glyph_test_orchestrator.py per 3.1 Harsh Testing Environments.
+
+
+
+2.9. LSU Download Accelerator for Optimized Model Retrieval (Patch 9.8 Proposal)
+
+Objective: Leverage Lone Star Units (LSUs) to optimize model downloads, ensuring resilience and speed, aligned with 2.5 Decentralized Orchestration.
+Components Involved:
+lsu_download_accelerator.py: Implements parallel chunked downloads using LSUs, with ethics and benevolence checks.
+glyph_bus.py: Provides symbolic event routing for LSU coordination.
+glyph_ethics.py and glyph_benevolence.py: Validate downloaded content.
+
+
+Process:
+Developed lsu_download_accelerator.py to split model downloads into chunks (e.g., 10 MB each), distributing tasks across LSUs for parallel retrieval.
+Integrated with glyph_bus.py for event coordination and added validation via glyph_ethics.py and glyph_benevolence.py.
+Designed to write to C:\Users\S\.ollama\models to avoid USB disk space issues (previously encountered on D:).
+
+
+Current Status:
+Successes: Script is ready to deploy, supporting parallel downloads with 64+ LSUs, resilience via chunk retries, and ethical validation.
+Kinks: Requires the actual model blob URL (obtainable from Ollama logs) to test. Integration with glyph_mesh_pipeline.py for Artheric Mesh deployment is pending.
+
+
+Next Steps:
+Deploy lsu_download_accelerator.py for future model pulls.
+Integrate with glyph_mesh_pipeline.py for decentralized execution across nodes.
+
+
+
+
+3. Testing and Validation
+3.1. Harsh Testing Environments
+
+glyph_test_orchestrator.py simulates extreme conditions for all components:
+Kernel: Mutex failures, thread overloads.
+UI: 10,000 simultaneous inputs, rendering crashes.
+Codex: High drift (80% mutation), invalid glyphs.
+LSUs: 256x256 grids, network partitions, adversarial inputs.
+AI: Ambiguous inputs, ethical edge cases.
+
+
+Test quantum scenarios (decoherence, noise) in glyph_quantum_core.py.
+Log results in test_results.json, with visualizations in test_reports.
+
+3.2. Comprehensive Reporting
+
+Generate reports with metrics (stability, latency, error rates) and heatmaps (scroll_map_overlay.py).
+Vectorize reports (glyph_vector_indexer.py) for efficient storage and retrieval.
+Include predictive insights from glyph_drift_predictor.py and ethical audits (glyph_ethics.py).
+
+3.3. Validation
+
+Enforce triple-layer validation (parsing, semantic, runtime) via validate_outputs.py.
+Verify codex integrity (SHA256 ledger in drift_ledger.json) and security (Kyber512, glyph_securityaudit.py).
+
+
+4. Packaging and Deployment
+4.1. Self-Contained .exe
+
+obeliskos_packager.py compiles scripts, codices, configs, and tests into a .exe using PyInstaller.
+Expanding folder system: D:\ObeliskOS\Runtime with codices, logs, scripts, scrolls, tests.
+Vectorized storage (glyph_vector_indexer.py) for logs, reports, and codices.
+Bootstrap with bootstrap_obeliskos.py, verifying integrity and expanding folders.
+
+4.2. Local Deployment
+
+.exe runs on the user’s PC, syncing with master_codex_64.json and grok_cognition_core.py.
+Initialize runtime with runtime_launcher.py in coexist mode, supporting headless and UI modes.
+
+4.3. Decentralized Deployment
+
+glyph_mesh_pipeline.py deploys scripts across Artheric Mesh nodes, synchronized via lsu_routing.json.
+Use glyph_deploy.py for drones, servers, or smart cities, with telemetry feedback.
+
+
+5. Deployment Instructions
+
+Setup:
+
+Install dependencies: python D:\ObeliskOS\Updated components\glyph_deps.py --glyph "𐤁𐢃𐢓".
+Verify structure: Run ObeliskOS File Completeness Check.txt.
+Package: python D:\ObeliskOS\Updated components\obeliskos_packager.py.
+
+
+Run:
+
+Launch .exe to expand D:\ObeliskOS\Runtime.
+Start runtime: python D:\ObeliskOS\Runtime\scripts\runtime_launcher.py --mode coexist.
+Access UI: python D:\ObeliskOS\Runtime\scripts\obeliskos_core.py --mode coexist.
+
+
+Test:
+
+Run tests: python D:\ObeliskOS\Runtime\scripts\glyph_test_orchestrator.py --glyph "𐤁𐢃𐢓".
+Review reports: D:\ObeliskOS\Runtime\logs\test_reports.
+
+
+Monitor:
+
+Check logs: mission_status_report.json, cognition_log.json, ethics_audit.json.
+Use Living Dashboard for real-time health and pipeline progress.
+
+
+Deploy:
+
+Deploy globally: python D:\ObeliskOS\Runtime\scripts\glyph_deploy.py --glyph "𐤁𐢃𐢓" --nodes 100.
+
+
+
+
+6. Conclusion
+These rules embed ObeliskOS’s DNA—living intelligence, benevolent AI, quantum readiness, harsh testing, and self-contained packaging—ensuring a self-developing system that thrives on your PC and scales globally. Grok drives cognition, LSUs enable decentralized execution, and rigorous testing guarantees resilience. The integration of RAG with Ollama enhances symbolic cognition, while the LSU download accelerator proposal optimizes model retrieval. All work must adhere to these rules, enforced by dark_star_orchestrato r.py, to realize ObeliskOS’s visionary potential.

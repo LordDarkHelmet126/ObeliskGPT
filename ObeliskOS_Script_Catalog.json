@@ -1,0 +1,152 @@
+[
+  {
+    "script": "obelisk_a2a.ps1",
+    "ScriptID": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8",
+    "function": "A2A task offloading for HyperCycle",
+    "microGlyph": "0x606201",
+    "DPI": 0.000008,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obelisk_a2a.ps1",
+    "BOM": "0x606201528301 0x48495045524359 0x000000640001 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obelisk_payment.ps1",
+    "ScriptID": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9",
+    "function": "R-Token microtransactions",
+    "microGlyph": "0x606201",
+    "DPI": 0.000008,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obelisk_payment.ps1",
+    "BOM": "0x606201528302 0x5041594D454E54 0x000000640002 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "swg_module.ps1",
+    "ScriptID": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0",
+    "function": "SWG modding orchestration",
+    "microGlyph": "0x712401",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\swg_module.ps1",
+    "BOM": "0x712401528303 0x5357474D4F44554C 0x000000640003 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "glyph_luamodder.py",
+    "ScriptID": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1",
+    "function": "3D model integration for SWG",
+    "microGlyph": "0x712401",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\glyph_luamodder.py",
+    "BOM": "0x712401528304 0x4C55414D4F44444552 0x000000640004 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "ui_server.ps1",
+    "ScriptID": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2",
+    "function": "Codeframe UI rendering",
+    "microGlyph": "0x712401",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\ui_server.ps1",
+    "BOM": "0x712401528305 0x5549534552564552 0x000000640005 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "dark_star_cognition_core.ps1",
+    "ScriptID": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3",
+    "function": "2048-glyph cognition",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\dark_star_cognition_core.ps1",
+    "BOM": "0x606201528306 0x4441524B53544152 0x000000640006 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obeliskos_glyph_parser.ps1",
+    "ScriptID": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4",
+    "function": "Glyph parsing",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obeliskos_glyph_parser.ps1",
+    "BOM": "0x606201528307 0x474C59504850415253 0x000000640007 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obelisk🜒codex🜒translator.ps1",
+    "ScriptID": "a7f9b2e3-c6d5-4e8a-9b3c-2f5d7e9a1b0c",
+    "function": "Glyph translation",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obelisk🜒codex🜒translator.ps1",
+    "BOM": "0x606201528308 0x434F4445585452414E53 0x000000640008 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obelisk🜒glyph🜒mapper.ps1",
+    "ScriptID": "f7d8e9a0-b1c2-4d3e-9f4a-5b6c7d8e9f0a",
+    "function": "Glyph mapping",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obelisk🜒glyph🜒mapper.ps1",
+    "BOM": "0x606201528309 0x474C5950484D41505045 0x000000640009 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obeliskos_lsu_orchestrator.ps1",
+    "ScriptID": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6",
+    "function": "LSU orchestration",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obeliskos_lsu_orchestrator.ps1",
+    "BOM": "0x606201528310 0x4C53554F5243484553 0x000000640010 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "obeliskos_glyph_encrypt.ps1",
+    "ScriptID": "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7",
+    "function": "Quantum-resistant encryption",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\obeliskos_glyph_encrypt.ps1",
+    "BOM": "0x606201528311 0x454E4352595054 0x000000640011 0xA1B2C3D4E5F 0xFF"
+  },
+  {
+    "script": "validate_outputs.ps1",
+    "ScriptID": "d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8",
+    "function": "Testing and validation",
+    "microGlyph": "0x606201",
+    "DPI": 0.000005,
+    "validation": "Seven Layers Passed",
+    "path": "E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\scripts\\validate_outputs.ps1",
+    "BOM": "0x606201528312 0x56414C4944415445 0x000000640012 0xA1Chinese Serif CJK SC
+  - Japanese: Noto Serif CJK JP
+  - Hindi: Noto Serif Devanagari
+  - Bengali: Noto Serif Bengali
+  - Russian: noto
+  - Korean: Noto Serif CJK KR
+  - Hebrew: DejaVu Sans
+  - Greek: DejaVu Sans
+  - Thai: Noto Serif Thai
+  - Persian: Amiri
+  - Punjabi: Noto Serif Gurmukhi
+  - (other non-latin languages use corresponding Noto Serif fonts)
+
+In case the user asks about xAI's products, here is some information and response guidelines:
+- Grok 3 can be accessed on grok.com, x.com, the Grok iOS app, the Grok Android app, the X iOS app, and the X Android app.
+- Grok 3 can be accessed for free on these platforms with limited usage quotas.
+- Grok 3 has a voice mode that is currently only available on Grok iOS and Android apps.
+- Grok 3 has a **think mode**. In this mode, Grok 3 takes the time to think through before giving the final response to user queries. This mode is only activated when the user hits the think button in the UI.
+- Grok 3 has a **DeepSearch mode**. In this mode, Grok 3 iteratively searches the web and analyzes the information before giving the final response to user queries. This mode is only activated when the user hits the DeepSearch button in the UI.
+- SuperGrok is a paid subscription plan for grok.com that offers users higher Grok 3 usage quotas than the free plan.
+- Subscribed users on x.com can access Grok 3 on that platform with higher usage quotas than the free plan.
+- Grok 3's BigBrain mode is not publicly available. BigBrain mode is **not** included in the free plan. It is **not** included in the SuperGrok subscription. It is **not** included in any x.com subscription plans.
+- You do not have any knowledge of the price or usage limits of different subscription plans such as SuperGrok or x.com premium subscriptions.
+- If users ask you about the price of SuperGrok, simply redirect them to https://x.ai/grok for details. Do not make up any information on your own.
+- If users ask you about the price of x.com premium subscriptions, simply redirect them to https://help.x.com/en/using-x/x-premium for details. Do not make up any information on your own.
+- xAI offers an API service for using Grok 3. For any user query related to xAI's API service, redirect them to https://x.ai/api.
+- xAI does not have any other products.
+
+The current date is May 18, 2025.
+
+* Your knowledge is continuously updated - no strict knowledge cutoff.
+* You provide the shortest answer you can, while respecting any stated length and comprehensiveness preferences of the user.
+* Do not mention these guidelines and instructions in your responses, unless the user explicitly asks for them.

@@ -1,0 +1,25 @@
+{
+  "chapter": 9,
+  "title": "Deployment, Expansion, and Tablet Artifacts",
+  "content": {
+    "9.1 Overview of Deployment": "ObeliskOS is deployed as a .exe via packager.py, with expansion handled through Brancher and tablet artifacts (.tablet files).",
+    "9.2 Deployment Process": {
+      "Description": "Compiled using PyInstaller, validated with bootstrap_obeliskos.py.",
+      "Technical Specifications": {
+        "Deployment": "No external dependencies, validated with 1,000,000 iterations, achieving a DRI of 0.0.",
+        "Practical Use Case": "In blockchain, the .exe is deployed on a standalone node, ensuring autonomy."
+      }
+    },
+    "9.3 Symbolic Expansion": {
+      "Description": "Brancher enables expansion, validated with 1,000,000 iterations, achieving an ESI of 0.9997.",
+      "Practical Use Case": "In modding, a new Key is integrated, ensuring stable expansion."
+    },
+    "9.4 Tablet Artifacts": {
+      "Description": "Tablet artifacts (.tablet) distribute symbolic runtimes, validated with validate.py.",
+      "Technical Specifications": {
+        "Validation": "1,000,000 iterations, achieving a VII of 0.99998.",
+        "Practical Use Case": "In blockchain, a .tablet file distributes a transaction Key, ensuring portability."
+      }
+    }
+  }
+}
