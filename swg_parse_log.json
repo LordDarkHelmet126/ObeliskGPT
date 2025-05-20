@@ -1,0 +1,5 @@
+{
+    "Timestamp":  "2025-05-08T05:10:48.9145566-04:00",
+    "Details":  "Failed to load SWG data: Cannot find path \u0027E:\\SWG_Data\\quest_1.lua\u0027 because it does not exist.",
+    "Event":  "DataLoadFailure"
+}

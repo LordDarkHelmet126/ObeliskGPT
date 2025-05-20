@@ -1,0 +1,20 @@
+{
+  "Timestamp": "2025-05-08T05:11:53.7631431-04:00",
+  "Details": "Loaded session state: ed659780-e9b6-402a-86c3-2afef4cd197d",
+  "Event": "SessionStateLoad"
+}
+{
+  "Timestamp": "2025-05-08T05:11:53.8929922-04:00",
+  "Details": "DPI 5E-06%",
+  "Event": "DriftCheckSuccess"
+}
+{
+  "Timestamp": "2025-05-08T05:11:53.8997469-04:00",
+  "Details": "API configured: http://obeliskos-api:9000",
+  "Event": "ApiConfigSuccess"
+}
+{
+  "Timestamp": "2025-05-08T05:14:13.8159163-04:00",
+  "Details": "The term 'Execute-Command' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+  "Event": "EnvironmentSetupFailure"
+}

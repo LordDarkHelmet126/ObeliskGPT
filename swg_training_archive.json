@@ -1,0 +1,13 @@
+{
+  "FinalAccuracy": 97.0,
+  "PatternsRecognized": 4,
+  "DriftPreventionIndex": 5E-06,
+  "ScalabilityTestGlyphs": 100000,
+  "ScalabilityTestLatency": 17038.1406,
+  "GlyphCount": 2
+}
+{
+  "Timestamp": "2025-05-08T05:43:03.8364168-04:00",
+  "Details": "Archived training results to E:\\ALL SCRIPTS FOR BOOK\\DARK_STAR\\Final Consolidated Folder\\Logs\\swg_training_archive.json.",
+  "Event": "ArchiveSuccess"
+}
